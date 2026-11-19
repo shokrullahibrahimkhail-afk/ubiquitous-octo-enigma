@@ -18,29 +18,37 @@ h2{color:#075b38}
 .card,.panel,.ad{background:white;border:1px solid #ddd;border-radius:10px;padding:15px;margin:10px 0}
 label{display:block;margin-top:10px;font-weight:bold}
 input,select,textarea{width:100%;padding:11px;box-sizing:border-box;border:1px solid #ccc;border-radius:6px;font:inherit}
-button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7px;margin-top:12px;font:inherit}
+button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7px;margin:6px 3px 0;font:inherit;cursor:pointer}
 button:disabled{opacity:.6}
+.danger{background:#9b2c2c}
+.notice{padding:10px;background:#edf4ed;border-radius:7px;margin-top:10px}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
+
 <header>
 <h1>شکرالله ابراهیم‌خیل</h1>
 <h2>ستاره اعتماد</h2>
 <p>دفتر رهنمای معاملات املاک افغانستان</p>
 <strong>اعتماد شما، اعتبار ما</strong>
 </header>
+
 <nav>
 <a href="#home">صفحه اصلی</a>
 <a href="#services">خدمات</a>
 <a href="#search">جستجو</a>
 <a href="#register">ثبت آگهی</a>
 <a href="#contact">تماس</a>
+<a href="#admin">مدیریت</a>
 </nav>
+
 <div class="hero" id="home">
 <h2>به سامانه املاک ستاره اعتماد خوش آمدید</h2>
 <p>خرید، فروش، کرایه و گروی ملکیت در سراسر افغانستان</p>
 <p>خانه، آپارتمان، زمین، دکان و دفتر</p>
 </div>
+
 <section id="services">
 <h2>خدمات ما</h2>
 <div class="cards">
@@ -51,21 +59,25 @@ button:disabled{opacity:.6}
 <div class="card">🏬 دفتر</div>
 </div>
 </section>
+
 <section id="search">
 <h2>جستجوی ملکیت</h2>
 <div class="panel">
+<label>نوع ملکیت</label>
 <select id="searchType">
 <option value="">همه انواع ملکیت</option>
 <option>خانه</option><option>آپارتمان</option>
 <option>زمین</option><option>دکان</option><option>دفتر</option>
 </select>
+<label>ولایت</label>
 <select id="searchProvince">
 <option value="">همه ولایت‌ها</option>
 </select>
-<button id="searchButton" type="button" onclick="searchAds()">جستجو</button>
+<button id="searchButton" type="button">جستجو</button>
 <div id="results"></div>
 </div>
 </section>
+
 <section id="register">
 <h2>ثبت رایگان آگهی</h2>
 <div class="panel">
@@ -93,6 +105,7 @@ button:disabled{opacity:.6}
 <p id="message" role="status"></p>
 </div>
 </section>
+
 <section id="contact">
 <h2>تماس با ما</h2>
 <div class="panel">
@@ -105,14 +118,36 @@ button:disabled{opacity:.6}
 <strong>اعتماد شما، اعتبار ما</strong>
 </div>
 </section>
+
+<section id="admin">
+<h2>پنل مدیریت ستاره اعتماد</h2>
+
+<div class="panel" id="adminLoginPanel">
+<h3>ورود مدیر سامانه</h3>
+<form id="adminLoginForm">
+<label>ایمیل مدیر</label>
+<input id="adminEmail" type="email" autocomplete="username" required>
+<label>رمز عبور</label>
+<input id="adminPassword" type="password" autocomplete="current-password" required>
+<button id="adminLoginButton" type="submit">ورود به مدیریت</button>
+</form>
+<p id="adminMessage" role="status"></p>
+</div>
+
+<div class="panel" id="adminDashboard" hidden>
+<p>مدیر گرامی، خوش آمدید.</p>
+<button id="refreshAdsButton" type="button">بارگذاری دوباره آگهی‌ها</button>
+<button id="adminLogoutButton" type="button" class="danger">خروج از حساب</button>
+<h3>آگهی‌های در انتظار بررسی</h3>
+<div id="pendingAds"></div>
+</div>
+</section>
+
 <footer>
 <p>ستاره اعتماد | سامانه املاک افغانستان</p>
 <p>تمامی حقوق محفوظ است</p>
 </footer>
-  <section id="admin">
-<h2>بخش مدیریت</h2>
-<p>این بخش مخصوص مدیر سامانه است.</p>
-</section>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 const SUPABASE_URL="https://apqmqtclnbnnvowumptr.supabase.co";
@@ -122,16 +157,18 @@ const db=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 const provinces=["کابل","هرات","قندهار","بلخ","ننگرهار","کندز","بغلان","بدخشان","تخار","پنجشیر","پروان","کاپیسا","لغمان","کنر","نورستان","غزنی","پکتیا","پکتیکا","خوست","لوگر","میدان وردک","بامیان","دایکندی","ارزگان","زابل","هلمند","فراه","نیمروز","فاریاب","جوزجان","سرپل","سمنگان","غور","بادغیس"];
 
 ["province","searchProvince"].forEach(id=>{
-const s=document.getElementById(id);
-provinces.forEach(p=>s.add(new Option(p,p)));
+const select=document.getElementById(id);
+provinces.forEach(p=>select.add(new Option(p,p)));
 });
 
+/* ثبت آگهی */
 document.getElementById("adForm").addEventListener("submit",async function(e){
 e.preventDefault();
 const msg=document.getElementById("message");
 const btn=document.getElementById("submitButton");
 btn.disabled=true;
 msg.textContent="در حال ثبت آگهی...";
+
 const ad={
 owner_name:document.getElementById("name").value.trim(),
 phone:document.getElementById("phone").value.trim(),
@@ -142,6 +179,7 @@ address:document.getElementById("address").value.trim(),
 price:document.getElementById("price").value.trim(),
 details:document.getElementById("details").value.trim()
 };
+
 try{
 const {error}=await db.from("property_ads").insert([ad]);
 if(error) throw error;
@@ -149,11 +187,12 @@ msg.textContent="آگهی شما ثبت شد و پس از تأیید مدیری�
 this.reset();
 }catch(error){
 console.error(error);
-msg.textContent="ثبت آگهی انجام نشد. لطفاً دوباره کوشش کنید.";
+msg.textContent="ثبت آگهی انجام نشد: "+error.message;
 }
 btn.disabled=false;
 });
 
+/* جستجوی آگهی‌های تأییدشده */
 async function searchAds(){
 const results=document.getElementById("results");
 const button=document.getElementById("searchButton");
@@ -161,15 +200,19 @@ const type=document.getElementById("searchType").value;
 const province=document.getElementById("searchProvince").value;
 button.disabled=true;
 results.textContent="در حال جستجو...";
+
 try{
 let query=db.from("property_ads")
 .select("property_type,deal_type,province,address,price,details,phone")
 .eq("status","approved")
 .order("created_at",{ascending:false});
+
 if(type) query=query.eq("property_type",type);
 if(province) query=query.eq("province",province);
+
 const {data,error}=await query;
 if(error) throw error;
+
 results.innerHTML="";
 if(!data || data.length===0){
 results.textContent="فعلاً آگهی تأییدشده‌ای پیدا نشد.";
@@ -180,7 +223,13 @@ box.className="ad";
 const heading=document.createElement("h3");
 heading.textContent=ad.property_type+" - "+ad.deal_type;
 box.appendChild(heading);
-[ad.province+"، "+(ad.address||""),"قیمت: "+(ad.price||""),ad.details||"","تماس: "+(ad.phone||"")].forEach(value=>{
+
+[
+ad.province+"، "+(ad.address||""),
+"قیمت: "+(ad.price||""),
+ad.details||"",
+"تماس: "+(ad.phone||"")
+].forEach(value=>{
 const p=document.createElement("p");
 p.textContent=value;
 box.appendChild(p);
@@ -190,13 +239,178 @@ results.appendChild(box);
 }
 }catch(error){
 console.error(error);
-results.textContent="در جستجو مشکلی پیش آمد.";
+results.textContent="در جستجو مشکلی پیش آمد: "+error.message;
 }
 button.disabled=false;
 }
-  </script>
+document.getElementById("searchButton").addEventListener("click",searchAds);
 
-<script>
+/* مدیریت و بررسی صلاحیت مدیر */
+const adminLoginForm=document.getElementById("adminLoginForm");
+const adminLoginPanel=document.getElementById("adminLoginPanel");
+const adminDashboard=document.getElementById("adminDashboard");
+const adminMessage=document.getElementById("adminMessage");
+const pendingAds=document.getElementById("pendingAds");
+
+async function verifyAdmin(user){
+const {data,error}=await db
+.from("admin_users")
+.select("user_id")
+.eq("user_id",user.id)
+.maybeSingle();
+
+if(error) throw error;
+return !!data;
+}
+
+async function loadPendingAds(){
+pendingAds.textContent="در حال بارگذاری آگهی‌ها...";
+
+const {data,error}=await db
+.from("property_ads")
+.select("*")
+.eq("status","pending")
+.order("created_at",{ascending:false});
+
+if(error){
+console.error(error);
+pendingAds.textContent="خطا در بارگذاری آگهی‌ها: "+error.message;
+return;
+}
+
+pendingAds.innerHTML="";
+
+if(!data || data.length===0){
+pendingAds.textContent="آگهی در انتظار بررسی وجود ندارد.";
+return;
+}
+
+data.forEach(ad=>{
+const box=document.createElement("div");
+box.className="ad";
+
+const title=document.createElement("h3");
+title.textContent=(ad.property_type||"ملکیت")+" - "+(ad.deal_type||"معامله");
+box.appendChild(title);
+
+[
+"نام: "+(ad.owner_name||""),
+"تماس: "+(ad.phone||""),
+"ولایت: "+(ad.province||""),
+"آدرس: "+(ad.address||""),
+"قیمت: "+(ad.price||""),
+"توضیحات: "+(ad.details||"")
+].forEach(value=>{
+const p=document.createElement("p");
+p.textContent=value;
+box.appendChild(p);
+});
+
+const approve=document.createElement("button");
+approve.type="button";
+approve.textContent="تأیید و نشر";
+approve.addEventListener("click",()=>updateAdStatus(ad.id,"approved"));
+
+const reject=document.createElement("button");
+reject.type="button";
+reject.className="danger";
+reject.textContent="رد آگهی";
+reject.addEventListener("click",()=>updateAdStatus(ad.id,"rejected"));
+
+box.appendChild(approve);
+box.appendChild(reject);
+pendingAds.appendChild(box);
+});
+}
+
+/* تغییر وضعیت آگهی فقط با نشست مدیر */
+async function updateAdStatus(id,status){
+if(!id) return;
+
+const {data:sessionData}=await db.auth.getSession();
+if(!sessionData.session){
+adminMessage.textContent="نشست مدیر پایان یافته است. دوباره وارد شوید.";
+return;
+}
+
+const {error}=await db
+.from("property_ads")
+.update({status:status})
+.eq("id",id);
+
+if(error){
+console.error(error);
+adminMessage.textContent="تغییر وضعیت انجام نشد: "+error.message;
+return;
+}
+
+adminMessage.textContent=status==="approved"
+?"آگهی تأیید و نشر شد."
+:"آگهی رد شد.";
+
+await loadPendingAds();
+}
+
+/* ورود مدیر */
+adminLoginForm.addEventListener("submit",async function(e){
+e.preventDefault();
+const button=document.getElementById("adminLoginButton");
+button.disabled=true;
+adminMessage.textContent="در حال ورود...";
+
+try{
+const email=document.getElementById("adminEmail").value.trim();
+const password=document.getElementById("adminPassword").value;
+
+const {data,error}=await db.auth.signInWithPassword({email,password});
+if(error) throw error;
+
+const isAdmin=await verifyAdmin(data.user);
+if(!isAdmin){
+await db.auth.signOut();
+throw new Error("این حساب در فهرست مدیران مجاز نیست.");
+}
+
+adminLoginPanel.hidden=true;
+adminDashboard.hidden=false;
+adminMessage.textContent="";
+await loadPendingAds();
+
+}catch(error){
+console.error(error);
+adminMessage.textContent="ورود انجام نشد: "+error.message;
+}
+button.disabled=false;
+});
+
+document.getElementById("refreshAdsButton").addEventListener("click",loadPendingAds);
+
+document.getElementById("adminLogoutButton").addEventListener("click",async()=>{
+await db.auth.signOut();
+adminDashboard.hidden=true;
+adminLoginPanel.hidden=false;
+document.getElementById("adminPassword").value="";
+adminMessage.textContent="از حساب خارج شدید.";
+});
+
+/* بازگرداندن نشست قبلی مدیر */
+(async function restoreAdminSession(){
+const {data}=await db.auth.getSession();
+if(!data.session) return;
+
+try{
+const isAdmin=await verifyAdmin(data.session.user);
+if(isAdmin){
+adminLoginPanel.hidden=true;
+adminDashboard.hidden=false;
+await loadPendingAds();
+}else{
+await db.auth.signOut();
+}
+}catch(error){
+console.error(error);
+}
+})();
 </script>
 </body>
 </html>
