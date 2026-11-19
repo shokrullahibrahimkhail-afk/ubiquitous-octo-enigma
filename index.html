@@ -8,18 +8,18 @@
 <style>
 body{margin:0;font-family:Tahoma,Arial;background:#f5f7f3;color:#222;line-height:1.8}
 header,footer{background:#075b38;color:white;text-align:center;padding:25px 12px}
-header h1,header h2{color:#f4d36b;margin:5px}
+header h1,header h2{color:#f4d36b}
 nav{background:#06452d;text-align:center;padding:12px}
 nav a{color:white;text-decoration:none;margin:7px}
-.hero{text-align:center;background:#e5efe7;padding:30px 12px}
+.hero{text-align:center;background:#e5efe7;padding:25px}
+section{padding:20px 14px;max-width:950px;margin:auto}
 h2{color:#075b38}
-section{padding:22px 14px;max-width:950px;margin:auto}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
-.card,.panel{background:white;border:1px solid #ddd;border-radius:10px;padding:15px;text-align:center}
-label{display:block;text-align:right;margin-top:10px;font-weight:bold}
+.card,.panel,.ad{background:white;border:1px solid #ddd;border-radius:10px;padding:15px;margin:10px 0}
+label{display:block;margin-top:10px;font-weight:bold}
 input,select,textarea{width:100%;padding:11px;box-sizing:border-box;border:1px solid #ccc;border-radius:6px;font:inherit}
 button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7px;margin-top:12px;font:inherit}
-.ad{background:white;padding:12px;border:1px solid #ddd;border-radius:8px;margin:10px 0}
+button:disabled{opacity:.6}
 </style>
 </head>
 <body>
@@ -44,11 +44,11 @@ button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7
 <section id="services">
 <h2>خدمات ما</h2>
 <div class="cards">
-<div class="card">🏠 <h3>خانه</h3>خرید و فروش و کرایه</div>
-<div class="card">🏢 <h3>آپارتمان</h3>خرید و کرایه</div>
-<div class="card">🌳 <h3>زمین</h3>خرید و فروش</div>
-<div class="card">🏪 <h3>دکان</h3>خرید و کرایه</div>
-<div class="card">🏬 <h3>دفتر</h3>فروش و کرایه</div>
+<div class="card">🏠 خانه</div>
+<div class="card">🏢 آپارتمان</div>
+<div class="card">🌳 زمین</div>
+<div class="card">🏪 دکان</div>
+<div class="card">🏬 دفتر</div>
 </div>
 </section>
 <section id="search">
@@ -59,15 +59,17 @@ button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7
 <option>خانه</option><option>آپارتمان</option>
 <option>زمین</option><option>دکان</option><option>دفتر</option>
 </select>
-<select id="searchProvince"><option value="">همه ولایت‌ها</option></select>
-<button onclick="searchAds()">جستجو</button>
+<select id="searchProvince">
+<option value="">همه ولایت‌ها</option>
+</select>
+<button id="searchButton" type="button" onclick="searchAds()">جستجو</button>
 <div id="results"></div>
 </div>
 </section>
 <section id="register">
 <h2>ثبت رایگان آگهی</h2>
 <div class="panel">
-<p>ثبت آگهی در این نسخه در همین مرورگر ذخیره می‌شود.</p>
+<p>آگهی شما پس از بررسی مدیریت نشر خواهد شد.</p>
 <form id="adForm">
 <label>نام شما</label><input id="name" required>
 <label>شماره تماس</label><input id="phone" required>
@@ -86,9 +88,9 @@ button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7
 <label>آدرس</label><input id="address" required>
 <label>قیمت</label><input id="price" required>
 <label>توضیحات</label><textarea id="details" required></textarea>
-<button type="submit">ثبت آگهی</button>
+<button id="submitButton" type="submit">ثبت آگهی</button>
 </form>
-<p id="message"></p>
+<p id="message" role="status"></p>
 </div>
 </section>
 <section id="contact">
@@ -107,32 +109,86 @@ button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7
 <p>ستاره اعتماد | سامانه املاک افغانستان</p>
 <p>تمامی حقوق محفوظ است</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+const SUPABASE_URL="https://apqmqtclnbnnvowumptr.supabase.co";
+const SUPABASE_KEY="sb_publishable_RWgi1ayo8tCXSHDA_EiKuQ_v1PZESVX";
+const db=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+
 const provinces=["کابل","هرات","قندهار","بلخ","ننگرهار","کندز","بغلان","بدخشان","تخار","پنجشیر","پروان","کاپیسا","لغمان","کنر","نورستان","غزنی","پکتیا","پکتیکا","خوست","لوگر","میدان وردک","بامیان","دایکندی","ارزگان","زابل","هلمند","فراه","نیمروز","فاریاب","جوزجان","سرپل","سمنگان","غور","بادغیس"];
+
 ["province","searchProvince"].forEach(id=>{
-let s=document.getElementById(id);
-if(id==="province")s.innerHTML='<option value="">انتخاب ولایت</option>';
+const s=document.getElementById(id);
 provinces.forEach(p=>s.add(new Option(p,p)));
 });
-function getAds(){try{return JSON.parse(localStorage.getItem("setareAds")||"[]")}catch(e){return []}}
-document.getElementById("adForm").addEventListener("submit",function(e){
+
+document.getElementById("adForm").addEventListener("submit",async function(e){
 e.preventDefault();
-let ad={name:name.value,phone:phone.value,type:type.value,deal:deal.value,province:province.value,address:address.value,price:price.value,details:details.value};
-let ads=getAds();ads.unshift(ad);
-try{localStorage.setItem("setareAds",JSON.stringify(ads));message.textContent="آگهی در همین دستگاه ذخیره شد.";this.reset();}
-catch(e){message.textContent="ذخیره آگهی ممکن نشد.";}
+const msg=document.getElementById("message");
+const btn=document.getElementById("submitButton");
+btn.disabled=true;
+msg.textContent="در حال ثبت آگهی...";
+const ad={
+owner_name:document.getElementById("name").value.trim(),
+phone:document.getElementById("phone").value.trim(),
+property_type:document.getElementById("type").value,
+deal_type:document.getElementById("deal").value,
+province:document.getElementById("province").value,
+address:document.getElementById("address").value.trim(),
+price:document.getElementById("price").value.trim(),
+details:document.getElementById("details").value.trim()
+};
+try{
+const {error}=await db.from("property_ads").insert([ad]);
+if(error) throw error;
+msg.textContent="آگهی شما ثبت شد و پس از تأیید مدیریت نشر می‌شود.";
+this.reset();
+}catch(error){
+console.error(error);
+msg.textContent="ثبت آگهی انجام نشد. لطفاً دوباره کوشش کنید.";
+}
+btn.disabled=false;
 });
-function searchAds(){
-let t=searchType.value,p=searchProvince.value;
-let ads=getAds().filter(a=>(!t||a.type===t)&&(!p||a.province===p));
+
+async function searchAds(){
+const results=document.getElementById("results");
+const button=document.getElementById("searchButton");
+const type=document.getElementById("searchType").value;
+const province=document.getElementById("searchProvince").value;
+button.disabled=true;
+results.textContent="در حال جستجو...";
+try{
+let query=db.from("property_ads")
+.select("property_type,deal_type,province,address,price,details,phone")
+.eq("status","approved")
+.order("created_at",{ascending:false});
+if(type) query=query.eq("property_type",type);
+if(province) query=query.eq("province",province);
+const {data,error}=await query;
+if(error) throw error;
 results.innerHTML="";
-if(!ads.length){results.textContent="آگهی‌ای پیدا نشد.";return;}
-ads.forEach(a=>{
-let d=document.createElement("div");d.className="ad";
-let h=document.createElement("h3");h.textContent=a.type+" - "+a.deal;d.appendChild(h);
-[a.province+"، "+a.address,"قیمت: "+a.price,a.details,"تماس: "+a.phone].forEach(v=>{let x=document.createElement("p");x.textContent=v;d.appendChild(x)});
-results.appendChild(d);
+if(!data || data.length===0){
+results.textContent="فعلاً آگهی تأییدشده‌ای پیدا نشد.";
+}else{
+data.forEach(ad=>{
+const box=document.createElement("div");
+box.className="ad";
+const heading=document.createElement("h3");
+heading.textContent=ad.property_type+" - "+ad.deal_type;
+box.appendChild(heading);
+[ad.province+"، "+(ad.address||""),"قیمت: "+(ad.price||""),ad.details||"","تماس: "+(ad.phone||"")].forEach(value=>{
+const p=document.createElement("p");
+p.textContent=value;
+box.appendChild(p);
 });
+results.appendChild(box);
+});
+}
+}catch(error){
+console.error(error);
+results.textContent="در جستجو مشکلی پیش آمد.";
+}
+button.disabled=false;
 }
 </script>
 </body>
