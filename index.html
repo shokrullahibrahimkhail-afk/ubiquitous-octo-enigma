@@ -3,77 +3,137 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>شکرالله ابراهیم‌خیل | ستاره اعتماد</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ستاره اعتماد | شکرالله ابراهیم‌خیل</title>
 <style>
-body{margin:0;font-family:Tahoma,Arial;background:#f5f5f0;color:#222}
-header{background:#075b38;color:white;text-align:center;padding:28px 12px}
-header h1{color:#f4d36b}
-nav{background:#06452d;padding:14px;text-align:center}
-nav a{color:white;text-decoration:none;margin:8px}
-.hero{text-align:center;padding:35px 12px;background:#e8f1e9}
+body{margin:0;font-family:Tahoma,Arial;background:#f5f7f3;color:#222;line-height:1.8}
+header,footer{background:#075b38;color:white;text-align:center;padding:25px 12px}
+header h1,header h2{color:#f4d36b;margin:5px}
+nav{background:#06452d;text-align:center;padding:12px}
+nav a{color:white;text-decoration:none;margin:7px}
+.hero{text-align:center;background:#e5efe7;padding:30px 12px}
 h2{color:#075b38}
-section{padding:22px 14px;text-align:center}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.card{background:white;padding:18px 5px;border-radius:10px;border:1px solid #ddd}
-.card h3{color:#087344}
-select{width:90%;padding:12px;margin:8px;border:1px solid #ccc;border-radius:6px}
-footer{background:#06452d;color:white;text-align:center;padding:22px}
+section{padding:22px 14px;max-width:950px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.card,.panel{background:white;border:1px solid #ddd;border-radius:10px;padding:15px;text-align:center}
+label{display:block;text-align:right;margin-top:10px;font-weight:bold}
+input,select,textarea{width:100%;padding:11px;box-sizing:border-box;border:1px solid #ccc;border-radius:6px;font:inherit}
+button{background:#075b38;color:white;border:0;padding:12px 20px;border-radius:7px;margin-top:12px;font:inherit}
+.ad{background:white;padding:12px;border:1px solid #ddd;border-radius:8px;margin:10px 0}
 </style>
 </head>
 <body>
 <header>
 <h1>شکرالله ابراهیم‌خیل</h1>
-<h2 style="color:#f4d36b">ستاره اعتماد</h2>
+<h2>ستاره اعتماد</h2>
 <p>دفتر رهنمای معاملات املاک افغانستان</p>
+<strong>اعتماد شما، اعتبار ما</strong>
 </header>
 <nav>
 <a href="#home">صفحه اصلی</a>
 <a href="#services">خدمات</a>
-<a href="#search">جستجوی ملکیت</a>
-<a href="#contact">تماس با ما</a>
+<a href="#search">جستجو</a>
+<a href="#register">ثبت آگهی</a>
+<a href="#contact">تماس</a>
 </nav>
 <div class="hero" id="home">
 <h2>به سامانه املاک ستاره اعتماد خوش آمدید</h2>
 <p>خرید، فروش، کرایه و گروی ملکیت در سراسر افغانستان</p>
+<p>خانه، آپارتمان، زمین، دکان و دفتر</p>
 </div>
 <section id="services">
 <h2>خدمات ما</h2>
 <div class="cards">
-<div class="card"><h3>🏠 خانه</h3><p>خرید و فروش خانه</p></div>
-<div class="card"><h3>🏢 آپارتمان</h3><p>خرید و کرایه آپارتمان</p></div>
-<div class="card"><h3>🌳 زمین</h3><p>خرید و فروش زمین</p></div>
-<div class="card"><h3>🏪 دکان</h3><p>خرید و کرایه دکان</p></div>
+<div class="card">🏠 <h3>خانه</h3>خرید و فروش و کرایه</div>
+<div class="card">🏢 <h3>آپارتمان</h3>خرید و کرایه</div>
+<div class="card">🌳 <h3>زمین</h3>خرید و فروش</div>
+<div class="card">🏪 <h3>دکان</h3>خرید و کرایه</div>
+<div class="card">🏬 <h3>دفتر</h3>فروش و کرایه</div>
 </div>
 </section>
 <section id="search">
 <h2>جستجوی ملکیت</h2>
-<select>
-<option>نوع ملکیت را انتخاب کنید</option>
-<option>خانه</option>
-<option>آپارتمان</option>
-<option>زمین</option>
-<option>دکان</option>
+<div class="panel">
+<select id="searchType">
+<option value="">همه انواع ملکیت</option>
+<option>خانه</option><option>آپارتمان</option>
+<option>زمین</option><option>دکان</option><option>دفتر</option>
 </select>
-<select>
-<option>ولایت را انتخاب کنید</option>
-<option>کابل</option>
-<option>هرات</option>
-<option>قندهار</option>
-<option>بلخ</option>
-<option>ننگرهار</option>
+<select id="searchProvince"><option value="">همه ولایت‌ها</option></select>
+<button onclick="searchAds()">جستجو</button>
+<div id="results"></div>
+</div>
+</section>
+<section id="register">
+<h2>ثبت رایگان آگهی</h2>
+<div class="panel">
+<p>ثبت آگهی در این نسخه در همین مرورگر ذخیره می‌شود.</p>
+<form id="adForm">
+<label>نام شما</label><input id="name" required>
+<label>شماره تماس</label><input id="phone" required>
+<label>نوع ملکیت</label>
+<select id="type" required>
+<option value="">انتخاب کنید</option>
+<option>خانه</option><option>آپارتمان</option>
+<option>زمین</option><option>دکان</option><option>دفتر</option>
 </select>
-<p>برای ثبت آگهی و دریافت معلومات با دفتر تماس بگیرید.</p>
+<label>نوع معامله</label>
+<select id="deal" required>
+<option value="">انتخاب کنید</option>
+<option>فروش</option><option>کرایه</option><option>گروی</option>
+</select>
+<label>ولایت</label><select id="province" required></select>
+<label>آدرس</label><input id="address" required>
+<label>قیمت</label><input id="price" required>
+<label>توضیحات</label><textarea id="details" required></textarea>
+<button type="submit">ثبت آگهی</button>
+</form>
+<p id="message"></p>
+</div>
 </section>
 <section id="contact">
 <h2>تماس با ما</h2>
+<div class="panel">
 <p>دفتر رهنمای معاملات شکرالله ابراهیم‌خیل</p>
-<p>شماره تماس: 0792928897</p>
-<p>شعار ما: اعتماد شما، اعتبار ما</p>
+<p>0705875878</p>
+<p>0792928897</p>
+<p>0731364644</p>
+<p>0777514602</p>
+<p>0747789284</p>
+<strong>اعتماد شما، اعتبار ما</strong>
+</div>
 </section>
 <footer>
 <p>ستاره اعتماد | سامانه املاک افغانستان</p>
 <p>تمامی حقوق محفوظ است</p>
 </footer>
+<script>
+const provinces=["کابل","هرات","قندهار","بلخ","ننگرهار","کندز","بغلان","بدخشان","تخار","پنجشیر","پروان","کاپیسا","لغمان","کنر","نورستان","غزنی","پکتیا","پکتیکا","خوست","لوگر","میدان وردک","بامیان","دایکندی","ارزگان","زابل","هلمند","فراه","نیمروز","فاریاب","جوزجان","سرپل","سمنگان","غور","بادغیس"];
+["province","searchProvince"].forEach(id=>{
+let s=document.getElementById(id);
+if(id==="province")s.innerHTML='<option value="">انتخاب ولایت</option>';
+provinces.forEach(p=>s.add(new Option(p,p)));
+});
+function getAds(){try{return JSON.parse(localStorage.getItem("setareAds")||"[]")}catch(e){return []}}
+document.getElementById("adForm").addEventListener("submit",function(e){
+e.preventDefault();
+let ad={name:name.value,phone:phone.value,type:type.value,deal:deal.value,province:province.value,address:address.value,price:price.value,details:details.value};
+let ads=getAds();ads.unshift(ad);
+try{localStorage.setItem("setareAds",JSON.stringify(ads));message.textContent="آگهی در همین دستگاه ذخیره شد.";this.reset();}
+catch(e){message.textContent="ذخیره آگهی ممکن نشد.";}
+});
+function searchAds(){
+let t=searchType.value,p=searchProvince.value;
+let ads=getAds().filter(a=>(!t||a.type===t)&&(!p||a.province===p));
+results.innerHTML="";
+if(!ads.length){results.textContent="آگهی‌ای پیدا نشد.";return;}
+ads.forEach(a=>{
+let d=document.createElement("div");d.className="ad";
+let h=document.createElement("h3");h.textContent=a.type+" - "+a.deal;d.appendChild(h);
+[a.province+"، "+a.address,"قیمت: "+a.price,a.details,"تماس: "+a.phone].forEach(v=>{let x=document.createElement("p");x.textContent=v;d.appendChild(x)});
+results.appendChild(d);
+});
+}
+</script>
 </body>
 </html>
