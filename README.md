@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+</گگ<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
@@ -122,9 +122,9 @@
   <div class="bg-navy-950 text-slate-200 border-b border-gold-500/40 text-xs py-2 px-4">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
       <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 bg-gold-500/20 text-gold-400 border border-gold-500/40 px-2.5 py-0.5 rounded-full font-semibold">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          سامانه رسمی و آنلاین ثبت املاک
+        <span id="cloud-status-badge" class="inline-flex items-center gap-1.5 bg-gold-500/20 text-gold-400 border border-gold-500/40 px-2.5 py-0.5 rounded-full font-semibold">
+          <span id="cloud-status-dot" class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span id="cloud-status-text">در حال اتصال به دیتابیس ابری زنده...</span>
         </span>
         <span id="top-announcement" class="hidden md:inline text-slate-300">مرجع معتبر خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد در سراسر افغانستان</span>
       </div>
@@ -608,6 +608,7 @@
               <select id="reg-deed-type" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
                 <option value="قباله شرعی">قباله شرعی</option>
                 <option value="قباله عرفی">قباله عرفی</option>
+                <option value="قباله کلانتر">قباله کلانتر</option>
                 <option value="کتابچه صفایی">کتابچه صفایی</option>
                 <option value="سایر">سایر</option>
               </select>
@@ -838,6 +839,7 @@
                   <th class="p-3">قیمت</th>
                   <th class="p-3">قباله</th>
                   <th class="p-3">ولایت / آدرس</th>
+                  <th class="p-3">وضعیت</th>
                   <th class="p-3 text-center">ارسال لینک و مدیریت</th>
                 </tr>
               </thead>
@@ -881,6 +883,33 @@
               </div>
               <div class="sm:col-span-2">
                 <label class="block text-xs font-bold text-navy-900 mb-1">توضیحات بنر صفحه اصلی</label>
+                <textarea id="set-hero-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm"></textarea>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-navy-900 mb-1">رنگ پس‌زمینه عمومی سایت</label>
+                <input type="color" id="set-bg-color" value="#f4f6f9" class="w-full h-10 rounded-xl border border-slate-300 cursor-pointer" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-navy-900 mb-1">رنگ اصلی هدر و بخش‌های رسمی</label>
+                <input type="color" id="set-navy-color" value="#0B192C" class="w-full h-10 rounded-xl border border-slate-300 cursor-pointer" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-bold text-navy-900 mb-1">شماره‌های تماس رسمی (با خط عمودی | جدا کنید)</label>
+                <input type="text" id="set-phones" dir="ltr" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <button type="submit" class="bg-navy-900 hover:bg-navy-800 text-gold-400 border border-gold-500 font-bold px-6 py-2.5 rounded-xl text-sm cursor-pointer">
+                <i class="fa-solid fa-floppy-disk ml-1"></i> ذخیره و اعمال تغییرات در سرور ابری
+              </button>
+              <button type="button" onclick="resetSiteSettings()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl text-xs cursor-pointer">
+                بازگشت به تنظیمات پیش‌فرض
+              </button>
+            </div>
+          </form>
+        </div>
+
         <!-- تب ۴ مدیریت: تغییر یوزر و رمز عبور مدیریت -->
         <div id="admin-panel-security" class="admin-panel hidden bg-white rounded-3xl border-2 border-gold-500/60 p-6 sm:p-8 shadow-lg max-w-2xl">
           <div class="flex items-center gap-3 border-b border-slate-200 pb-4 mb-6">
@@ -999,8 +1028,8 @@
   <!-- اسکریپت اصلی و اتصال به Firebase Firestore برای آنلاین بودن در تمام مرورگرها -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-    import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-    import { getFirestore, doc, setDoc, getDoc, addDoc, deleteDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, doc, setDoc, addDoc, updateDoc, deleteDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
     // ==================== لیست ۳۴ ولایت افغانستان ====================
     const AFGHANISTAN_PROVINCES = [
@@ -1094,6 +1123,19 @@
     const appId = typeof __app_id !== 'undefined' ? __app_id : 'shukrullah-real-estate';
 
     // ==================== مقداردهی اولیه Firebase ====================
+    function updateCloudBadge(status) {
+      const dot = document.getElementById('cloud-status-dot');
+      const text = document.getElementById('cloud-status-text');
+      if (!dot || !text) return;
+      if (status === 'online') {
+        dot.className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
+        text.textContent = "متصل به دیتابیس ابری زنده (همگام‌سازی خودکار)";
+      } else {
+        dot.className = "w-2 h-2 rounded-full bg-sky-400";
+        text.textContent = "حالت آماده به کار (پشتیبان محلی فعال)";
+      }
+    }
+
     async function initCloudStorage() {
       try {
         if (typeof __firebase_config !== 'undefined' && __firebase_config) {
@@ -1110,10 +1152,14 @@
 
           state.user = auth.currentUser;
           state.dbReady = true;
+          updateCloudBadge('online');
           setupRealtimeListeners();
+        } else {
+          updateCloudBadge('fallback');
         }
       } catch (err) {
-        console.warn("Running in standalone mode:", err);
+        console.warn("Running in fallback mode:", err);
+        updateCloudBadge('fallback');
       }
     }
 
@@ -1157,6 +1203,10 @@
           }
           if (data.adminCreds) {
             state.adminCreds = data.adminCreds;
+            if (state.isAdminLoggedIn) {
+              document.getElementById('admin-current-user-label').textContent = state.adminCreds.username;
+              document.getElementById('security-current-user-display').textContent = state.adminCreds.username;
+            }
           }
         }
       }, (err) => console.error("Config listener error:", err));
@@ -1307,7 +1357,7 @@
         const img = new Image();
         img.onload = function() {
           const canvas = document.createElement('canvas');
-          const MAX_WIDTH = 800;
+          const MAX_WIDTH = 680;
           let width = img.width;
           let height = img.height;
           if (width > MAX_WIDTH) {
@@ -1318,7 +1368,7 @@
           canvas.height = height;
           const ctx = canvas.getContext('2d');
           ctx.drawImage(img, 0, 0, width, height);
-          const dataUrl = canvas.toDataURL('image/jpeg', 0.72);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.65);
 
           document.getElementById(previewImgId).src = dataUrl;
           document.getElementById(`${previewImgId}-box`).classList.remove('hidden');
@@ -1342,6 +1392,12 @@
         return;
       }
 
+      const submitBtn = document.getElementById('btn-submit-property');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>در حال ذخیره در دیتابیس ابری...</span>';
+      }
+
       const newCode = String(100 + state.properties.length + 1);
       const newProp = {
         code: newCode,
@@ -1357,6 +1413,7 @@
         notes: document.getElementById('reg-notes').value.trim(),
         propertyPhoto: compressedPropertyPhoto,
         deedPhoto: compressedDeedPhoto || "",
+        approved: true,
         createdAt: Date.now()
       };
 
@@ -1376,11 +1433,16 @@
         document.getElementById('preview-prop-img-box').classList.add('hidden');
         document.getElementById('preview-deed-img-box').classList.add('hidden');
 
-        showToast(`ملکیت شما با کد #${newCode} با موفقیت در سامانه ثبت شد!`);
+        showToast(`ملکیت شما با کد #${newCode} در دیتابیس ابری ثبت و برای همه کاربران فعال شد!`);
         navigateTo('properties');
       } catch (err) {
         console.error(err);
-        showToast('خطا در ثبت ملکیت. لطفاً دوباره تلاش کنید.', 'error');
+        showToast('خطا در ثبت ملکیت. لطفاً حجم عکس را کمتر انتخاب کنید.', 'error');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<i class="fa-solid fa-check-circle"></i> <span>ثبت رسمی ملکیت در سامانه</span>';
+        }
       }
     };
 
@@ -1722,9 +1784,12 @@
           <td class="p-3 font-bold text-emerald-700">${p.price} ${p.currency}</td>
           <td class="p-3">
             ${p.deedType}
-            ${p.deedPhoto ? `<a href="${p.deedPhoto}" target="_blank" class="block text-[11px] text-blue-600 underline mt-0.5">مشاهده عکس قباله</a>` : ''}
+            ${p.deedPhoto ? `<button type="button" onclick="viewDeedPhotoModal('${p.id}')" class="block text-[11px] text-blue-600 underline mt-0.5 cursor-pointer">مشاهده عکس قباله</button>` : ''}
           </td>
           <td class="p-3">${p.province} - ${p.address}</td>
+          <td class="p-3">
+            <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold text-[11px]">منتشر شده</span>
+          </td>
           <td class="p-3 text-center">
             <div class="flex items-center justify-center gap-1.5">
               <button onclick="copyPropertyLink('${p.id}', '${p.code}')" class="bg-gold-500 text-navy-950 px-2.5 py-1.5 rounded-lg font-bold hover:bg-gold-400 cursor-pointer" title="ارسال لینک به مشتری">
@@ -1740,6 +1805,23 @@
 
       renderAdminMessages();
     }
+
+    window.viewDeedPhotoModal = function(propId) {
+      const prop = state.properties.find(p => p.id === propId);
+      if (!prop || !prop.deedPhoto) return;
+      document.getElementById('modal-prop-title').textContent = `تصویر قباله محرم — ملکیت کد #${prop.code} (${prop.customerName})`;
+      document.getElementById('modal-prop-body').innerHTML = `
+        <div class="text-center space-y-3">
+          <p class="text-xs text-amber-800 bg-amber-50 border border-amber-200 p-2.5 rounded-xl font-bold">
+            <i class="fa-solid fa-lock ml-1"></i> این سند صرفاً برای مدیر سیستم قابل مشاهده است.
+          </p>
+          <img src="${prop.deedPhoto}" alt="تصویر قباله" class="max-h-[70vh] mx-auto rounded-2xl border-2 border-navy-900 shadow-lg" />
+        </div>
+      `;
+      const modal = document.getElementById('property-detail-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
 
     function renderAdminMessages() {
       document.getElementById('admin-msg-badge').textContent = state.messages.length;
