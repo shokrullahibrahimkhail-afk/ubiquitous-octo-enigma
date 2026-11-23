@@ -3,3239 +3,1887 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="پرتال رسمی دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد در افغانستان (الهام‌گرفته از طبیعت پغمان): ثبت آنلاین ملکیت، جستجوی عمومی املاک، تبلیغات رسمی و مدیریت یکپارچه." />
-  <meta name="keywords" content="دفتر رهنمای معاملات, شکرالله ابراهیم خیل, ستاره اعتماد, پغمان, املاک افغانستان, خرید و فروش, گروی, گرایی, اجاره, شریک آباد, قباله شرعی, قباله عرفی" />
+  <title>دفتر رهنمای معاملات شکرالله ابراهیم خیل | ستاره اعتماد - املاک رسمی</title>
+  <meta name="description" content="وب‌سایت رسمی دفتر رهنمای معاملات شکرالله ابراهیم خیل (ستاره اعتماد) - مرجع معتبر خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد املاک در سراسر افغانستان." />
+  <meta name="keywords" content="رهنمای معاملات, شکرالله ابراهیم خیل, ستاره اعتماد, خرید و فروش خانه کابل, کرایه آپارتمان, زمین, دوکان, سرای, املاک افغانستان" />
+  <meta name="author" content="دفتر رهنمای معاملات شکرالله ابراهیم خیل" />
   <meta name="robots" content="index, follow" />
+  
+  <!-- OpenGraph Meta Tags برای اشتراک‌گذاری رسمی و شناخت گوگل -->
+  <meta property="og:title" content="دفتر رهنمای معاملات شکرالله ابراهیم خیل | ستاره اعتماد" />
+  <meta property="og:description" content="سامانه رسمی ثبت، جستجو و معاملات املاک (خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد) در سراسر افغانستان." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد" />
-  <meta property="og:description" content="سامانه رسمی و آنلاین ثبت، جستجو و مدیریت ملکیت‌ها با حفظ حریم خصوصی مشتریان و شماره‌های تماس رسمی دفتر." />
-  <title>دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد | پرتال رسمی املاک</title>
+  <meta property="og:locale" content="fa_AF" />
 
-  <!-- اسکیمای رسمی JSON-LD برای معرفی دفتر معاملات در موتورهای جستجو -->
+  <!-- داده‌های ساختاریافته گوگل (JSON-LD Schema) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "name": "دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد",
-    "description": "دفتر رسمی رهنمای معاملات و مشاوره املاک در افغانستان با الهام از طبیعت پغمان؛ خدمات خرید، فروش، گروی، گرایی، اجاره و شریک‌آباد.",
+    "name": "دفتر رهنمای معاملات شکرالله ابراهیم خیل - ستاره اعتماد",
+    "description": "مرجع رسمی معاملات املاک، خرید، فروش، کرایه، گروی، اجاره و شراکت آباد در افغانستان",
+    "telephone": ["+93705875878", "+93792928897", "+93731364644", "+93777514602", "+93747789284"],
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "AF",
-      "addressRegion": "کابل — پغمان"
-    },
-    "telephone": [
-      "0705875878",
-      "0792928897",
-      "0731364644",
-      "0777514602",
-      "0747789284"
-    ]
+      "addressLocality": "Kabul"
+    }
   }
+  </script>
+
+  <!-- فونت رسمی وزیرمتن -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- آیکون‌های رسمی FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Vazirmatn', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              950: '#060F1D',
+              900: '#0B192C',
+              800: '#102A43',
+              700: '#1E3E62',
+            },
+            gold: {
+              300: '#F3E5AB',
+              400: '#E5C158',
+              500: '#D4AF37',
+              600: '#B59020',
+              700: '#8E6F12',
+            }
+          }
+        }
+      }
+    }
   </script>
 
   <style>
     :root {
-      --bg-page: #f1f5f2;
-      --bg-card: #ffffff;
-      --bg-soft: #f6f9f7;
-      --primary: #14452f;
-      --primary-dark: #0d3020;
-      --primary-light: #e6f0eb;
-      --accent: #b8860b;
-      --accent-soft: #fdf7e4;
-      --text-main: #16221c;
-      --text-muted: #52635a;
-      --border: #d5e0da;
-      --danger-bg: #fdf0f0;
-      --danger-text: #991b1b;
-      --success-bg: #eaf7ef;
-      --success-text: #14532d;
-      --warn-bg: #fef9e7;
-      --warn-text: #854d0e;
-      --shadow-sm: 0 2px 8px rgba(15, 42, 29, 0.05);
-      --shadow-md: 0 8px 24px rgba(15, 42, 29, 0.08);
-      --radius: 12px;
-      --radius-sm: 8px;
+      --bg-main: #f4f6f9;
+      --primary-navy: #0B192C;
+      --accent-gold: #D4AF37;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-page);
-      color: var(--text-main);
-      font-family: "Vazirmatn", "Tahoma", "IRANSans", system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-      direction: rtl;
-      text-align: right;
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: var(--bg-main);
+      color: #1e293b;
       overflow-x: hidden;
     }
-
-    button, input, select, textarea {
-      font-family: inherit;
-      font-size: 0.95rem;
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA8218 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-
-    button {
-      cursor: pointer;
-      border: none;
-      transition: background-color 0.2s ease, transform 0.12s ease, opacity 0.2s ease, border-color 0.2s ease;
+    .gold-border-glow {
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
     }
-
-    button:active {
-      transform: scale(0.99);
+    .ministry-pattern {
+      background-color: var(--primary-navy);
+      background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px);
+      background-size: 24px 24px;
     }
-
-    .hidden {
-      display: none !important;
+    .nav-tab.active {
+      background: linear-gradient(135deg, #D4AF37 0%, #B59020 100%);
+      color: #0B192C;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
     }
-
-    .container {
-      width: 100%;
-      max-width: 1220px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-
-    /* نوار بالایی رسمی و وضعیت اتصال آنلاین */
-    .top-gov-strip {
-      background: var(--primary-dark);
-      color: #e6f2ec;
-      font-size: 0.82rem;
-      padding: 7px 0;
-      border-bottom: 2px solid var(--accent);
-    }
-
-    .top-gov-inner {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .top-gov-badges {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .online-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.24);
-      color: #ffffff;
-      border-radius: 999px;
-      padding: 3px 10px;
-      font-size: 0.78rem;
-      font-weight: 700;
-    }
-
-    .online-dot {
+    /* اسکرول بار سفارشی */
+    ::-webkit-scrollbar {
       width: 8px;
       height: 8px;
-      border-radius: 50%;
-      background: #4ade80;
-      display: inline-block;
     }
-
-    .online-dot.fallback {
-      background: #facc15;
+    ::-webkit-scrollbar-track {
+      background: #0B192C;
     }
-
-    /* هدر اصلی رسمی با لوگوی طبیعت پغمان */
-    .main-header {
-      background: linear-gradient(135deg, var(--primary) 0%, #1d5c3f 100%);
-      color: #ffffff;
-      padding: 18px 0;
-      box-shadow: var(--shadow-md);
-    }
-
-    .header-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    @media (max-width: 900px) {
-      .header-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .brand-box {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .logo-frame {
-      width: 84px;
-      height: 84px;
-      min-width: 84px;
-      border-radius: 16px;
-      background: #ffffff;
-      padding: 5px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
-      border: 2px solid var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .logo-frame svg,
-    .logo-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 11px;
-    }
-
-    .brand-title {
-      margin: 0 0 4px 0;
-      font-size: 1.32rem;
-      font-weight: 800;
-      line-height: 1.35;
-    }
-
-    .brand-subtitle {
-      margin: 0;
-      font-size: 0.88rem;
-      color: #d9ece3;
-    }
-
-    .header-phones-card {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: var(--radius);
-      padding: 12px 14px;
-    }
-
-    .header-phones-title {
-      font-size: 0.83rem;
-      font-weight: 700;
-      color: #fde68a;
-      margin-bottom: 8px;
-    }
-
-    .phones-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    .phone-chip-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #ffffff;
-      color: var(--primary-dark);
-      border-radius: 8px;
-      padding: 5px 10px;
-      font-size: 0.84rem;
-      font-weight: 700;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-    }
-
-    .phone-chip-btn:hover {
-      background: var(--accent-soft);
-    }
-
-    .phone-chip-btn span.copy-hint {
-      font-size: 0.72rem;
-      color: var(--primary);
-      background: var(--primary-light);
-      padding: 1px 6px;
-      border-radius: 5px;
-    }
-
-    /* نوار تبلیغات فعال در بالای بدنه */
-    .top-ad-ticker {
-      background: var(--accent-soft);
-      border-bottom: 1px solid #e6d191;
-      padding: 9px 0;
-    }
-
-    .top-ad-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .ad-pill {
-      background: var(--accent);
-      color: #ffffff;
-      font-size: 0.76rem;
-      font-weight: 700;
-      padding: 2px 9px;
-      border-radius: 999px;
-      margin-left: 8px;
-    }
-
-    .ad-ticker-content {
-      font-size: 0.88rem;
-      color: #423206;
-      font-weight: 600;
-    }
-
-    /* منوی ناوبری درون‌صفحه‌ای با دکمه‌های button */
-    .main-nav-wrap {
-      background: #ffffff;
-      border-bottom: 1px solid var(--border);
-      box-shadow: var(--shadow-sm);
-      position: sticky;
-      top: 0;
-      z-index: 40;
-    }
-
-    .main-nav {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      padding: 10px 0;
-    }
-
-    .nav-buttons-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    .nav-btn {
-      background: var(--bg-soft);
-      color: var(--text-main);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 8px 14px;
-      font-weight: 700;
-      font-size: 0.88rem;
-    }
-
-    .nav-btn:hover {
-      background: var(--primary-light);
-      border-color: var(--primary);
-      color: var(--primary-dark);
-    }
-
-    .nav-btn.active {
-      background: var(--primary);
-      color: #ffffff;
-      border-color: var(--primary);
-    }
-
-    .nav-btn.client-focus-btn {
-      background: #eef6f1;
-      border-color: #9ec2ae;
-      color: var(--primary-dark);
-    }
-
-    .nav-btn.admin-btn {
-      background: #fdf6e3;
-      border-color: #deb859;
-      color: #6b4c05;
-    }
-
-    .nav-btn.admin-btn.active {
-      background: var(--accent);
-      color: #ffffff;
-      border-color: var(--accent);
-    }
-
-    /* پیام اعلان درون‌صفحه‌ای (بدون alert/confirm) */
-    .notice-banner {
-      margin-top: 16px;
-      border-radius: var(--radius);
-      padding: 12px 16px;
-      font-weight: 600;
-      font-size: 0.92rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      border: 1px solid transparent;
-    }
-
-    .notice-banner.success {
-      background: var(--success-bg);
-      color: var(--success-text);
-      border-color: #a7dcb9;
-    }
-
-    .notice-banner.error {
-      background: var(--danger-bg);
-      color: var(--danger-text);
-      border-color: #f2b8b8;
-    }
-
-    .notice-close-btn {
-      background: rgba(0, 0, 0, 0.07);
-      color: inherit;
-      border-radius: 6px;
-      padding: 3px 10px;
-      font-size: 0.8rem;
-      font-weight: 700;
-    }
-
-    /* محتوای اصلی */
-    main.page-main {
-      padding: 22px 0 44px 0;
-      min-height: 62vh;
-    }
-
-    .section-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 20px;
-    }
-
-    .section-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 14px;
-      margin-bottom: 18px;
-    }
-
-    .section-title {
-      margin: 0 0 4px 0;
-      font-size: 1.22rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-    }
-
-    .section-desc {
-      margin: 0;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    /* نوار شناسه و مسیر رسمی هر بخش (بدون تگ a و تغییر آدرس) */
-    .official-path-bar {
-      background: var(--bg-soft);
-      border: 1px dashed #9cb5a8;
-      border-radius: var(--radius-sm);
-      padding: 10px 14px;
-      margin-bottom: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .official-path-label {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      font-weight: 700;
-    }
-
-    .official-path-code {
-      direction: ltr;
-      text-align: left;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 0.82rem;
-      color: var(--primary-dark);
-      font-weight: 700;
-    }
-
-    /* کارت‌های آمار */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 900px) {
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 520px) {
-      .stats-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .stat-box {
-      background: var(--bg-soft);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 15px;
-      border-right: 4px solid var(--primary);
-    }
-
-    .stat-label {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-
-    .stat-value {
-      font-size: 1.45rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-    }
-
-    /* فرم‌ها و ورودی‌ها */
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-    }
-
-    @media (max-width: 720px) {
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .form-group.full-width {
-      grid-column: 1 / -1;
-    }
-
-    .form-label {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 10px 12px;
-      border: 1px solid #c2d1c8;
-      border-radius: var(--radius-sm);
-      background: #ffffff;
-      color: var(--text-main);
-    }
-
-    .form-control:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(20, 69, 47, 0.12);
-    }
-
-    textarea.form-control {
-      min-height: 92px;
-      resize: vertical;
-    }
-
-    .privacy-alert-box {
-      background: #eef6f1;
-      border: 1px solid #9fc4b0;
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      font-size: 0.86rem;
-      color: var(--primary-dark);
-      margin-bottom: 16px;
-    }
-
-    /* دکمه‌های عملیاتی */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      padding: 9px 16px;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      font-size: 0.9rem;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: #ffffff;
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-    }
-
-    .btn-accent {
-      background: var(--accent);
-      color: #ffffff;
-    }
-
-    .btn-accent:hover {
-      background: #966c06;
-    }
-
-    .btn-secondary {
-      background: var(--bg-soft);
-      color: var(--text-main);
-      border-color: var(--border);
-    }
-
-    .btn-secondary:hover {
-      background: #e7efea;
-    }
-
-    .btn-danger {
-      background: var(--danger-bg);
-      color: var(--danger-text);
-      border-color: #eab3b3;
-    }
-
-    .btn-danger:hover {
-      background: #fadcdc;
-    }
-
-    .btn-sm {
-      padding: 5px 10px;
-      font-size: 0.8rem;
-    }
-
-    /* پیش‌نمایش تصاویر آپلودی */
-    .img-preview-box {
-      margin-top: 8px;
-    }
-
-    .img-preview-box img {
-      max-width: 210px;
-      max-height: 150px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      object-fit: cover;
-      display: block;
-    }
-
-    /* کارت‌های ملکیت در جستجوی عمومی و صفحه اصلی */
-    .filter-bar {
-      display: grid;
-      grid-template-columns: 2fr repeat(3, 1fr);
-      gap: 12px;
-      background: var(--bg-soft);
-      border: 1px solid var(--border);
-      padding: 14px;
-      border-radius: var(--radius-sm);
-      margin-bottom: 18px;
-    }
-
-    @media (max-width: 900px) {
-      .filter-bar {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 560px) {
-      .filter-bar {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .properties-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    @media (max-width: 780px) {
-      .properties-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .prop-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px;
-      background: #ffffff;
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .prop-card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 10px;
-    }
-
-    .prop-title {
-      margin: 0 0 6px 0;
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-    }
-
-    .tags-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 8px;
-    }
-
-    .tag {
-      font-size: 0.76rem;
-      font-weight: 700;
-      padding: 3px 9px;
-      border-radius: 999px;
-      background: var(--primary-light);
-      color: var(--primary-dark);
-    }
-
-    .tag.deal {
-      background: var(--accent-soft);
-      color: #7c5804;
-    }
-
-    .tag.deed {
-      background: #eef2ff;
-      color: #3730a3;
-    }
-
-    .prop-photo {
-      width: 100%;
-      height: 185px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
-
-    .prop-meta-text {
-      font-size: 0.88rem;
-      color: var(--text-main);
-      margin: 4px 0;
-    }
-
-    .prop-office-contact {
-      background: var(--bg-soft);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 10px 12px;
-      font-size: 0.83rem;
-    }
-
-    .prop-office-contact strong {
-      display: block;
-      color: var(--primary-dark);
-      margin-bottom: 6px;
-    }
-
-    /* تبلیغات */
-    .ads-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-
-    @media (max-width: 720px) {
-      .ads-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .ad-card {
-      background: linear-gradient(180deg, #fffdf6 0%, #ffffff 100%);
-      border: 1px solid #e7d496;
-      border-right: 4px solid var(--accent);
-      border-radius: var(--radius-sm);
-      padding: 14px 16px;
-    }
-
-    .ad-card-title {
-      margin: 0 0 6px 0;
-      font-size: 1rem;
-      font-weight: 800;
-      color: #5c4204;
-    }
-
-    .ad-card-text {
-      margin: 0;
-      font-size: 0.9rem;
-      color: var(--text-main);
-    }
-
-    /* پنل مدیریت */
-    .admin-tabs-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 12px;
-      margin-bottom: 18px;
-    }
-
-    .admin-tab-btn {
-      background: var(--bg-soft);
-      color: var(--text-main);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 8px 13px;
-      font-size: 0.85rem;
-      font-weight: 700;
-    }
-
-    .admin-tab-btn.active {
-      background: var(--primary);
-      color: #ffffff;
-      border-color: var(--primary);
-    }
-
-    .table-wrap {
-      width: 100%;
-      overflow-x: auto;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-    }
-
-    table.data-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.85rem;
-      background: #ffffff;
-    }
-
-    table.data-table th,
-    table.data-table td {
-      border-bottom: 1px solid var(--border);
-      padding: 10px 11px;
-      text-align: right;
-      vertical-align: top;
-    }
-
-    table.data-table th {
-      background: var(--bg-soft);
-      color: var(--primary-dark);
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    .status-pill {
-      display: inline-block;
-      padding: 2px 9px;
-      border-radius: 999px;
-      font-size: 0.76rem;
-      font-weight: 700;
-    }
-
-    .status-pill.approved {
-      background: var(--success-bg);
-      color: var(--success-text);
-    }
-
-    .status-pill.pending {
-      background: var(--warn-bg);
-      color: var(--warn-text);
-    }
-
-    .status-pill.disabled {
-      background: var(--danger-bg);
-      color: var(--danger-text);
-    }
-
-    .disabled-section-box {
-      text-align: center;
-      padding: 36px 20px;
-      background: var(--danger-bg);
-      border: 1px solid #f0b8b8;
-      border-radius: var(--radius);
-      color: var(--danger-text);
-    }
-
-    /* فوتر رسمی */
-    .main-footer {
-      background: var(--primary-dark);
-      color: #dcebe3;
-      padding: 24px 0;
-      margin-top: 24px;
-      border-top: 3px solid var(--accent);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 18px;
-      align-items: start;
-    }
-
-    @media (max-width: 780px) {
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .footer-title {
-      margin: 0 0 8px 0;
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #ffffff;
-    }
-
-    .footer-copy {
-      margin: 14px 0 0 0;
-      padding-top: 12px;
-      border-top: 1px solid rgba(255, 255, 255, 0.14);
-      font-size: 0.82rem;
-      color: #b7d2c4;
-      text-align: center;
+    ::-webkit-scrollbar-thumb {
+      background: #D4AF37;
+      border-radius: 4px;
     }
   </style>
 </head>
-<body>
-  <!-- نوار بالایی رسمی -->
-  <div class="top-gov-strip">
-    <div class="container top-gov-inner">
-      <div class="top-gov-badges">
-        <span class="online-badge" id="onlineSyncBadge">
-          <span class="online-dot fallback" id="onlineSyncDot"></span>
-          <span id="onlineSyncText">در حال بررسی اتصال آنلاین ابری...</span>
+<body class="min-h-screen flex flex-col">
+
+  <!-- نوار اعلان پیام (Toast Notification) -->
+  <div id="toast-container" class="fixed bottom-5 left-5 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <!-- نوار رسمی بالای سایت (شبیه پورتال‌های وزارتی) -->
+  <div class="bg-navy-950 text-slate-200 border-b border-gold-500/40 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 bg-gold-500/20 text-gold-400 border border-gold-500/40 px-2.5 py-0.5 rounded-full font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          سامانه رسمی و آنلاین ثبت املاک
         </span>
-        <span>پرتال رسمی خدمات معاملات ملکی — افغانستان (الهام از طبیعت پغمان)</span>
+        <span id="top-announcement" class="hidden md:inline text-slate-300">مرجع معتبر خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد در سراسر افغانستان</span>
       </div>
-      <div>حفظ حریم خصوصی مشتریان • نمایش شماره‌های رسمی دفتر</div>
+      <div class="flex flex-wrap items-center gap-3">
+        <span id="current-date" class="text-gold-300 font-medium"></span>
+        <button onclick="copyCurrentUrl('آدرس رسمی وب‌سایت کاپی شد!')" class="bg-navy-800 hover:bg-gold-500 hover:text-navy-950 text-gold-400 border border-gold-500/40 px-2.5 py-1 rounded-lg transition flex items-center gap-1.5 font-semibold cursor-pointer">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span>کاپی لینک وب‌سایت</span>
+        </button>
+      </div>
     </div>
   </div>
 
-  <!-- هدر اصلی با لوگوی SVG طبیعت پغمان و شماره‌های تماس -->
-  <header class="main-header">
-    <div class="container header-grid">
-      <div class="brand-box">
-        <div class="logo-frame" id="headerLogoContainer" aria-label="لوگوی دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد"></div>
-        <div>
-          <h1 class="brand-title">دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد</h1>
-          <p class="brand-subtitle">سامانه رسمی ثبت ملکیت، جستجوی عمومی، تبلیغات و مدیریت معاملات ملکی</p>
+  <!-- هدر رسمی با نشان اختصاصی مطابق عکس -->
+  <header id="main-header" class="ministry-pattern text-white border-b-4 border-gold-500 shadow-2xl relative">
+    <div class="max-w-7xl mx-auto px-4 py-5 sm:py-6">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+        
+        <!-- لوگو و عنوان رسمی -->
+        <div class="flex flex-col sm:flex-row items-center text-center sm:text-right gap-4">
+          <!-- نشان رسمی SVG برگرفته دقیق از تصویر ارسالی -->
+          <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white p-1.5 border-4 border-gold-500 gold-border-glow shrink-0 flex items-center justify-center shadow-xl">
+            <svg viewBox="0 0 200 200" class="w-full h-full">
+              <defs>
+                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F7E7A9"/>
+                  <stop offset="50%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="#9A7213"/>
+                </linearGradient>
+                <linearGradient id="navyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#143254"/>
+                  <stop offset="100%" stop-color="#071222"/>
+                </linearGradient>
+              </defs>
+              <!-- حلقه بیرونی طلایی و سرمه‌ای -->
+              <circle cx="100" cy="100" r="94" fill="none" stroke="url(#goldGrad)" stroke-width="5"/>
+              <circle cx="100" cy="100" r="88" fill="none" stroke="url(#navyGrad)" stroke-width="3"/>
+              <!-- برج‌های پشت ستاره -->
+              <rect x="63" y="45" width="16" height="42" rx="2" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+              <line x1="67" y1="53" x2="75" y2="53" stroke="#D4AF37" stroke-width="2"/>
+              <line x1="67" y1="60" x2="75" y2="60" stroke="#D4AF37" stroke-width="2"/>
+              <line x1="67" y1="67" x2="75" y2="67" stroke="#D4AF37" stroke-width="2"/>
+              
+              <rect x="121" y="45" width="16" height="42" rx="2" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+              <line x1="125" y1="53" x2="133" y2="53" stroke="#D4AF37" stroke-width="2"/>
+              <line x1="125" y1="60" x2="133" y2="60" stroke="#D4AF37" stroke-width="2"/>
+              <line x1="125" y1="67" x2="133" y2="67" stroke="#D4AF37" stroke-width="2"/>
+
+              <rect x="86" y="26" width="28" height="60" rx="2" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2"/>
+              <line x1="93" y1="36" x2="93" y2="65" stroke="#D4AF37" stroke-width="2.5"/>
+              <line x1="100" y1="32" x2="100" y2="65" stroke="#D4AF37" stroke-width="2.5"/>
+              <line x1="107" y1="36" x2="107" y2="65" stroke="#D4AF37" stroke-width="2.5"/>
+
+              <!-- ستاره بزرگ طلایی -->
+              <polygon points="100,42 114,76 152,78 122,100 132,135 100,114 68,135 78,100 48,78 86,76" fill="url(#goldGrad)" stroke="#0B192C" stroke-width="2"/>
+              <!-- سقف خانه زیر ستاره -->
+              <polyline points="68,125 100,101 132,125" fill="none" stroke="url(#navyGrad)" stroke-width="7" stroke-linecap="round"/>
+              <polyline points="68,125 100,101 132,125" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- پنجره چهارخانه طلایی -->
+              <rect x="92" y="117" width="6.5" height="6.5" fill="url(#goldGrad)" stroke="#0B192C" stroke-width="0.8"/>
+              <rect x="101.5" y="117" width="6.5" height="6.5" fill="url(#goldGrad)" stroke="#0B192C" stroke-width="0.8"/>
+              <rect x="92" y="126.5" width="6.5" height="6.5" fill="url(#goldGrad)" stroke="#0B192C" stroke-width="0.8"/>
+              <rect x="101.5" y="126.5" width="6.5" height="6.5" fill="url(#goldGrad)" stroke="#0B192C" stroke-width="0.8"/>
+
+              <!-- ریبون سرمه‌ای پایین لوگو -->
+              <rect x="34" y="143" width="132" height="22" rx="11" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2"/>
+              <text x="100" y="158" text-anchor="middle" fill="#F3E5AB" font-size="11" font-weight="bold" font-family="Vazirmatn, sans-serif">ستاره اعتماد • املاک</text>
+            </svg>
+          </div>
+
+          <!-- عناوین رسمی دفتر -->
+          <div>
+            <div class="inline-flex items-center gap-2 bg-navy-800/90 border border-gold-500/50 px-3 py-1 rounded-full text-gold-300 text-xs sm:text-sm font-bold mb-2">
+              <i class="fa-solid fa-landmark text-gold-400"></i>
+              <span>دفتر رسمی رهنمای معاملات املاک</span>
+            </div>
+            <h1 id="site-main-title" class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white drop-shadow">
+              دفتر رهنمای معاملات شکرالله ابراهیم خیل
+            </h1>
+            <p id="site-sub-title" class="text-lg sm:text-xl font-extrabold gold-gradient-text mt-1">
+              ★ ستاره اعتماد — مرجع خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد ★
+            </p>
+          </div>
         </div>
+
+        <!-- باکس شماره‌های تماس رسمی (مطابق عکس) -->
+        <div class="bg-navy-950/90 border-2 border-gold-500/60 rounded-2xl p-3.5 shadow-xl w-full lg:w-auto">
+          <div class="text-xs text-gold-400 font-bold mb-2 flex items-center justify-between gap-2 border-b border-gold-500/20 pb-1.5">
+            <span><i class="fa-solid fa-phone-volume ml-1"></i> شماره‌های تماس رسمی دفتر:</span>
+            <span class="text-[11px] text-emerald-400">پاسخگویی مستقیم</span>
+          </div>
+          <div id="header-phones-list" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-1.5 text-xs sm:text-sm font-bold" dir="ltr">
+            <!-- توسط جاوااسکریپت پر می‌شود -->
+          </div>
+        </div>
+
       </div>
 
-      <div class="header-phones-card">
-        <div class="header-phones-title">شماره‌های تماس رسمی دفتر و مدیریت (برای کپی کلیک کنید):</div>
-        <div class="phones-list" id="headerPhonesList"></div>
-      </div>
+      <!-- منوی ناوبری اصلی با لینک‌های جداگانه (#hash) -->
+      <nav aria-label="منوی اصلی" class="mt-6 pt-4 border-t border-gold-500/30 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto">
+          <a href="#home" data-route="home" onclick="navigateTo('home')" class="nav-tab active px-4 py-2.5 rounded-xl text-sm font-bold text-white hover:bg-navy-800 border border-gold-500/30 transition flex items-center gap-2">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>صفحه اصلی</span>
+          </a>
+          <a href="#properties" data-route="properties" onclick="navigateTo('properties')" class="nav-tab px-4 py-2.5 rounded-xl text-sm font-bold text-white hover:bg-navy-800 border border-gold-500/30 transition flex items-center gap-2">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+            <span>جستجو و لیست ملکیت‌ها</span>
+          </a>
+          <a href="#register" data-route="register" onclick="navigateTo('register')" class="nav-tab px-4 py-2.5 rounded-xl text-sm font-bold text-white hover:bg-navy-800 border border-gold-500/30 transition flex items-center gap-2">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>ثبت ملکیت جدید</span>
+          </a>
+          <a href="#contact" data-route="contact" onclick="navigateTo('contact')" class="nav-tab px-4 py-2.5 rounded-xl text-sm font-bold text-white hover:bg-navy-800 border border-gold-500/30 transition flex items-center gap-2">
+            <i class="fa-solid fa-headset"></i>
+            <span>تماس با مشتریان و دفتر</span>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2 w-full lg:w-auto justify-end">
+          <a href="#admin" data-route="admin" onclick="navigateTo('admin')" class="nav-tab px-4 py-2.5 rounded-xl text-sm font-bold bg-navy-800 text-gold-300 hover:bg-navy-700 border border-gold-500/60 transition flex items-center gap-2">
+            <i class="fa-solid fa-user-shield"></i>
+            <span>بخش مدیریت و کنترول</span>
+          </a>
+        </div>
+      </nav>
     </div>
   </header>
 
-  <!-- نوار آگهی‌های تبلیغاتی فعال -->
-  <div class="top-ad-ticker" id="topAdTickerWrap">
-    <div class="container top-ad-inner">
-      <div class="ad-ticker-content" id="topAdTickerText">
-        <span class="ad-pill">تبلیغات رسمی</span>
-        در حال بارگذاری آگهی‌های فعال...
-      </div>
-      <button type="button" class="btn btn-secondary btn-sm" data-nav="ads">مشاهده همه تبلیغات</button>
-    </div>
-  </div>
+  <!-- محتوای اصلی صفحات -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-6 sm:py-8">
 
-  <!-- منوی ناوبری کاملاً مبتنی بر دکمه button بدون تغییر آدرس -->
-  <nav class="main-nav-wrap" aria-label="منوی اصلی پرتال">
-    <div class="container main-nav">
-      <div class="nav-buttons-group">
-        <button type="button" class="nav-btn active" data-nav="home">صفحه اصلی</button>
-        <button type="button" class="nav-btn client-focus-btn" data-nav="client-portal">لینک مشتریان (ثبت و جستجو)</button>
-        <button type="button" class="nav-btn" data-nav="register">ثبت ملکیت مشتری</button>
-        <button type="button" class="nav-btn" data-nav="search">جستجوی عمومی</button>
-        <button type="button" class="nav-btn" data-nav="ads">تبلیغات</button>
-        <button type="button" class="nav-btn" data-nav="contact">تماس با دفتر</button>
+    <!-- ==================== بخش ۱: صفحه اصلی (#home) ==================== -->
+    <section id="section-home" class="route-section space-y-8">
+      
+      <!-- بنر رسمی خوش‌آمدگویی و آمار -->
+      <div id="hero-banner" class="bg-gradient-to-l from-navy-900 via-navy-800 to-navy-900 rounded-3xl p-6 sm:p-10 text-white border-2 border-gold-500/50 shadow-xl relative overflow-hidden">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 relative z-10">
+          <div class="space-y-4 max-w-2xl">
+            <div class="inline-flex items-center gap-2 bg-gold-500/20 text-gold-300 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold border border-gold-500/40">
+              <i class="fa-solid fa-certificate"></i>
+              <span>معاملات شفاف، قانونی و مطمئن زیر نظر متخصصین املاک</span>
+            </div>
+            <h2 id="hero-heading" class="text-2xl sm:text-4xl font-black leading-snug">
+              سامانه رسمی ثبت و معاملات املاک <span class="text-gold-400">ستاره اعتماد</span>
+            </h2>
+            <p id="hero-desc" class="text-slate-200 text-sm sm:text-base leading-relaxed">
+              دفتر رهنمای معاملات شکرالله ابراهیم خیل با سال‌ها تجربه و اعتبار درخشان، آماده ارائه خدمات معیاری در بخش خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد انواع خانه، حویلی، آپارتمان، زمین، دوکان و سرای در سراسر افغانستان می‌باشد.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a href="#properties" onclick="navigateTo('properties')" class="bg-gold-500 hover:bg-gold-400 text-navy-950 font-extrabold px-6 py-3 rounded-xl shadow-lg transition flex items-center gap-2">
+                <i class="fa-solid fa-search"></i>
+                <span>جستجوی ملکیت‌ها</span>
+              </a>
+              <a href="#register" onclick="navigateTo('register')" class="bg-navy-950/80 hover:bg-navy-950 text-gold-300 border border-gold-500 font-bold px-6 py-3 rounded-xl transition flex items-center gap-2">
+                <i class="fa-solid fa-plus-circle"></i>
+                <span>ثبت ملکیت شما</span>
+              </a>
+              <button onclick="copySectionLink('home', 'صفحه اصلی')" class="bg-white/10 hover:bg-white/20 text-white px-4 py-3 rounded-xl text-sm font-semibold transition flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-link"></i>
+                <span>کاپی لینک این بخش</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- کارت‌های آمار زنده -->
+          <div class="grid grid-cols-2 gap-3 sm:gap-4 w-full lg:w-96 shrink-0">
+            <div class="bg-navy-950/80 border border-gold-500/40 p-4 rounded-2xl text-center">
+              <div class="text-gold-400 text-2xl mb-1"><i class="fa-solid fa-building"></i></div>
+              <div id="stat-total-props" class="text-2xl sm:text-3xl font-black text-white">0</div>
+              <div class="text-xs text-slate-300 mt-1">کل ملکیت‌های ثبت‌شده</div>
+            </div>
+            <div class="bg-navy-950/80 border border-gold-500/40 p-4 rounded-2xl text-center">
+              <div class="text-emerald-400 text-2xl mb-1"><i class="fa-solid fa-handshake"></i></div>
+              <div class="text-2xl sm:text-3xl font-black text-white">۸ نوع</div>
+              <div class="text-xs text-slate-300 mt-1">معامله رسمی و شرعی</div>
+            </div>
+            <div class="bg-navy-950/80 border border-gold-500/40 p-4 rounded-2xl text-center">
+              <div class="text-sky-400 text-2xl mb-1"><i class="fa-solid fa-map-location-dot"></i></div>
+              <div class="text-2xl sm:text-3xl font-black text-white">۳۴ ولایت</div>
+              <div class="text-xs text-slate-300 mt-1">پوشش سراسری افغانستان</div>
+            </div>
+            <div class="bg-navy-950/80 border border-gold-500/40 p-4 rounded-2xl text-center">
+              <div class="text-gold-400 text-2xl mb-1"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="text-2xl sm:text-3xl font-black text-white">۱۰۰٪</div>
+              <div class="text-xs text-slate-300 mt-1">حفظ محرمیت مشتریان</div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- خدمات رسمی دفتر (مطابق آیکون‌های پایین لوگو) -->
       <div>
-        <button type="button" class="nav-btn admin-btn" data-nav="admin">پنل مدیریت</button>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container page-main">
-    <!-- پیام اطلاع‌رسانی درون‌صفحه‌ای -->
-    <div id="globalNoticeBox" class="notice-banner success hidden" role="status">
-      <span id="globalNoticeText"></span>
-      <button type="button" class="notice-close-btn" id="closeNoticeBtn">بستن</button>
-    </div>
-
-    <!-- ===================================================================
-         بخش ۱: صفحه اصلی
-         =================================================================== -->
-    <section id="sec-home" class="app-section">
-      <div class="section-card">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">صفحه اصلی پرتال رسمی معاملات ملکی</h2>
-            <p class="section-desc">دسترسی سریع به ثبت آنلاین ملکیت، جستجوی عمومی، تبلیغات تاییدشده و کنترل کامل مدیریتی</p>
-          </div>
-          <div style="display:flex; flex-wrap:wrap; gap:8px;">
-            <button type="button" class="btn btn-primary" data-nav="client-portal">ورود به بخش مشتریان</button>
-            <button type="button" class="btn btn-accent" data-nav="admin">مدیریت سیستم</button>
-          </div>
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl sm:text-2xl font-black text-navy-900 flex items-center gap-2">
+            <span class="w-2 h-7 bg-gold-500 rounded-full inline-block"></span>
+            خدمات رسمی معاملات املاک
+          </h3>
+          <span class="text-xs text-slate-500 font-semibold">انتخاب سریع برای جستجو</span>
         </div>
-
-        <div class="official-path-bar">
-          <div>
-            <span class="official-path-label">شناسه رسمی بخش صفحه اصلی:</span>
-            <span class="official-path-code" id="path-code-home">PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/HOME</span>
-          </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-copy-path="home">کپی شناسه بخش</button>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+          <button onclick="quickFilterTransaction('خرید')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+            <div class="font-extrabold text-sm">خرید</div>
+          </button>
+          <button onclick="quickFilterTransaction('فروش')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="font-extrabold text-sm">فروش</div>
+          </button>
+          <button onclick="quickFilterTransaction('کرایه')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="font-extrabold text-sm">کرایه</div>
+          </button>
+          <button onclick="quickFilterTransaction('گروی')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-vault"></i>
+            </div>
+            <div class="font-extrabold text-sm">گروی</div>
+          </button>
+          <button onclick="quickFilterTransaction('بیع وفا')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <div class="font-extrabold text-sm">بیع وفا</div>
+          </button>
+          <button onclick="quickFilterTransaction('اجاره')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="font-extrabold text-sm">اجاره</div>
+          </button>
+          <button onclick="quickFilterTransaction('شراکت آباد')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div class="font-extrabold text-sm">شراکت آباد</div>
+          </button>
+          <button onclick="quickFilterTransaction('سایر')" class="bg-white hover:bg-navy-900 hover:text-white border border-slate-200 hover:border-gold-500 p-4 rounded-2xl shadow-sm transition text-center group cursor-pointer">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gold-500/15 text-gold-600 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center text-xl mb-2 transition">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="font-extrabold text-sm">سایر</div>
+          </button>
         </div>
-
-        <div class="stats-grid" id="homeStatsGrid"></div>
-
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px;">
-          <button type="button" class="btn btn-primary" data-nav="register">ثبت ملکیت جدید توسط مشتری</button>
-          <button type="button" class="btn btn-secondary" data-nav="search">جستجوی عمومی ملکیت‌ها</button>
-          <button type="button" class="btn btn-secondary" data-nav="ads">بخش تبلیغات و اعلانات</button>
-          <button type="button" class="btn btn-secondary" data-nav="contact">اطلاعات تماس دفتر</button>
-        </div>
-
-        <h3 style="margin:0 0 12px 0; font-size:1.05rem; color:var(--primary-dark);">تازه‌ترین ملکیت‌های ثبت‌شده در جستجوی عمومی</h3>
-        <div class="properties-grid" id="homeLatestPropsGrid"></div>
-      </div>
-
-      <div class="section-card">
-        <h3 style="margin:0 0 12px 0; font-size:1.05rem; color:var(--primary-dark);">تبلیغات و اطلاعیه‌های فعال دفتر</h3>
-        <div class="ads-grid" id="homeActiveAdsGrid"></div>
-      </div>
-    </section>
-
-    <!-- ===================================================================
-         بخش ۲: نمای اختصاصی لینک مشتریان (فقط فرم ثبت ملکیت + جستجو + شماره‌های دفتر)
-         =================================================================== -->
-    <section id="sec-client-portal" class="app-section hidden">
-      <div class="section-card">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">درگاه اختصاصی مشتریان — ثبت ملکیت و جستجوی عمومی</h2>
-            <p class="section-desc">این نما ویژه ارسال به مشتریان است: شامل فرم ثبت ملکیت، جستجوی عمومی و شماره‌های رسمی دفتر می‌باشد</p>
-          </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-nav="home">بازگشت به صفحه اصلی</button>
-        </div>
-
-        <div class="official-path-bar">
-          <div>
-            <span class="official-path-label">شناسه اختصاصی لینک مشتریان (ثبت و جستجو):</span>
-            <span class="official-path-code" id="path-code-client-portal">PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/CLIENT-REGISTER-SEARCH</span>
-          </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-copy-path="client-portal">کپی شناسه مشتریان</button>
-        </div>
-
-        <div class="prop-office-contact" style="margin-bottom:18px;">
-          <strong>شماره‌های رسمی دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد:</strong>
-          <div class="phones-list" id="clientPortalPhonesList"></div>
-        </div>
-
-        <!-- جایگاه فرم ثبت ملکیت منتقل‌شده یا بازرندر‌شده -->
-        <div id="clientPortalRegisterSlot"></div>
       </div>
 
-      <div class="section-card">
-        <div id="clientPortalSearchSlot"></div>
+      <!-- تازه‌ترین ملکیت‌های ثبت‌شده -->
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <h3 class="text-xl sm:text-2xl font-black text-navy-900 flex items-center gap-2">
+            <span class="w-2 h-7 bg-gold-500 rounded-full inline-block"></span>
+            تازه‌ترین ملکیت‌های ثبت‌شده در سیستم
+          </h3>
+          <a href="#properties" onclick="navigateTo('properties')" class="text-navy-800 hover:text-gold-600 font-bold text-sm flex items-center gap-1">
+            <span>مشاهده همه و جدول جستجو</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+        <div id="home-featured-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- کارت‌های ملکیت‌ها توسط جاوااسکریپت رندر می‌شوند -->
+        </div>
       </div>
     </section>
 
-    <!-- ===================================================================
-         بخش ۳: ثبت ملکیت مشتری
-         =================================================================== -->
-    <section id="sec-register" class="app-section hidden">
-      <div class="section-card" id="registerFormContainer">
-        <div class="section-header">
+    <!-- ==================== بخش ۲: جستجو و جدول ملکیت‌ها (#properties) ==================== -->
+    <section id="section-properties" class="route-section hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-5">
           <div>
-            <h2 class="section-title">فورم ثبت آنلاین ملکیت مشتری</h2>
-            <p class="section-desc">اطلاعات ملکیت خود را ثبت کنید تا بلافاصله در لیست جستجوی عمومی و نزد مدیریت ثبت شود</p>
+            <h2 class="text-2xl font-black text-navy-900 flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-location text-gold-600"></i>
+              سامانه جستجو و جدول رسمی ملکیت‌ها
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">
+              جهت حفظ محرمیت مالکین، شماره تلفن مشتریان تنها نزد مدیریت دفتر محفوظ است. برای معلومات بیشتر با دفتر تماس بگیرید.
+            </p>
           </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-nav="search">رفتن به جستجوی عمومی</button>
+          <div class="flex items-center gap-2">
+            <button onclick="copySectionLink('properties', 'جستجو و لیست ملکیت‌ها')" class="bg-navy-900 hover:bg-navy-800 text-gold-400 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-share-nodes"></i>
+              <span>ارسال لینک بخش جستجو</span>
+            </button>
+          </div>
         </div>
 
-        <div class="official-path-bar">
+        <!-- فرم فیلتر و جستجوی پیشرفته -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
           <div>
-            <span class="official-path-label">شناسه بخش ثبت ملکیت مشتری:</span>
-            <span class="official-path-code" id="path-code-register">PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/REGISTER-PROPERTY</span>
+            <label class="block text-xs font-bold text-slate-700 mb-1">جستجو در آدرس / مشخصات</label>
+            <input type="text" id="filter-keyword" oninput="renderProperties()" placeholder="مثلاً: شهر نو، کارته چهار..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm" />
           </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-copy-path="register">کپی شناسه ثبت ملکیت</button>
-        </div>
-
-        <div class="privacy-alert-box">
-          <strong>تضمین حریم خصوصی و امنیت اطلاعات:</strong> نام و شماره تماس مالک صرفاً نزد مدیر سایت محفوظ می‌ماند و در بخش جستجوی عمومی برای سایر مشتریان نمایش داده نمی‌شود؛ در عوض شماره‌های رسمی دفتر نمایش داده می‌شوند.
-        </div>
-
-        <form id="clientPropertyForm" novalidate>
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label" for="propTitle">عنوان یا شماره ملکیت *</label>
-              <input type="text" id="propTitle" class="form-control" placeholder="مثال: حویلی دو منزله پغمان — پلاک ۴۵" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="propType">نوع ملکیت *</label>
-              <select id="propType" class="form-control">
-                <option value="خانه">خانه</option>
-                <option value="زمین">زمین</option>
-                <option value="دوکان">دوکان</option>
-                <option value="آپارتمان">آپارتمان</option>
-                <option value="حویلی">حویلی</option>
-                <option value="سرای">سرای</option>
-                <option value="سایر">سایر (نوع دیگر)</option>
-              </select>
-            </div>
-
-            <div class="form-group full-width hidden" id="propTypeCustomGroup">
-              <label class="form-label" for="propTypeCustom">شرح نوع ملکیت دیگر *</label>
-              <input type="text" id="propTypeCustom" class="form-control" placeholder="نوع ملکیت را وارد کنید (مثال: باغ، مارکیت، زمین زراعتی)" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="dealType">نوع معامله *</label>
-              <select id="dealType" class="form-control">
-                <option value="خرید">خرید</option>
-                <option value="فروش">فروش</option>
-                <option value="گروی">گروی</option>
-                <option value="گرایی">گرایی</option>
-                <option value="اجاره">اجاره</option>
-                <option value="شریک‌آباد">شریک‌آباد</option>
-                <option value="سایر">سایر</option>
-              </select>
-            </div>
-
-            <div class="form-group full-width hidden" id="dealTypeCustomGroup">
-              <label class="form-label" for="dealTypeCustom">شرح نوع معامله دیگر *</label>
-              <input type="text" id="dealTypeCustom" class="form-control" placeholder="نوع معامله را وارد کنید" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="deedType">نوع قباله *</label>
-              <select id="deedType" class="form-control">
-                <option value="عرفی">عرفی</option>
-                <option value="شرعی">شرعی</option>
-                <option value="سایر">سایر</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="propPrice">قیمت / مبلغ پیشنهادی</label>
-              <input type="text" id="propPrice" class="form-control" placeholder="مثال: ۶۵,۰۰۰ دالر یا توافقی" />
-            </div>
-
-            <div class="form-group full-width">
-              <label class="form-label" for="propLocation">موقعیت و آدرس دقیق ملکیت *</label>
-              <input type="text" id="propLocation" class="form-control" placeholder="مثال: ولسوالی پغمان، سرک عمومی، نزدیک مرکز" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="ownerName">نام مالک (محرمانه نزد مدیریت) *</label>
-              <input type="text" id="ownerName" class="form-control" placeholder="نام و تخلص مالک" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="ownerPhone">شماره تماس مالک (در جستجوی عمومی مخفی است) *</label>
-              <input type="tel" id="ownerPhone" class="form-control" placeholder="مثال: 0700000000" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="propImageInput">آپلود تصویر ملکیت (اختیاری)</label>
-              <input type="file" id="propImageInput" class="form-control" accept="image/*" />
-              <div class="img-preview-box" id="propImagePreviewBox"></div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="deedImageInput">آپلود تصویر قباله (اختیاری)</label>
-              <input type="file" id="deedImageInput" class="form-control" accept="image/*" />
-              <div class="img-preview-box" id="deedImagePreviewBox"></div>
-            </div>
-
-            <div class="form-group full-width">
-              <label class="form-label" for="propDesc">توضیحات تکمیلی ملکیت</label>
-              <textarea id="propDesc" class="form-control" placeholder="مساحت، تعداد اتاق‌ها، امکانات، وضعیت قباله و سایر جزئیات..."></textarea>
-            </div>
-
-            <div class="form-group full-width" style="flex-direction:row; flex-wrap:wrap; gap:10px;">
-              <button type="submit" class="btn btn-primary">ثبت آنلاین ملکیت در سامانه</button>
-              <button type="reset" class="btn btn-secondary" id="resetClientFormBtn">پاک کردن فورم</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- ===================================================================
-         بخش ۴: جستجوی عمومی ملکیت‌ها
-         =================================================================== -->
-    <section id="sec-search" class="app-section hidden">
-      <div class="section-card" id="publicSearchContainer">
-        <div class="section-header">
           <div>
-            <h2 class="section-title">جستجوی عمومی ملکیت‌ها</h2>
-            <p class="section-desc">جستجو بر اساس عنوان/شماره، موقعیت، نوع ملکیت، نوع معامله و نوع قباله (شماره مالک مخفی است)</p>
+            <label class="block text-xs font-bold text-slate-700 mb-1">ولایت</label>
+            <select id="filter-province" onchange="renderProperties()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
+              <option value="">همه ولایات</option>
+            </select>
           </div>
-          <button type="button" class="btn btn-primary btn-sm" data-nav="register">ثبت ملکیت جدید</button>
-        </div>
-
-        <div class="official-path-bar">
           <div>
-            <span class="official-path-label">شناسه بخش جستجوی عمومی:</span>
-            <span class="official-path-code" id="path-code-search">PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/PUBLIC-SEARCH</span>
-          </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-copy-path="search">کپی شناسه جستجو</button>
-        </div>
-
-        <div class="filter-bar">
-          <div class="form-group">
-            <label class="form-label" for="searchKeywordInput">جستجوی عنوان، شماره یا آدرس</label>
-            <input type="text" id="searchKeywordInput" class="form-control" placeholder="جستجو در نام/شماره ملکیت، منطقه یا توضیحات..." />
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="filterPropType">نوع ملکیت</label>
-            <select id="filterPropType" class="form-control">
+            <label class="block text-xs font-bold text-slate-700 mb-1">نوع ملکیت</label>
+            <select id="filter-type" onchange="renderProperties()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
               <option value="">همه انواع ملکیت</option>
               <option value="خانه">خانه</option>
+              <option value="حویلی">حویلی</option>
+              <option value="آپارتمان">آپارتمان</option>
               <option value="زمین">زمین</option>
               <option value="دوکان">دوکان</option>
-              <option value="آپارتمان">آپارتمان</option>
-              <option value="حویلی">حویلی</option>
               <option value="سرای">سرای</option>
               <option value="سایر">سایر</option>
             </select>
           </div>
-
-          <div class="form-group">
-            <label class="form-label" for="filterDealType">نوع معامله</label>
-            <select id="filterDealType" class="form-control">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">نوع معامله</label>
+            <select id="filter-transaction" onchange="renderProperties()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
               <option value="">همه معاملات</option>
               <option value="خرید">خرید</option>
               <option value="فروش">فروش</option>
               <option value="گروی">گروی</option>
-              <option value="گرایی">گرایی</option>
+              <option value="کرایه">کرایه</option>
               <option value="اجاره">اجاره</option>
-              <option value="شریک‌آباد">شریک‌آباد</option>
+              <option value="بیع وفا">بیع وفا</option>
+              <option value="شراکت آباد">شراکت آباد</option>
               <option value="سایر">سایر</option>
             </select>
           </div>
-
-          <div class="form-group">
-            <label class="form-label" for="filterDeedType">نوع قباله</label>
-            <select id="filterDeedType" class="form-control">
-              <option value="">همه قباله‌ها</option>
-              <option value="عرفی">عرفی</option>
-              <option value="شرعی">شرعی</option>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">نوع قباله</label>
+            <select id="filter-deed" onchange="renderProperties()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
+              <option value="">همه انواع قباله</option>
+              <option value="قباله شرعی">قباله شرعی</option>
+              <option value="قباله عرفی">قباله عرفی</option>
+              <option value="کتابچه صفایی">کتابچه صفایی</option>
               <option value="سایر">سایر</option>
             </select>
           </div>
         </div>
 
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
-          <strong id="searchResultCountText" style="color:var(--primary-dark); font-size:0.92rem;"></strong>
-          <button type="button" class="btn btn-secondary btn-sm" id="clearSearchFiltersBtn">نمایش همه ملکیت‌ها</button>
+        <div class="flex flex-wrap items-center justify-between gap-3 mt-4 pt-4 border-t border-slate-100">
+          <div class="text-sm font-bold text-navy-900">
+            تعداد نتایج یافت‌شده: <span id="search-results-count" class="text-gold-600 font-black">0</span> ملکیت
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="resetFilters()" class="text-xs font-bold text-slate-600 hover:text-navy-900 px-3 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 transition cursor-pointer">
+              <i class="fa-solid fa-rotate-right ml-1"></i> پاک کردن فیلترها
+            </button>
+            <div class="bg-slate-100 p-1 rounded-xl flex items-center">
+              <button id="btn-view-cards" onclick="setViewMode('cards')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-navy-900 text-gold-400 transition cursor-pointer">
+                <i class="fa-solid fa-grip ml-1"></i> نمایش کارتی
+              </button>
+              <button id="btn-view-table" onclick="setViewMode('table')" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-navy-900 transition cursor-pointer">
+                <i class="fa-solid fa-table-list ml-1"></i> جدول جستجو
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="properties-grid" id="publicSearchResultsGrid"></div>
+      <!-- نمایش کارتی ملکیت‌ها -->
+      <div id="properties-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- نمایش جدولی ملکیت‌ها (بدون نمایش شماره تلفن مشتری) -->
+      <div id="properties-table-container" class="hidden bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-right border-collapse">
+            <thead>
+              <tr class="bg-navy-900 text-gold-300 text-xs sm:text-sm">
+                <th class="p-3.5 font-bold">تصویر</th>
+                <th class="p-3.5 font-bold">کد ملکیت</th>
+                <th class="p-3.5 font-bold">اسم مشتری / مالک</th>
+                <th class="p-3.5 font-bold">نوع ملکیت</th>
+                <th class="p-3.5 font-bold">نوع معامله</th>
+                <th class="p-3.5 font-bold">قیمت</th>
+                <th class="p-3.5 font-bold">نوع قباله</th>
+                <th class="p-3.5 font-bold">ولایت و آدرس</th>
+                <th class="p-3.5 font-bold text-center">عملیات و لینک</th>
+              </tr>
+            </thead>
+            <tbody id="properties-table-body" class="divide-y divide-slate-200 text-xs sm:text-sm">
+              <!-- ردیف‌ها توسط جاوااسکریپت پر می‌شوند -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
-    <!-- ===================================================================
-         بخش ۵: تبلیغات و اعلانات
-         =================================================================== -->
-    <section id="sec-ads" class="app-section hidden">
-      <div class="section-card">
-        <div class="section-header">
+    <!-- ==================== بخش ۳: ثبت ملکیت جدید (#register) ==================== -->
+    <section id="section-register" class="route-section hidden">
+      <div class="max-w-4xl mx-auto bg-white rounded-3xl border-2 border-gold-500/40 shadow-xl overflow-hidden">
+        <div class="bg-navy-900 text-white p-6 border-b-4 border-gold-500 flex flex-wrap items-center justify-between gap-4">
           <div>
-            <h2 class="section-title">بخش تبلیغات و اعلانات رسمی</h2>
-            <p class="section-desc">آگهی‌ها و اطلاعیه‌های منتشرشده تحت نظارت مدیریت دفتر رهنمای معاملات</p>
+            <h2 class="text-xl sm:text-2xl font-black text-gold-400 flex items-center gap-2">
+              <i class="fa-solid fa-file-signature"></i>
+              فورم رسمی ثبت ملکیت در سیستم
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+              لطفاً مشخصات ملکیت را دقیق درج نمایید. شماره تماس شما کاملاً محرم بوده و فقط برای مدیر دفتر نمایش داده می‌شود.
+            </p>
           </div>
-          <button type="button" class="btn btn-accent btn-sm" data-nav="admin">مدیریت تبلیغات</button>
+          <button onclick="copySectionLink('register', 'فورم ثبت ملکیت')" class="bg-navy-800 hover:bg-gold-500 hover:text-navy-950 text-gold-300 border border-gold-500/40 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition cursor-pointer">
+            <i class="fa-solid fa-link"></i>
+            <span>کاپی لینک فورم ثبت</span>
+          </button>
         </div>
 
-        <div class="official-path-bar">
-          <div>
-            <span class="official-path-label">شناسه بخش تبلیغات:</span>
-            <span class="official-path-code" id="path-code-ads">PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/ADVERTISEMENTS</span>
-          </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-copy-path="ads">کپی شناسه تبلیغات</button>
-        </div>
+        <form id="property-register-form" onsubmit="handlePropertySubmit(event)" class="p-6 sm:p-8 space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <!-- اسم مشتری -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                اسم مشتری / مالک <span class="text-red-600">*</span>
+              </label>
+              <input type="text" id="reg-customer-name" required placeholder="نام و تخلص مشتری را بنویسید" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm" />
+            </div>
 
-        <div class="ads-grid" id="publicAdsListGrid"></div>
+            <!-- شماره تلفن مشتری (محرم) -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                شماره تلفن مشتری <span class="text-red-600">*</span>
+                <span class="text-[11px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full mr-1">فقط برای مدیر نمایان است</span>
+              </label>
+              <input type="tel" id="reg-customer-phone" required dir="ltr" placeholder="07XXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm text-right" />
+            </div>
+
+            <!-- نوع ملکیت -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                نوع ملکیت <span class="text-red-600">*</span>
+              </label>
+              <select id="reg-property-type" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
+                <option value="خانه">خانه</option>
+                <option value="حویلی">حویلی</option>
+                <option value="آپارتمان">آپارتمان</option>
+                <option value="زمین">زمین</option>
+                <option value="دوکان">دوکان</option>
+                <option value="سرای">سرای</option>
+                <option value="سایر">سایر</option>
+              </select>
+            </div>
+
+            <!-- نوع معامله -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                نوع معامله <span class="text-red-600">*</span>
+              </label>
+              <select id="reg-transaction-type" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
+                <option value="فروش">فروش</option>
+                <option value="خرید">خرید</option>
+                <option value="گروی">گروی</option>
+                <option value="کرایه">کرایه</option>
+                <option value="اجاره">اجاره</option>
+                <option value="بیع وفا">بیع وفا</option>
+                <option value="شراکت آباد">شراکت آباد</option>
+                <option value="سایر">سایر</option>
+              </select>
+            </div>
+
+            <!-- قیمت ملکیت -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                قیمت ملکیت <span class="text-red-600">*</span>
+              </label>
+              <div class="flex gap-2">
+                <input type="text" id="reg-price" required placeholder="مثلاً: 45,000 یا 3,500,000" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+                <select id="reg-currency" class="px-3 py-3 rounded-xl border border-slate-300 bg-slate-50 font-bold text-sm outline-none">
+                  <option value="دالر ($)">دالر ($)</option>
+                  <option value="افغانی (؋)">افغانی (؋)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- نوع قباله ملکیت -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                نوع قباله ملکیت <span class="text-red-600">*</span>
+              </label>
+              <select id="reg-deed-type" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
+                <option value="قباله شرعی">قباله شرعی</option>
+                <option value="قباله عرفی">قباله عرفی</option>
+                <option value="کتابچه صفایی">کتابچه صفایی</option>
+                <option value="سایر">سایر</option>
+              </select>
+            </div>
+
+            <!-- ولایت -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                ولایت <span class="text-red-600">*</span>
+              </label>
+              <select id="reg-province" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm bg-white">
+                <!-- توسط جاوااسکریپت با ۳۴ ولایت پر می‌شود -->
+              </select>
+            </div>
+
+            <!-- آدرس دقیق ملکیت -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1.5">
+                آدرس دقیق ملکیت <span class="text-red-600">*</span>
+              </label>
+              <input type="text" id="reg-address" required placeholder="ناحیه، سرک، کوچه و نمبر خانه/دوکان" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+            </div>
+          </div>
+
+          <!-- بخش آپلود عکس‌ها -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2 border-t border-slate-200">
+            <!-- عکس ملکیت (ضروری) -->
+            <div class="bg-slate-50 p-4 rounded-2xl border-2 border-dashed border-gold-500/70">
+              <label class="block text-sm font-bold text-navy-900 mb-1">
+                <i class="fa-solid fa-image text-gold-600 ml-1"></i>
+                عکس ملکیت <span class="text-red-600 font-extrabold">(ضروری *)</span>
+              </label>
+              <p class="text-xs text-slate-500 mb-3">تصویر واضح از نمای بیرونی یا داخلی ملکیت انتخاب کنید.</p>
+              <input type="file" id="reg-property-photo" accept="image/*" required onchange="previewImageFile(this, 'preview-prop-img')" class="block w-full text-xs text-slate-600 file:ml-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-navy-900 file:text-gold-400 hover:file:bg-navy-800 cursor-pointer" />
+              <div id="preview-prop-img-box" class="hidden mt-3">
+                <img id="preview-prop-img" src="" alt="پیش‌نمایش ملکیت" class="w-full h-40 object-cover rounded-xl border border-slate-300" />
+              </div>
+            </div>
+
+            <!-- عکس قباله (اختیاری) -->
+            <div class="bg-slate-50 p-4 rounded-2xl border-2 border-dashed border-slate-300">
+              <label class="block text-sm font-bold text-navy-900 mb-1">
+                <i class="fa-solid fa-file-shield text-navy-700 ml-1"></i>
+                عکس قباله ملکیت <span class="text-slate-500 font-normal">(اختیاری)</span>
+              </label>
+              <p class="text-xs text-slate-500 mb-3">تصویر قباله صرفاً نزد مدیر دفتر محفوظ می‌ماند و در سایت نشر نمی‌شود.</p>
+              <input type="file" id="reg-deed-photo" accept="image/*" onchange="previewImageFile(this, 'preview-deed-img')" class="block w-full text-xs text-slate-600 file:ml-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-slate-200 file:text-slate-800 hover:file:bg-slate-300 cursor-pointer" />
+              <div id="preview-deed-img-box" class="hidden mt-3">
+                <img id="preview-deed-img" src="" alt="پیش‌نمایش قباله" class="w-full h-40 object-cover rounded-xl border border-slate-300" />
+              </div>
+            </div>
+          </div>
+
+          <!-- توضیحات تکمیلی -->
+          <div>
+            <label class="block text-sm font-bold text-navy-900 mb-1.5">جزئیات و مشخصات اضافی (مساحت، تعداد اتاق، منزل و...)</label>
+            <textarea id="reg-notes" rows="3" placeholder="مثلاً: ۴ بسوه، دارای ۵ اتاق، تهکوی، آب و برق مستقل..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm"></textarea>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-end gap-3 pt-2">
+            <button type="submit" id="btn-submit-property" class="w-full sm:w-auto bg-navy-900 hover:bg-navy-800 text-gold-400 border-2 border-gold-500 font-black px-8 py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>ثبت رسمی ملکیت در سامانه</span>
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
-    <!-- ===================================================================
-         بخش ۶: تماس با دفتر
-         =================================================================== -->
-    <section id="sec-contact" class="app-section hidden">
-      <div class="section-card">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">تماس با دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد</h2>
-            <p class="section-desc">راه‌های ارتباطی رسمی و شماره‌های تماس مستقیم دفتر و مدیریت</p>
+    <!-- ==================== بخش ۴: تماس با مشتریان و دفتر (#contact) ==================== -->
+    <section id="section-contact" class="route-section hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- اطلاعات تماس و شماره‌های رسمی -->
+        <div class="bg-navy-900 text-white rounded-3xl p-6 sm:p-8 border-2 border-gold-500/50 shadow-xl space-y-6">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl sm:text-2xl font-black text-gold-400">ارتباط مستقیم با دفتر</h2>
+            <button onclick="copySectionLink('contact', 'تماس با مشتریان')" class="bg-navy-800 text-gold-300 p-2 rounded-xl text-xs hover:bg-gold-500 hover:text-navy-950 transition cursor-pointer" title="کاپی لینک بخش تماس">
+              <i class="fa-solid fa-link"></i>
+            </button>
           </div>
-          <button type="button" class="btn btn-primary btn-sm" data-nav="register">ثبت ملکیت</button>
-        </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            مشتریان گرامی می‌توانند جهت استعلام ملکیت‌ها، هماهنگی بازدید حضوری و دریافت مشوره‌های حقوقی و معاملاتی با شماره‌های رسمی ذیل در تماس شوند:
+          </p>
 
-        <div class="official-path-bar">
-          <div>
-            <span class="official-path-label">شناسه بخش تماس با دفتر:</span>
-            <span class="official-path-code" id="path-code-contact">PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/OFFICE-CONTACT</span>
+          <div id="contact-phones-cards" class="space-y-3">
+            <!-- شماره‌های تماس + دکمه تماس و واتساپ توسط JS ساخته می‌شوند -->
           </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-copy-path="contact">کپی شناسه تماس</button>
-        </div>
 
-        <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="stat-box">
-            <div class="stat-label">نام رسمی دفتر</div>
-            <div class="stat-value" style="font-size:1.05rem;">دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد</div>
-          </div>
-          <div class="stat-box" style="border-right-color:var(--accent);">
-            <div class="stat-label">موقعیت جغرافیایی و الهام برند</div>
-            <div class="stat-value" style="font-size:1.05rem;">افغانستان — طبیعت سرسبز پغمان</div>
+          <div class="bg-navy-950/70 p-4 rounded-2xl border border-gold-500/30 text-xs text-slate-300 space-y-2">
+            <div class="font-bold text-gold-400"><i class="fa-solid fa-clock ml-1"></i> اوقات کاری دفتر:</div>
+            <div>شنبه الی پنج‌شنبه: ۸:۰۰ صبح الی ۶:۰۰ عصر</div>
+            <div>خدمات آنلاین وب‌سایت: ۲۴ ساعته در تمام مرورگرها</div>
           </div>
         </div>
 
-        <h3 style="margin:0 0 10px 0; font-size:1rem; color:var(--primary-dark);">شماره‌های تماس رسمی دفتر (کلیک برای کپی):</h3>
-        <div class="phones-list" id="contactSectionPhonesList"></div>
+        <!-- فورم ارسال پیام / درخواست مشتری -->
+        <div class="lg:col-span-2 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+          <h3 class="text-xl sm:text-2xl font-black text-navy-900 mb-2">ارسال پیام و درخواست به مدیریت</h3>
+          <p class="text-sm text-slate-500 mb-6">
+            اگر ملکیت خاصی مد نظر دارید یا می‌خواهید کارشناسان ما با شما تماس بگیرند، فورم ذیل را خانه‌پری نمایید.
+          </p>
+
+          <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-bold text-navy-900 mb-1">اسم مکمل شما <span class="text-red-600">*</span></label>
+                <input type="text" id="contact-name" required placeholder="نام و تخلص" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-navy-900 mb-1">شماره تماس / واتساپ <span class="text-red-600">*</span></label>
+                <input type="tel" id="contact-phone" required dir="ltr" placeholder="07XXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm text-right" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1">موضوع / کد ملکیت مورد نظر</label>
+              <input type="text" id="contact-subject" placeholder="مثلاً: درخواست بازدید ملکیت کد #102 یا خرید خانه در کابل" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-1">متن پیام شما <span class="text-red-600">*</span></label>
+              <textarea id="contact-message" rows="4" required placeholder="جزئیات درخواست یا سوال خود را اینجا بنویسید..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="bg-navy-900 hover:bg-navy-800 text-gold-400 border-2 border-gold-500 font-black px-8 py-3.5 rounded-xl shadow-md transition flex items-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>ارسال پیام به دفتر</span>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
-    <!-- ===================================================================
-         بخش ۷: پنل مدیریت جامع
-         =================================================================== -->
-    <section id="sec-admin" class="app-section hidden">
-      <!-- فرم ورود مدیر -->
-      <div class="section-card" id="adminLoginCard">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">ورود به پنل مدیریت سیستم</h2>
-            <p class="section-desc">دسترسی مدیریتی به تمامی ملکیت‌ها (همراه با شماره محرمانه مالک)، تبلیغات، لوگو، شماره‌ها و تنظیمات</p>
+    <!-- ==================== بخش ۵: مدیریت و کنترول (#admin) ==================== -->
+    <section id="section-admin" class="route-section hidden">
+      
+      <!-- صفحه ورود مدیر -->
+      <div id="admin-login-box" class="max-w-md mx-auto bg-white rounded-3xl border-2 border-gold-500/60 shadow-2xl overflow-hidden my-4">
+        <div class="bg-navy-900 text-white p-6 text-center border-b-4 border-gold-500">
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/20 border border-gold-500 text-gold-400 flex items-center justify-center text-3xl mb-3">
+            <i class="fa-solid fa-user-shield"></i>
           </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-nav="home">صفحه اصلی</button>
+          <h2 class="text-xl font-black">ورود به پنل مدیریت و کنترول</h2>
+          <p class="text-xs text-slate-300 mt-1">دفتر رهنمای معاملات شکرالله ابراهیم خیل</p>
         </div>
 
-        <div class="official-path-bar">
+        <form onsubmit="handleAdminLogin(event)" class="p-6 space-y-4">
           <div>
-            <span class="official-path-label">شناسه بخش مدیریت:</span>
-            <span class="official-path-code" id="path-code-admin">PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/ADMIN-CONTROL</span>
+            <label class="block text-sm font-bold text-navy-900 mb-1">نام کاربری (Username)</label>
+            <input type="text" id="login-username" required dir="ltr" placeholder="admin" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
           </div>
-          <button type="button" class="btn btn-secondary btn-sm" data-copy-path="admin">کپی شناسه مدیریت</button>
-        </div>
-
-        <form id="adminLoginForm" style="max-width:460px;">
-          <div class="form-grid">
-            <div class="form-group full-width">
-              <label class="form-label" for="adminUserInput">نام کاربری مدیر (یوزرنیم)</label>
-              <input type="text" id="adminUserInput" class="form-control" placeholder="admin" required />
-            </div>
-
-            <div class="form-group full-width">
-              <label class="form-label" for="adminPassInput">رمز عبور مدیر (پسورد)</label>
-              <input type="password" id="adminPassInput" class="form-control" placeholder="123456" required />
-            </div>
-
-            <div class="form-group full-width" style="flex-direction:row; flex-wrap:wrap; gap:8px;">
-              <button type="submit" class="btn btn-primary">ورود به پنل مدیریت</button>
-              <button type="button" class="btn btn-accent" id="quickDemoLoginBtn">ورود سریع (admin / 123456)</button>
-              <button type="button" class="btn btn-secondary" id="resetDefaultCredsLoginBtn">بازیابی رمز پیش‌فرض</button>
-            </div>
+          <div>
+            <label class="block text-sm font-bold text-navy-900 mb-1">رمز عبور (Password)</label>
+            <input type="password" id="login-password" required dir="ltr" placeholder="••••••" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+          </div>
+          <button type="submit" class="w-full bg-navy-900 hover:bg-navy-800 text-gold-400 border border-gold-500 font-black py-3.5 rounded-xl shadow-lg transition cursor-pointer">
+            <i class="fa-solid fa-right-to-bracket ml-1"></i> ورود به سیستم مدیریت
+          </button>
+          <div class="bg-slate-100 p-3 rounded-xl text-xs text-slate-600 text-center border border-slate-200">
+            نام کاربری پیش‌فرض: <strong dir="ltr" class="text-navy-900">admin</strong> | رمز پیش‌فرض: <strong dir="ltr" class="text-navy-900">123456</strong>
+            <br><span class="text-[11px] text-slate-500">(پس از ورود می‌توانید هر زمان نام کاربری و رمز را تغییر دهید)</span>
           </div>
         </form>
       </div>
 
-      <!-- داشبورد پس از ورود مدیر -->
-      <div class="section-card hidden" id="adminDashboardCard">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">داشبورد مدیریت جامع — ستاره اعتماد</h2>
-            <p class="section-desc">کنترل کامل ملکیت‌ها، اطلاعات محرمانه مالکان، تبلیغات، لوگوی پغمان، شماره‌ها، وضعیت بخش‌ها و امنیت</p>
+      <!-- داشبورد کامل مدیریت (پس از ورود) -->
+      <div id="admin-dashboard" class="hidden space-y-6">
+        <!-- نوار بالای داشبورد -->
+        <div class="bg-navy-900 text-white rounded-3xl p-5 border-2 border-gold-500 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-gold-500 text-navy-950 flex items-center justify-center text-xl font-black">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div>
+              <h2 class="text-lg sm:text-xl font-black text-gold-400">پنل مرکزی مدیریت و کنترول</h2>
+              <p class="text-xs text-slate-300">خوش آمدید، مدیر محترم (<span id="admin-current-user-label" class="font-bold text-white">admin</span>)</p>
+            </div>
           </div>
-          <button type="button" class="btn btn-danger btn-sm" id="adminLogoutBtn">خروج از حساب مدیر</button>
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="switchAdminTab('security')" class="bg-gold-500 hover:bg-gold-400 text-navy-950 px-3.5 py-2 rounded-xl text-xs font-extrabold shadow cursor-pointer flex items-center gap-1.5">
+              <i class="fa-solid fa-key"></i> تغییر یوزر و رمز مدیریت
+            </button>
+            <button onclick="copySectionLink('admin', 'پنل مدیریت')" class="bg-navy-800 hover:bg-navy-700 text-gold-300 px-3.5 py-2 rounded-xl text-xs font-bold border border-gold-500/40 cursor-pointer">
+              <i class="fa-solid fa-link ml-1"></i> کاپی لینک پنل
+            </button>
+            <button onclick="handleAdminLogout()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-xl text-xs font-bold cursor-pointer">
+              <i class="fa-solid fa-right-from-bracket ml-1"></i> خروج از مدیریت
+            </button>
+          </div>
         </div>
 
-        <div class="admin-tabs-bar" role="tablist">
-          <button type="button" class="admin-tab-btn active" data-admin-tab="props">مدیریت ملکیت‌ها</button>
-          <button type="button" class="admin-tab-btn" data-admin-tab="ads">مدیریت تبلیغات</button>
-          <button type="button" class="admin-tab-btn" data-admin-tab="branding">لوگو و شماره‌های دفتر</button>
-          <button type="button" class="admin-tab-btn" data-admin-tab="sections">وضعیت بخش‌ها و شناسه‌ها</button>
-          <button type="button" class="admin-tab-btn" data-admin-tab="security">یوزر، پسورد و پشتیبان JSON</button>
+        <!-- تب‌های داخلی پنل مدیریت -->
+        <div class="flex flex-wrap gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+          <button onclick="switchAdminTab('manage-props')" id="admin-tab-manage-props" class="admin-subtab bg-navy-900 text-gold-400 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer">
+            <i class="fa-solid fa-building-lock ml-1"></i> مدیریت ملکیت‌ها و شماره مشتریان
+          </button>
+          <button onclick="switchAdminTab('security')" id="admin-tab-security" class="admin-subtab text-slate-700 hover:bg-slate-100 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer border border-gold-500/40">
+            <i class="fa-solid fa-user-lock text-gold-600 ml-1"></i> تغییر یوزر و رمز مدیریت
+          </button>
+          <button onclick="switchAdminTab('messages')" id="admin-tab-messages" class="admin-subtab text-slate-700 hover:bg-slate-100 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer">
+            <i class="fa-solid fa-envelope-open-text ml-1"></i> پیام‌های مشتریان (<span id="admin-msg-badge">0</span>)
+          </button>
+          <button onclick="switchAdminTab('appearance')" id="admin-tab-appearance" class="admin-subtab text-slate-700 hover:bg-slate-100 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer">
+            <i class="fa-solid fa-palette ml-1"></i> تغییر پس‌زمینه، عنوان و بخش‌ها
+          </button>
         </div>
 
-        <!-- تب ۱: مدیریت ملکیت‌ها -->
-        <div id="adminTab-props" class="admin-tab-panel">
-          <div class="table-wrap">
-            <table class="data-table">
+        <!-- تب ۱ مدیریت: جدول کامل ملکیت‌ها با شماره تلفن محرم مشتری و قباله -->
+        <div id="admin-panel-manage-props" class="admin-panel bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="p-5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h3 class="text-lg font-black text-navy-900">لیست کامل ملکیت‌ها (دسترسی ویژه مدیر)</h3>
+              <p class="text-xs text-slate-500">شماره تماس مشتریان و تصویر قباله فقط در این بخش قابل مشاهده است.</p>
+            </div>
+            <a href="#register" onclick="navigateTo('register')" class="bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> ثبت ملکیت جدید
+            </a>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-right border-collapse">
               <thead>
-                <tr>
-                  <th>کد / عنوان</th>
-                  <th>نوع ملکیت و معامله</th>
-                  <th>قباله و موقعیت</th>
-                  <th>قیمت</th>
-                  <th>اطلاعات محرمانه مالک</th>
-                  <th>تصاویر</th>
-                  <th>وضعیت</th>
-                  <th>عملیات</th>
+                <tr class="bg-navy-900 text-gold-300 text-xs">
+                  <th class="p-3">کد</th>
+                  <th class="p-3">اسم مشتری</th>
+                  <th class="p-3 bg-amber-900/60 text-amber-200">شماره تلفن مشتری (محرم)</th>
+                  <th class="p-3">نوع ملکیت / معامله</th>
+                  <th class="p-3">قیمت</th>
+                  <th class="p-3">قباله</th>
+                  <th class="p-3">ولایت / آدرس</th>
+                  <th class="p-3 text-center">ارسال لینک و مدیریت</th>
                 </tr>
               </thead>
-              <tbody id="adminPropsTableBody"></tbody>
+              <tbody id="admin-properties-tbody" class="divide-y divide-slate-200 text-xs">
+                <!-- توسط جاوااسکریپت پر می‌شود -->
+              </tbody>
             </table>
           </div>
         </div>
 
-        <!-- تب ۲: مدیریت تبلیغات -->
-        <div id="adminTab-ads" class="admin-tab-panel hidden">
-          <form id="adminAddAdForm" style="margin-bottom:18px;">
-            <div class="form-grid">
-              <div class="form-group">
-                <label class="form-label" for="newAdTitle">عنوان آگهی تبلیغاتی *</label>
-                <input type="text" id="newAdTitle" class="form-control" placeholder="مثال: فروش نمره زمین ممتاز در پغمان" required />
+        <!-- تب ۲ مدیریت: پیام‌های مشتریان -->
+        <div id="admin-panel-messages" class="admin-panel hidden bg-white rounded-3xl border border-slate-200 p-6 shadow-sm space-y-4">
+          <h3 class="text-lg font-black text-navy-900">پیام‌ها و درخواست‌های دریافت‌شده از مشتریان</h3>
+          <div id="admin-messages-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- توسط JS پر می‌شود -->
+          </div>
+        </div>
+
+        <!-- تب ۳ مدیریت: تغییر پس‌زمینه، عنوان و بخش‌های سایت -->
+        <div id="admin-panel-appearance" class="admin-panel hidden bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+          <h3 class="text-lg font-black text-navy-900 mb-1">تنظیمات ظاهری، پس‌زمینه و عناوین وب‌سایت</h3>
+          <p class="text-xs text-slate-500 mb-6">هر تغییری که اینجا ذخیره کنید بلافاصله در کل وب‌سایت اعمال و ذخیره می‌شود.</p>
+          
+          <form onsubmit="handleSaveSettings(event)" class="space-y-5 max-w-3xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-navy-900 mb-1">عنوان اصلی وب‌سایت (هدر)</label>
+                <input type="text" id="set-main-title" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
               </div>
-              <div class="form-group">
-                <label class="form-label" for="newAdText">متن آگهی تبلیغاتی *</label>
-                <input type="text" id="newAdText" class="form-control" placeholder="جزئیات کوتاه و شفاف آگهی..." required />
+              <div>
+                <label class="block text-xs font-bold text-navy-900 mb-1">عنوان فرعی / شعار برند</label>
+                <input type="text" id="set-sub-title" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
               </div>
-              <div class="form-group full-width" style="flex-direction:row;">
-                <button type="submit" class="btn btn-primary">افزودن آگهی جدید</button>
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-bold text-navy-900 mb-1">متن نوار اعلان بالای سایت</label>
+                <input type="text" id="set-announcement" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
               </div>
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-bold text-navy-900 mb-1">عنوان بنر صفحه اصلی</label>
+                <input type="text" id="set-hero-heading" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-bold text-navy-900 mb-1">توضیحات بنر صفحه اصلی</label>
+        <!-- تب ۴ مدیریت: تغییر یوزر و رمز عبور مدیریت -->
+        <div id="admin-panel-security" class="admin-panel hidden bg-white rounded-3xl border-2 border-gold-500/60 p-6 sm:p-8 shadow-lg max-w-2xl">
+          <div class="flex items-center gap-3 border-b border-slate-200 pb-4 mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-navy-900 text-gold-400 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-user-lock"></i>
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-black text-navy-900">تغییر یوزر (نام کاربری) و رمز عبور مدیریت</h3>
+              <p class="text-xs text-slate-500 mt-0.5">مدیر محترم می‌تواند هر زمان نام کاربری و رمز ورود به پنل کنترول را تغییر دهد.</p>
+            </div>
+          </div>
+          
+          <form onsubmit="handleChangeCredentials(event)" class="space-y-4">
+            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-3.5 text-xs text-amber-900 flex items-center justify-between">
+              <span>نام کاربری فعلی سیستم:</span>
+              <strong dir="ltr" id="security-current-user-display" class="text-sm font-black bg-white px-3 py-1 rounded-lg border border-amber-300">admin</strong>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-navy-900 mb-1">رمز عبور فعلی (Current Password) <span class="text-red-600">*</span></label>
+              <div class="relative">
+                <input type="password" id="current-admin-password" required dir="ltr" placeholder="رمز فعلی را وارد کنید" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+                <button type="button" onclick="togglePasswordField('current-admin-password', this)" class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-navy-900 cursor-pointer">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-navy-900 mb-1">نام کاربری جدید (New Username) <span class="text-red-600">*</span></label>
+              <input type="text" id="new-admin-username" required dir="ltr" placeholder="نام کاربری جدید" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm font-bold" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-navy-900 mb-1">رمز عبور جدید (New Password) <span class="text-red-600">*</span></label>
+                <div class="relative">
+                  <input type="password" id="new-admin-password" required dir="ltr" minlength="4" placeholder="حداقل ۴ کاراکتر" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+                  <button type="button" onclick="togglePasswordField('new-admin-password', this)" class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-navy-900 cursor-pointer">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-navy-900 mb-1">تکرار رمز عبور جدید <span class="text-red-600">*</span></label>
+                <div class="relative">
+                  <input type="password" id="confirm-admin-password" required dir="ltr" minlength="4" placeholder="تکرار رمز عبور جدید" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-500 outline-none text-sm" />
+                  <button type="button" onclick="togglePasswordField('confirm-admin-password', this)" class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-navy-900 cursor-pointer">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 pt-3 border-t border-slate-100">
+              <button type="submit" class="bg-navy-900 hover:bg-navy-800 text-gold-400 border-2 border-gold-500 font-black px-6 py-3 rounded-xl text-sm shadow-md transition flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-floppy-disk"></i>
+                <span>ذخیره یوزر و رمز جدید</span>
+              </button>
+              <button type="button" onclick="handleAdminLogout()" class="bg-slate-100 hover:bg-slate-200 text-navy-900 font-bold px-4 py-3 rounded-xl text-xs transition flex items-center gap-1.5 cursor-pointer">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>خروج و آزمایش ورود با رمز جدید</span>
+              </button>
             </div>
           </form>
-
-          <div id="adminAdsManageList"></div>
-        </div>
-
-        <!-- تب ۳: لوگو و شماره‌های دفتر -->
-        <div id="adminTab-branding" class="admin-tab-panel hidden">
-          <div class="form-grid">
-            <div class="form-group">
-              <h3 style="margin:0 0 8px 0; font-size:1rem; color:var(--primary-dark);">شخصی‌سازی رنگ لوگوی طبیعت پغمان</h3>
-              <form id="logoColorsForm">
-                <div class="form-group" style="margin-bottom:10px;">
-                  <label class="form-label" for="mountainColorInput">رنگ کوه‌های پغمان</label>
-                  <input type="color" id="mountainColorInput" class="form-control" style="height:42px; padding:4px;" />
-                </div>
-                <div class="form-group" style="margin-bottom:10px;">
-                  <label class="form-label" for="meadowColorInput">رنگ دشت و درختان سبز پغمان</label>
-                  <input type="color" id="meadowColorInput" class="form-control" style="height:42px; padding:4px;" />
-                </div>
-                <div class="form-group" style="margin-bottom:12px;">
-                  <label class="form-label" for="starColorInput">رنگ ستاره طلایی اعتماد</label>
-                  <input type="color" id="starColorInput" class="form-control" style="height:42px; padding:4px;" />
-                </div>
-                <div style="display:flex; flex-wrap:wrap; gap:8px;">
-                  <button type="submit" class="btn btn-primary btn-sm">ذخیره رنگ‌های لوگو</button>
-                  <button type="button" class="btn btn-secondary btn-sm" id="resetDefaultLogoBtn">بازگردانی لوگوی پغمان</button>
-                </div>
-              </form>
-            </div>
-
-            <div class="form-group">
-              <h3 style="margin:0 0 8px 0; font-size:1rem; color:var(--primary-dark);">آپلود لوگوی سفارشی</h3>
-              <label class="form-label" for="customLogoUpload">انتخاب فایل تصویر لوگو</label>
-              <input type="file" id="customLogoUpload" class="form-control" accept="image/*" />
-              <p class="section-desc" style="margin-top:6px;">در صورت بارگذاری تصویر سفارشی، جایگزین لوگوی پیش‌فرض طبیعت پغمان می‌شود.</p>
-            </div>
-
-            <div class="form-group full-width" style="margin-top:10px; border-top:1px solid var(--border); padding-top:16px;">
-              <h3 style="margin:0 0 8px 0; font-size:1rem; color:var(--primary-dark);">ویرایش شماره‌های تماس رسمی دفتر</h3>
-              <form id="officePhonesForm">
-                <div class="form-group" style="margin-bottom:10px;">
-                  <label class="form-label" for="officePhonesTextarea">شماره‌ها را با کاما یا خط جدید از هم جدا کنید</label>
-                  <textarea id="officePhonesTextarea" class="form-control" style="min-height:80px;"></textarea>
-                </div>
-                <div style="display:flex; flex-wrap:wrap; gap:8px;">
-                  <button type="submit" class="btn btn-primary btn-sm">ذخیره شماره‌های دفتر</button>
-                  <button type="button" class="btn btn-secondary btn-sm" id="resetDefaultPhonesBtn">بازگردانی ۵ شماره پیش‌فرض</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- تب ۴: وضعیت بخش‌ها و شناسه‌ها -->
-        <div id="adminTab-sections" class="admin-tab-panel hidden">
-          <p class="section-desc" style="margin-bottom:14px;">
-            وضعیت فعال یا غیرفعال بودن هر بخش سایت را کنترل کنید و شناسه رسمی هر بخش را برای کپی و ارسال آماده نمایید.
-          </p>
-          <div id="adminSectionsControlList"></div>
-        </div>
-
-        <!-- تب ۵: تغییر یوزر/پسورد و پشتیبان‌گیری JSON -->
-        <div id="adminTab-security" class="admin-tab-panel hidden">
-          <div class="form-grid">
-            <div class="form-group">
-              <h3 style="margin:0 0 8px 0; font-size:1rem; color:var(--primary-dark);">تغییر نام کاربری و رمز عبور مدیر</h3>
-              <form id="changeAdminCredsForm">
-                <div class="form-group" style="margin-bottom:10px;">
-                  <label class="form-label" for="newAdminUsername">نام کاربری جدید</label>
-                  <input type="text" id="newAdminUsername" class="form-control" required />
-                </div>
-                <div class="form-group" style="margin-bottom:12px;">
-                  <label class="form-label" for="newAdminPassword">رمز عبور جدید (حداقل ۴ کاراکتر)</label>
-                  <input type="password" id="newAdminPassword" class="form-control" required />
-                </div>
-                <button type="submit" class="btn btn-primary btn-sm">ذخیره یوزرنیم و پسورد جدید</button>
-              </form>
-            </div>
-
-            <div class="form-group">
-              <h3 style="margin:0 0 8px 0; font-size:1rem; color:var(--primary-dark);">پشتیبان‌گیری، بازگردانی و بازنشانی JSON</h3>
-              <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
-                <button type="button" class="btn btn-accent btn-sm" id="exportJsonBtn">خروجی گرفتن JSON</button>
-                <button type="button" class="btn btn-secondary btn-sm" id="importJsonBtn">بازگردانی از متن JSON</button>
-                <button type="button" class="btn btn-danger btn-sm" id="factoryResetBtn">بازنشانی کامل به حالت اولیه</button>
-              </div>
-              <textarea id="jsonBackupTextarea" class="form-control" style="min-height:130px; direction:ltr; text-align:left; font-size:0.8rem;" placeholder='{"properties": [], "ads": []}'></textarea>
-            </div>
-          </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- فوتر رسمی -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3 class="footer-title">دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد</h3>
-          <p style="margin:0 0 10px 0; font-size:0.88rem; color:#d2e6dc;">
-            ارائه‌دهنده خدمات شفاف و مطمئن خرید، فروش، گروی، گرایی، اجاره و شریک‌آباد با الهام از طبیعت پغمان و رعایت کامل حریم خصوصی مشتریان.
-          </p>
-          <div style="display:flex; flex-wrap:wrap; gap:6px;">
-            <button type="button" class="btn btn-secondary btn-sm" data-nav="home">صفحه اصلی</button>
-            <button type="button" class="btn btn-secondary btn-sm" data-nav="client-portal">لینک مشتریان</button>
-            <button type="button" class="btn btn-secondary btn-sm" data-nav="search">جستجوی عمومی</button>
-            <button type="button" class="btn btn-secondary btn-sm" data-nav="ads">تبلیغات</button>
-            <button type="button" class="btn btn-secondary btn-sm" data-nav="contact">تماس با دفتر</button>
-            <button type="button" class="btn btn-accent btn-sm" data-nav="admin">پنل مدیریت</button>
-          </div>
-        </div>
-
-        <div>
-          <h3 class="footer-title">شماره‌های رسمی دفتر</h3>
-          <div class="phones-list" id="footerPhonesList"></div>
-        </div>
+  <!-- مودال نمایش جزئیات ملکیت (برای مشتریان - بدون شماره تلفن مالک) -->
+  <div id="property-detail-modal" class="fixed inset-0 bg-navy-950/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-3xl w-full border-2 border-gold-500 shadow-2xl overflow-hidden my-8">
+      <div class="bg-navy-900 text-white px-6 py-4 flex items-center justify-between border-b-2 border-gold-500">
+        <h3 id="modal-prop-title" class="text-lg font-black text-gold-400">جزئیات رسمی ملکیت</h3>
+        <button onclick="closePropertyModal()" class="text-slate-300 hover:text-white text-xl cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
-
-      <div class="footer-copy">
-        دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد | تمامی حقوق محفوظ است
+      <div id="modal-prop-body" class="p-6 space-y-5">
+        <!-- محتوا توسط JS پر می‌شود -->
       </div>
+    </div>
+  </div>
+
+  <!-- فوتر رسمی وب‌سایت -->
+  <footer class="bg-navy-950 text-slate-300 border-t-4 border-gold-500 mt-12">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-black text-gold-400 mb-3">دفتر رهنمای معاملات شکرالله ابراهیم خیل</h4>
+        <p class="text-xs leading-relaxed text-slate-400">
+          مرجع رسمی و قابل اعتماد در امور خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد املاک در سراسر افغانستان. تمامی معاملات با اسناد معتبر و حفظ کامل محرمیت مشتریان انجام می‌گردد.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-sm font-black text-white mb-3">دسترسی سریع به بخش‌ها (لینک‌های مستقیم)</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#home" onclick="navigateTo('home')" class="hover:text-gold-400 transition">• صفحه اصلی سامانه</a></li>
+          <li><a href="#properties" onclick="navigateTo('properties')" class="hover:text-gold-400 transition">• جستجو و جدول ملکیت‌ها</a></li>
+          <li><a href="#register" onclick="navigateTo('register')" class="hover:text-gold-400 transition">• ثبت ملکیت جدید</a></li>
+          <li><a href="#contact" onclick="navigateTo('contact')" class="hover:text-gold-400 transition">• تماس با مشتریان و دفتر</a></li>
+          <li><a href="#admin" onclick="navigateTo('admin')" class="hover:text-gold-400 transition">• بخش مدیریت و کنترول</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-black text-white mb-3">شماره‌های تماس رسمی دفتر</h4>
+        <div id="footer-phones" class="space-y-1.5 text-xs font-bold text-gold-300" dir="ltr"></div>
+      </div>
+    </div>
+    <div class="bg-black/40 py-3 px-4 text-center text-xs text-slate-400 border-t border-white/10">
+      © ۱۴۰۵ - تمامی حقوق این سامانه متعلق به <span class="text-gold-400 font-bold">دفتر رهنمای معاملات شکرالله ابراهیم خیل (ستاره اعتماد)</span> می‌باشد.
     </div>
   </footer>
 
-  <script>
-    (function () {
-      'use strict';
+  <!-- اسکریپت اصلی و اتصال به Firebase Firestore برای آنلاین بودن در تمام مرورگرها -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, doc, setDoc, getDoc, addDoc, deleteDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-      // =====================================================================
-      // ۱. مقادیر پیش‌فرض و تنظیمات ذخیره‌سازی آنلاین (Firebase) + پشتیبان امن
-      // =====================================================================
-      const DEFAULT_OFFICE_PHONES = [
-        '0705875878',
-        '0792928897',
-        '0731364644',
-        '0777514602',
-        '0747789284'
-      ];
+    // ==================== لیست ۳۴ ولایت افغانستان ====================
+    const AFGHANISTAN_PROVINCES = [
+      "کابل", "هرات", "بلخ", "قندهار", "ننگرهار", "کندز", "بغلان", "تخار", "بدخشان", "غزنی",
+      "پکتیا", "پکتیکا", "خوست", "لوگر", "میدان وردک", "پروان", "کاپیسا", "پنجشیر", "بامیان",
+      "دایکندی", "غور", "بادغیس", "فاریاب", "جوزجان", "سرپل", "سمنگان", "لغمان", "کنر",
+      "نورستان", "فراه", "نیمروز", "هلمند", "زابل", "ارزگان"
+    ];
 
-      const DEFAULT_CREDS = {
-        username: 'admin',
-        password: '123456'
-      };
+    // ==================== تنظیمات پیش‌فرض سایت ====================
+    const DEFAULT_SETTINGS = {
+      mainTitle: "دفتر رهنمای معاملات شکرالله ابراهیم خیل",
+      subTitle: "★ ستاره اعتماد — مرجع خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد ★",
+      announcement: "مرجع معتبر خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد در سراسر افغانستان",
+      heroHeading: "سامانه رسمی ثبت و معاملات املاک ستاره اعتماد",
+      heroDesc: "دفتر رهنمای معاملات شکرالله ابراهیم خیل با سال‌ها تجربه و اعتبار درخشان، آماده ارائه خدمات معیاری در بخش خرید، فروش، کرایه، گروی، بیع وفا، اجاره و شراکت آباد انواع خانه، حویلی، آپارتمان، زمین، دوکان و سرای در سراسر افغانستان می‌باشد.",
+      bgColor: "#f4f6f9",
+      navyColor: "#0B192C",
+      phones: "0705875878 | 0792928897 | 0731364644 | 0777514602 | 0747789284"
+    };
 
-      const DEFAULT_LOGO = {
-        mountainColor: '#2c5e8a',
-        meadowColor: '#2e7d32',
-        starColor: '#eab308',
-        customImage: ''
-      };
-
-      const SECTION_META = {
-        home: {
-          label: 'صفحه اصلی',
-          code: 'PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/HOME'
-        },
-        'client-portal': {
-          label: 'درگاه اختصاصی مشتریان (ثبت و جستجو)',
-          code: 'PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/CLIENT-REGISTER-SEARCH'
-        },
-        register: {
-          label: 'ثبت ملکیت مشتری',
-          code: 'PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/REGISTER-PROPERTY'
-        },
-        search: {
-          label: 'جستجوی عمومی',
-          code: 'PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/PUBLIC-SEARCH'
-        },
-        ads: {
-          label: 'تبلیغات',
-          code: 'PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/ADVERTISEMENTS'
-        },
-        contact: {
-          label: 'تماس با دفتر',
-          code: 'PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/OFFICE-CONTACT'
-        },
-        admin: {
-          label: 'پنل مدیریت',
-          code: 'PORTAL://SHUKRULLAH-IBRAHIMKHEL/STAR-OF-TRUST/ADMIN-CONTROL'
-        }
-      };
-
-      const DEFAULT_SECTION_ACCESS = {
-        home: true,
-        'client-portal': true,
-        register: true,
-        search: true,
-        ads: true,
-        contact: true,
-        admin: true
-      };
-
-      const DEFAULT_PROPERTIES = [
-        {
-          id: 'PR-1001',
-          title: 'حویلی باغچه پغمان — پلاک ۱۲',
-          propertyType: 'حویلی',
-          dealType: 'فروش',
-          deedType: 'شرعی',
-          location: 'ولسوالی پغمان، سرک باغ عمومی',
-          price: '۸۵,۰۰۰ دالر',
-          ownerName: 'حاجی کریم‌الله',
-          ownerPhone: '0780112233',
-          description: 'حویلی خوش‌منظره با درختان مثمر، آب شیرین و حیاط وسیع.',
-          propertyImage: '',
-          deedImage: '',
-          approved: true,
-          createdAt: '۱۴۰۴/۰۸/۱۰'
-        },
-        {
-          id: 'PR-1002',
-          title: 'دوکان تجاری بر سرک اصلی',
-          propertyType: 'دوکان',
-          dealType: 'اجاره',
-          deedType: 'عرفی',
-          location: 'پغمان، بازار مرکزی',
-          price: '۱۸,۰۰۰ افغانی ماهوار',
-          ownerName: 'احمد ضیا',
-          ownerPhone: '0799445566',
-          description: 'مناسب برای دفتر، مغازه یا نمایشگاه با بر مناسب.',
-          propertyImage: '',
-          deedImage: '',
-          approved: true,
-          createdAt: '۱۴۰۴/۰۸/۱۲'
-        },
-        {
-          id: 'PR-1003',
-          title: 'قطعه زمین مسکونی با قباله عرفی',
-          propertyType: 'زمین',
-          dealType: 'گروی',
-          deedType: 'عرفی',
-          location: 'پغمان، منطقه دشت خوش‌هوا',
-          price: '۲۴,۰۰۰ دالر',
-          ownerName: 'محبوب شاه',
-          ownerPhone: '0772334455',
-          description: 'دسترسی آسان به جاده و برق، مناسب ساخت منزل مسکونی.',
-          propertyImage: '',
-          deedImage: '',
-          approved: true,
-          createdAt: '۱۴۰۴/۰۸/۱۵'
-        }
-      ];
-
-      const DEFAULT_ADS = [
-        {
-          id: 'AD-201',
-          title: 'ثبت مستقیم ملکیت مشتریان با حفظ کامل حریم خصوصی',
-          text: 'مالکان محترم می‌توانند ملکیت خود را ثبت کنند؛ شماره تماس شما در جستجوی عمومی مخفی است و مراجعین با شماره‌های رسمی دفتر تماس می‌گیرند.',
-          active: true
-        },
-        {
-          id: 'AD-202',
-          title: 'مشاوره مطمئن خرید، فروش، گروی، گرایی، اجاره و شریک‌آباد',
-          text: 'دفتر رهنمای معاملات شکرالله ابراهیم خیل — ستاره اعتماد آماده ارائه خدمات شفاف و قانونی به هموطنان عزیز است.',
-          active: true
-        }
-      ];
-
-      const STORAGE_KEYS = {
-        PROPERTIES: 'star_trust_properties_v1',
-        ADS: 'star_trust_ads_v1',
-        CREDS: 'star_trust_creds_v1',
-        LOGO: 'star_trust_logo_v1',
-        PHONES: 'star_trust_phones_v1',
-        SECTIONS: 'star_trust_sections_v1'
-      };
-
-      const CLOUD_CONFIG = {
-        storage: 'FIREBASE',
-        collections: {
-          PROPERTIES: 'star_trust_properties',
-          ADS: 'star_trust_ads',
-          CREDS: 'star_trust_creds',
-          LOGO: 'star_trust_logo',
-          PHONES: 'star_trust_phones',
-          SECTIONS: 'star_trust_sections'
-        }
-      };
-
-      // حافظه پشتیبان در صورت محدودیت فضای مرورگر
-      const memoryFallback = {};
-
-      const state = {
-        activeSection: 'home',
-        activeAdminTab: 'props',
-        isAdminLoggedIn: false,
-        cloudEnabled: false,
-        cloudAppId: 'default-app-id',
-        fbCtx: null,
-        properties: [],
-        ads: [],
-        phones: DEFAULT_OFFICE_PHONES.slice(),
-        sectionAccess: Object.assign({}, DEFAULT_SECTION_ACCESS),
-        creds: Object.assign({}, DEFAULT_CREDS),
-        logo: Object.assign({}, DEFAULT_LOGO),
-        draftPropImg: '',
-        draftDeedImg: ''
-      };
-
-      // =====================================================================
-      // ۲. توابع کمکی، ایمن‌سازی متن و ذخیره‌سازی امن
-      // =====================================================================
-      function cloneDeep(obj) {
-        return JSON.parse(JSON.stringify(obj));
+    // ==================== نمونه‌های اولیه ملکیت برای نمایش فوری ====================
+    const INITIAL_PROPERTIES = [
+      {
+        id: "PROP-101",
+        code: "101",
+        customerName: "حاجی محمد اکبر",
+        customerPhone: "0700112233",
+        propertyType: "حویلی",
+        transactionType: "فروش",
+        price: "145,000",
+        currency: "دالر ($)",
+        deedType: "قباله شرعی",
+        province: "کابل",
+        address: "کارته چهار، سرک سوم، نزدیک مسجد جامع",
+        notes: "۴ بسوه پخته کاری، دارای ۶ اتاق مفشن، تهکوی مکمل، پارکینگ برای ۳ موتر و آب شیرین.",
+        propertyPhoto: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+        deedPhoto: "",
+        createdAt: Date.now() - 86400000 * 2
+      },
+      {
+        id: "PROP-102",
+        code: "102",
+        customerName: "انجنیر فرهاد ناصری",
+        customerPhone: "0799445566",
+        propertyType: "آپارتمان",
+        transactionType: "کرایه",
+        price: "18,000",
+        currency: "افغانی (؋)",
+        deedType: "قباله شرعی",
+        province: "کابل",
+        address: "شهر نو، چهارراهی انصاری، بلاک ستاره",
+        notes: "۴ اتاقه آفتاب‌رخ، منزل سوم، دارای لفت ۲۴ ساعته، مرکزگرمی و نگهبانی.",
+        propertyPhoto: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+        deedPhoto: "",
+        createdAt: Date.now() - 86400000
+      },
+      {
+        id: "PROP-103",
+        code: "103",
+        customerName: "حاجی عبدالرحمن",
+        customerPhone: "0788776655",
+        propertyType: "دوکان",
+        transactionType: "گروی",
+        price: "25,000",
+        currency: "دالر ($)",
+        deedType: "کتابچه صفایی",
+        province: "هرات",
+        address: "چوک گلها، مارکیت تجارتی اعتماد، منزل اول",
+        notes: "موقعیت عالی تجارتی، دارای دکوریشن مدرن، برق مستقل و امنیت کامل.",
+        propertyPhoto: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
+        deedPhoto: "",
+        createdAt: Date.now() - 3600000 * 5
       }
+    ];
 
-      function escapeHtml(str) {
-        return String(str == null ? '' : str)
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;')
-          .replace(/'/g, '&#39;');
-      }
+    // ==================== وضعیت سراسری برنامه ====================
+    let state = {
+      properties: [...INITIAL_PROPERTIES],
+      messages: [],
+      settings: { ...DEFAULT_SETTINGS },
+      adminCreds: { username: "admin", password: "123456" },
+      isAdminLoggedIn: false,
+      viewMode: "cards",
+      dbReady: false,
+      user: null
+    };
 
-      function safeStorageGet(key) {
-        try {
-          if (window.localStorage) {
-            const val = window.localStorage.getItem(key);
-            if (val !== null) return val;
-          }
-        } catch (e) {}
-        return Object.prototype.hasOwnProperty.call(memoryFallback, key) ? memoryFallback[key] : null;
-      }
+    let db = null;
+    let auth = null;
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'shukrullah-real-estate';
 
-      function safeStorageSet(key, valueStr) {
-        memoryFallback[key] = valueStr;
-        try {
-          if (window.localStorage) {
-            window.localStorage.setItem(key, valueStr);
-          }
-        } catch (e) {}
-      }
+    // ==================== مقداردهی اولیه Firebase ====================
+    async function initCloudStorage() {
+      try {
+        if (typeof __firebase_config !== 'undefined' && __firebase_config) {
+          const firebaseConfig = JSON.parse(__firebase_config);
+          const app = initializeApp(firebaseConfig);
+          auth = getAuth(app);
+          db = getFirestore(app);
 
-      function loadJsonData(key, fallbackObj) {
-        try {
-          const raw = safeStorageGet(key);
-          if (!raw) return cloneDeep(fallbackObj);
-          const parsed = JSON.parse(raw);
-          return parsed != null ? parsed : cloneDeep(fallbackObj);
-        } catch (e) {
-          return cloneDeep(fallbackObj);
-        }
-      }
-
-      function saveJsonData(key, dataObj) {
-        try {
-          safeStorageSet(key, JSON.stringify(dataObj));
-        } catch (e) {}
-      }
-
-      function showNotice(message, isError) {
-        const box = document.getElementById('globalNoticeBox');
-        const txt = document.getElementById('globalNoticeText');
-        if (!box || !txt) return;
-        txt.textContent = message;
-        box.classList.remove('hidden', 'success', 'error');
-        box.classList.add(isError ? 'error' : 'success');
-      }
-
-      function hideNotice() {
-        const box = document.getElementById('globalNoticeBox');
-        if (box) box.classList.add('hidden');
-      }
-
-      function copyToClipboard(textToCopy, successLabel) {
-        const val = String(textToCopy || '');
-        if (!val) return;
-        try {
-          const tempInput = document.createElement('textarea');
-          tempInput.value = val;
-          tempInput.setAttribute('readonly', '');
-          tempInput.style.position = 'fixed';
-          tempInput.style.top = '-9999px';
-          document.body.appendChild(tempInput);
-          tempInput.select();
-          document.execCommand('copy');
-          document.body.removeChild(tempInput);
-          showNotice((successLabel || 'متن') + ' کپی شد: ' + val, false);
-        } catch (e) {
-          showNotice('امکان کپی خودکار وجود نداشت؛ متن: ' + val, true);
-        }
-      }
-
-      function readImageFile(file, callback) {
-        if (!file) {
-          callback('');
-          return;
-        }
-        try {
-          const reader = new FileReader();
-          reader.onload = function (ev) {
-            callback(ev && ev.target && ev.target.result ? String(ev.target.result) : '');
-          };
-          reader.onerror = function () {
-            callback('');
-          };
-          reader.readAsDataURL(file);
-        } catch (e) {
-          callback('');
-        }
-      }
-
-      // =====================================================================
-      // ۳. مقداردهی اولیه وضعیت و همگام‌سازی آنلاین Firebase
-      // =====================================================================
-      function initState() {
-        state.properties = loadJsonData(STORAGE_KEYS.PROPERTIES, DEFAULT_PROPERTIES);
-        state.ads = loadJsonData(STORAGE_KEYS.ADS, DEFAULT_ADS);
-        state.phones = loadJsonData(STORAGE_KEYS.PHONES, DEFAULT_OFFICE_PHONES);
-        if (!Array.isArray(state.phones) || state.phones.length === 0) {
-          state.phones = DEFAULT_OFFICE_PHONES.slice();
-        }
-        state.sectionAccess = Object.assign(
-          {},
-          DEFAULT_SECTION_ACCESS,
-          loadJsonData(STORAGE_KEYS.SECTIONS, DEFAULT_SECTION_ACCESS)
-        );
-        state.creds = Object.assign(
-          {},
-          DEFAULT_CREDS,
-          loadJsonData(STORAGE_KEYS.CREDS, DEFAULT_CREDS)
-        );
-        state.logo = Object.assign(
-          {},
-          DEFAULT_LOGO,
-          loadJsonData(STORAGE_KEYS.LOGO, DEFAULT_LOGO)
-        );
-      }
-
-      function updateOnlineBadge(text, isLive) {
-        const txtEl = document.getElementById('onlineSyncText');
-        const dotEl = document.getElementById('onlineSyncDot');
-        if (txtEl) txtEl.textContent = text;
-        if (dotEl) {
-          if (isLive) dotEl.classList.remove('fallback');
-          else dotEl.classList.add('fallback');
-        }
-      }
-
-      function getCloudDocRef(colName, docId) {
-        if (!state.cloudEnabled || !state.fbCtx) return null;
-        return state.fbCtx.dbMod.doc(
-          state.fbCtx.db,
-          'artifacts',
-          state.cloudAppId,
-          'public',
-          'data',
-          colName,
-          docId
-        );
-      }
-
-      function getCloudColRef(colName) {
-        if (!state.cloudEnabled || !state.fbCtx) return null;
-        return state.fbCtx.dbMod.collection(
-          state.fbCtx.db,
-          'artifacts',
-          state.cloudAppId,
-          'public',
-          'data',
-          colName
-        );
-      }
-
-      async function syncCloudDoc(colName, docId, payload) {
-        if (!state.cloudEnabled || !state.fbCtx || !state.fbCtx.user) return;
-        try {
-          const ref = getCloudDocRef(colName, docId);
-          if (ref) {
-            await state.fbCtx.dbMod.setDoc(ref, payload, { merge: true });
-          }
-        } catch (e) {}
-      }
-
-      async function deleteCloudDoc(colName, docId) {
-        if (!state.cloudEnabled || !state.fbCtx || !state.fbCtx.user) return;
-        try {
-          const ref = getCloudDocRef(colName, docId);
-          if (ref) {
-            await state.fbCtx.dbMod.deleteDoc(ref);
-          }
-        } catch (e) {}
-      }
-
-      async function initFirebaseSync() {
-        try {
-          if (typeof window.__firebase_config === 'undefined' || !window.__firebase_config) {
-            updateOnlineBadge('آماده بهره‌برداری آنلاین (حافظه فعال)', false);
-            return;
-          }
-
-          const firebaseConfig =
-            typeof window.__firebase_config === 'string'
-              ? JSON.parse(window.__firebase_config)
-              : window.__firebase_config;
-
-          if (!firebaseConfig || !firebaseConfig.apiKey) {
-            updateOnlineBadge('آماده بهره‌برداری آنلاین (حافظه فعال)', false);
-            return;
-          }
-
-          state.cloudAppId =
-            typeof window.__app_id !== 'undefined' && window.__app_id
-              ? String(window.__app_id)
-              : 'default-app-id';
-
-          const appMod = await import('https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js');
-          const authMod = await import('https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js');
-          const dbMod = await import('https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js');
-
-          const app = appMod.initializeApp(firebaseConfig);
-          const auth = authMod.getAuth(app);
-          const db = dbMod.getFirestore(app);
-
-          if (typeof window.__initial_auth_token !== 'undefined' && window.__initial_auth_token) {
-            await authMod.signInWithCustomToken(auth, window.__initial_auth_token);
+          if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+            await signInWithCustomToken(auth, __initial_auth_token);
           } else {
-            await authMod.signInAnonymously(auth);
+            await signInAnonymously(auth);
           }
 
-          if (!auth.currentUser) {
-            updateOnlineBadge('احراز هویت ابری برقرار نشد', false);
-            return;
-          }
-
-          state.cloudEnabled = true;
-          state.fbCtx = { db: db, dbMod: dbMod, user: auth.currentUser };
-          updateOnlineBadge('آنلاین و همگام‌سازی زنده ابری فعال است', true);
-
-          // شنونده زنده ملکیت‌ها
-          dbMod.onSnapshot(
-            getCloudColRef(CLOUD_CONFIG.collections.PROPERTIES),
-            function (snap) {
-              if (!state.fbCtx || !state.fbCtx.user) return;
-              const items = [];
-              snap.forEach(function (docSnap) {
-                items.push(Object.assign({ id: docSnap.id }, docSnap.data() || {}));
-              });
-              if (items.length > 0) {
-                state.properties = items;
-                saveJsonData(STORAGE_KEYS.PROPERTIES, state.properties);
-              } else {
-                state.properties.forEach(function (p) {
-                  syncCloudDoc(CLOUD_CONFIG.collections.PROPERTIES, String(p.id), p);
-                });
-              }
-              renderAllDynamicViews();
-            },
-            function () {}
-          );
-
-          // شنونده زنده تبلیغات
-          dbMod.onSnapshot(
-            getCloudColRef(CLOUD_CONFIG.collections.ADS),
-            function (snap) {
-              if (!state.fbCtx || !state.fbCtx.user) return;
-              const items = [];
-              snap.forEach(function (docSnap) {
-                const d = docSnap.data() || {};
-                items.push(Object.assign({ id: docSnap.id, active: d.active !== false }, d));
-              });
-              if (items.length > 0) {
-                state.ads = items;
-                saveJsonData(STORAGE_KEYS.ADS, state.ads);
-              } else {
-                state.ads.forEach(function (ad) {
-                  syncCloudDoc(CLOUD_CONFIG.collections.ADS, String(ad.id), ad);
-                });
-              }
-              renderAllDynamicViews();
-            },
-            function () {}
-          );
-
-          // شنونده زنده شماره‌های تماس دفتر
-          dbMod.onSnapshot(
-            getCloudDocRef(CLOUD_CONFIG.collections.PHONES, 'main'),
-            function (snap) {
-              if (!state.fbCtx || !state.fbCtx.user) return;
-              if (snap.exists() && Array.isArray(snap.data().list) && snap.data().list.length > 0) {
-                state.phones = snap.data().list.map(function (n) { return String(n).trim(); }).filter(Boolean);
-                saveJsonData(STORAGE_KEYS.PHONES, state.phones);
-                renderAllDynamicViews();
-              } else {
-                syncCloudDoc(CLOUD_CONFIG.collections.PHONES, 'main', { list: state.phones });
-              }
-            },
-            function () {}
-          );
-
-          // شنونده زنده وضعیت بخش‌ها
-          dbMod.onSnapshot(
-            getCloudDocRef(CLOUD_CONFIG.collections.SECTIONS, 'main'),
-            function (snap) {
-              if (!state.fbCtx || !state.fbCtx.user) return;
-              if (snap.exists() && snap.data().access && typeof snap.data().access === 'object') {
-                state.sectionAccess = Object.assign({}, DEFAULT_SECTION_ACCESS, snap.data().access);
-                saveJsonData(STORAGE_KEYS.SECTIONS, state.sectionAccess);
-                renderAllDynamicViews();
-              } else {
-                syncCloudDoc(CLOUD_CONFIG.collections.SECTIONS, 'main', { access: state.sectionAccess });
-              }
-            },
-            function () {}
-          );
-
-          // شنونده زنده تنظیمات لوگو
-          dbMod.onSnapshot(
-            getCloudDocRef(CLOUD_CONFIG.collections.LOGO, 'main'),
-            function (snap) {
-              if (!state.fbCtx || !state.fbCtx.user) return;
-              if (snap.exists() && snap.data().config && typeof snap.data().config === 'object') {
-                state.logo = Object.assign({}, DEFAULT_LOGO, snap.data().config);
-                saveJsonData(STORAGE_KEYS.LOGO, state.logo);
-                renderHeaderLogo();
-              } else {
-                syncCloudDoc(CLOUD_CONFIG.collections.LOGO, 'main', { config: state.logo });
-              }
-            },
-            function () {}
-          );
-
-          // شنونده زنده اعتبار ورود مدیر
-          dbMod.onSnapshot(
-            getCloudDocRef(CLOUD_CONFIG.collections.CREDS, 'admin_auth'),
-            function (snap) {
-              if (!state.fbCtx || !state.fbCtx.user) return;
-              if (snap.exists() && snap.data().username && snap.data().password) {
-                state.creds = {
-                  username: String(snap.data().username),
-                  password: String(snap.data().password)
-                };
-                saveJsonData(STORAGE_KEYS.CREDS, state.creds);
-              } else {
-                syncCloudDoc(CLOUD_CONFIG.collections.CREDS, 'admin_auth', {
-                  username: state.creds.username,
-                  password: state.creds.password
-                });
-              }
-            },
-            function () {}
-          );
-        } catch (err) {
-          updateOnlineBadge('آماده بهره‌برداری آنلاین (حافظه فعال)', false);
+          state.user = auth.currentUser;
+          state.dbReady = true;
+          setupRealtimeListeners();
         }
+      } catch (err) {
+        console.warn("Running in standalone mode:", err);
       }
+    }
 
-      // =====================================================================
-      // ۴. رندر لوگوی طبیعت پغمان و شماره‌های تماس دفتر
-      // =====================================================================
-      function renderHeaderLogo() {
-        const wrap = document.getElementById('headerLogoContainer');
-        if (!wrap) return;
+    function setupRealtimeListeners() {
+      if (!db || !state.user) return;
 
-        if (state.logo && state.logo.customImage) {
-          wrap.innerHTML = '<img src="' + escapeHtml(state.logo.customImage) + '" alt="لوگوی سفارشی دفتر" />';
-          return;
+      // ۱. گوش دادن به تغییرات ملکیت‌ها
+      const propsCol = collection(db, 'artifacts', appId, 'public', 'data', 'properties');
+      onSnapshot(propsCol, (snapshot) => {
+        if (!snapshot.empty) {
+          const list = [];
+          snapshot.forEach(docSnap => {
+            list.push({ id: docSnap.id, ...docSnap.data() });
+          });
+          list.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+          state.properties = list;
         }
+        renderAll();
+      }, (err) => console.error("Properties listener error:", err));
 
-        const mColor = escapeHtml((state.logo && state.logo.mountainColor) || DEFAULT_LOGO.mountainColor);
-        const gColor = escapeHtml((state.logo && state.logo.meadowColor) || DEFAULT_LOGO.meadowColor);
-        const sColor = escapeHtml((state.logo && state.logo.starColor) || DEFAULT_LOGO.starColor);
-
-        wrap.innerHTML =
-          '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="لوگوی طبیعت پغمان">' +
-          '<rect x="0" y="0" width="100" height="100" rx="14" fill="#eef6f9" />' +
-          '<!-- کوه‌های برفی پغمان -->' +
-          '<polygon points="6,64 38,24 68,64" fill="' + mColor + '" />' +
-          '<polygon points="38,24 29,36 35,39 39,34 43,39 48,36" fill="#ffffff" />' +
-          '<polygon points="42,64 70,32 95,64" fill="#3a7563" />' +
-          '<!-- دشت سرسبز و درختان پغمان -->' +
-          '<path d="M0,62 Q50,52 100,62 L100,100 L0,100 Z" fill="' + gColor + '" />' +
-          '<circle cx="18" cy="65" r="7" fill="#1b5e20" />' +
-          '<circle cx="83" cy="66" r="7" fill="#1b5e20" />' +
-          '<!-- ساختمان نماد معاملات و املاک -->' +
-          '<rect x="37" y="54" width="26" height="22" rx="2" fill="#ffffff" stroke="#14452f" stroke-width="2" />' +
-          '<rect x="42" y="64" width="5" height="12" fill="#14452f" />' +
-          '<rect x="52" y="59" width="6" height="6" fill="#2c5e8a" />' +
-          '<!-- ستاره طلایی اعتماد -->' +
-          '<polygon points="50,6 53.5,13.5 61.5,14.5 55.7,20 57.2,28 50,24 42.8,28 44.3,20 38.5,14.5 46.5,13.5" fill="' + sColor + '" stroke="#926c06" stroke-width="1" />' +
-          '</svg>';
-      }
-
-      function buildPhonesButtonsHtml() {
-        return state.phones
-          .map(function (phone) {
-            const safePhone = escapeHtml(phone);
-            return (
-              '<button type="button" class="phone-chip-btn" data-copy-phone="' +
-              safePhone +
-              '">' +
-              '<span>' +
-              safePhone +
-              '</span>' +
-              '<span class="copy-hint">کپی</span>' +
-              '</button>'
-            );
-          })
-          .join('');
-      }
-
-      function renderOfficePhones() {
-        const html = buildPhonesButtonsHtml();
-        const headerEl = document.getElementById('headerPhonesList');
-        const footerEl = document.getElementById('footerPhonesList');
-        const contactEl = document.getElementById('contactSectionPhonesList');
-        const clientPortalEl = document.getElementById('clientPortalPhonesList');
-        if (headerEl) headerEl.innerHTML = html;
-        if (footerEl) footerEl.innerHTML = html;
-        if (contactEl) contactEl.innerHTML = html;
-        if (clientPortalEl) clientPortalEl.innerHTML = html;
-      }
-
-      // =====================================================================
-      // ۵. رندر تبلیغات فعال در نوار بالا، صفحه اصلی و بخش تبلیغات
-      // =====================================================================
-      function getActiveAds() {
-        return state.ads.filter(function (a) {
-          return a.active !== false;
+      // ۲. گوش دادن به پیام‌های مشتریان
+      const msgsCol = collection(db, 'artifacts', appId, 'public', 'data', 'messages');
+      onSnapshot(msgsCol, (snapshot) => {
+        const list = [];
+        snapshot.forEach(docSnap => {
+          list.push({ id: docSnap.id, ...docSnap.data() });
         });
-      }
+        list.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+        state.messages = list;
+        renderAdminMessages();
+      }, (err) => console.error("Messages listener error:", err));
 
-      function renderTopAdBar() {
-        const wrap = document.getElementById('topAdTickerWrap');
-        const txtEl = document.getElementById('topAdTickerText');
-        if (!wrap || !txtEl) return;
-
-        if (!state.sectionAccess.ads) {
-          wrap.classList.add('hidden');
-          return;
-        }
-
-        const activeAds = getActiveAds();
-        if (activeAds.length === 0) {
-          wrap.classList.add('hidden');
-          return;
-        }
-
-        wrap.classList.remove('hidden');
-        const firstAd = activeAds[0];
-        txtEl.innerHTML =
-          '<span class="ad-pill">تبلیغات فعال</span>' +
-          '<strong>' +
-          escapeHtml(firstAd.title) +
-          ':</strong> ' +
-          escapeHtml(firstAd.text);
-      }
-
-      function renderAdsSection() {
-        const grid = document.getElementById('publicAdsListGrid');
-        if (!grid) return;
-        const activeAds = getActiveAds();
-        if (activeAds.length === 0) {
-          grid.innerHTML = '<p class="section-desc">در حال حاضر آگهی تبلیغاتی فعالی منتشر نشده است.</p>';
-          return;
-        }
-        grid.innerHTML = activeAds
-          .map(function (ad) {
-            return (
-              '<div class="ad-card">' +
-              '<h4 class="ad-card-title">' +
-              escapeHtml(ad.title) +
-              '</h4>' +
-              '<p class="ad-card-text">' +
-              escapeHtml(ad.text) +
-              '</p>' +
-              '</div>'
-            );
-          })
-          .join('');
-      }
-
-      // =====================================================================
-      // ۶. رندر کارت ملکیت در جستجوی عمومی (با مخفی‌سازی شماره مالک و نمایش دفتر)
-      // =====================================================================
-      function getApprovedProperties() {
-        return state.properties.filter(function (p) {
-          return p.approved !== false;
-        });
-      }
-
-      function renderPublicPropertyCard(prop) {
-        const photoHtml = prop.propertyImage
-          ? '<img src="' + escapeHtml(prop.propertyImage) + '" alt="' + escapeHtml(prop.title) + '" class="prop-photo" />'
-          : '';
-
-        const deedPhotoHtml = prop.deedImage
-          ? '<p class="prop-meta-text" style="color:var(--primary-dark); font-weight:700;">تصویر قباله ضمیمه شده است</p>'
-          : '';
-
-        return (
-          '<article class="prop-card">' +
-          '<div>' +
-          photoHtml +
-          '<div class="prop-card-top" style="margin-top:10px;">' +
-          '<h4 class="prop-title">' +
-          escapeHtml(prop.title) +
-          '</h4>' +
-          '<span class="tag">کد: ' +
-          escapeHtml(prop.id) +
-          '</span>' +
-          '</div>' +
-          '<div class="tags-row">' +
-          '<span class="tag">نوع ملکیت: ' +
-          escapeHtml(prop.propertyType) +
-          '</span>' +
-          '<span class="tag deal">نوع معامله: ' +
-          escapeHtml(prop.dealType) +
-          '</span>' +
-          '<span class="tag deed">قباله: ' +
-          escapeHtml(prop.deedType) +
-          '</span>' +
-          '</div>' +
-          '<p class="prop-meta-text"><strong>موقعیت:</strong> ' +
-          escapeHtml(prop.location) +
-          '</p>' +
-          (prop.price
-            ? '<p class="prop-meta-text"><strong>قیمت / مبلغ:</strong> ' + escapeHtml(prop.price) + '</p>'
-            : '') +
-          (prop.description
-            ? '<p class="prop-meta-text" style="color:var(--text-muted);">' + escapeHtml(prop.description) + '</p>'
-            : '') +
-          deedPhotoHtml +
-          '</div>' +
-          '<div class="prop-office-contact">' +
-          '<strong>شماره تماس مالک محرمانه است — برای هماهنگی با دفتر تماس بگیرید:</strong>' +
-          '<div class="phones-list">' +
-          buildPhonesButtonsHtml() +
-          '</div>' +
-          '</div>' +
-          '</article>'
-        );
-      }
-
-      function renderPublicSearch() {
-        const grid = document.getElementById('publicSearchResultsGrid');
-        const countEl = document.getElementById('searchResultCountText');
-        if (!grid) return;
-
-        const kwEl = document.getElementById('searchKeywordInput');
-        const pTypeEl = document.getElementById('filterPropType');
-        const dTypeEl = document.getElementById('filterDealType');
-        const deedEl = document.getElementById('filterDeedType');
-
-        const keyword = kwEl ? kwEl.value.trim().toLowerCase() : '';
-        const propTypeVal = pTypeEl ? pTypeEl.value : '';
-        const dealTypeVal = dTypeEl ? dTypeEl.value : '';
-        const deedTypeVal = deedEl ? deedEl.value : '';
-
-        const approved = getApprovedProperties();
-        const filtered = approved.filter(function (p) {
-          if (propTypeVal && p.propertyType !== propTypeVal) return false;
-          if (dealTypeVal && p.dealType !== dealTypeVal) return false;
-          if (deedTypeVal && p.deedType !== deedTypeVal) return false;
-          if (keyword) {
-            const hay = [
-              p.id,
-              p.title,
-              p.propertyType,
-              p.dealType,
-              p.deedType,
-              p.location,
-              p.price,
-              p.description
-            ]
-              .join(' ')
-              .toLowerCase();
-            if (hay.indexOf(keyword) === -1) return false;
+      // ۳. گوش دادن به تنظیمات سایت و اعتبارنامه مدیر
+      const configDoc = doc(db, 'artifacts', appId, 'public', 'data', 'config', 'main');
+      onSnapshot(configDoc, (docSnap) => {
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          if (data.settings) {
+            state.settings = { ...DEFAULT_SETTINGS, ...data.settings };
+            applySiteSettings();
           }
-          return true;
-        });
-
-        if (countEl) {
-          countEl.textContent = 'تعداد ملکیت‌های یافت‌شده در جستجوی عمومی: ' + filtered.length + ' مورد';
-        }
-
-        if (filtered.length === 0) {
-          grid.innerHTML =
-            '<div class="section-card" style="grid-column:1/-1; text-align:center;">هیچ ملکیتی مطابق با فیلترهای انتخاب‌شده یافت نشد.</div>';
-          return;
-        }
-
-        grid.innerHTML = filtered.map(renderPublicPropertyCard).join('');
-      }
-
-      function renderHomeSection() {
-        const statsGrid = document.getElementById('homeStatsGrid');
-        const latestGrid = document.getElementById('homeLatestPropsGrid');
-        const adsGrid = document.getElementById('homeActiveAdsGrid');
-
-        const approved = getApprovedProperties();
-        const activeAds = getActiveAds();
-
-        if (statsGrid) {
-          statsGrid.innerHTML =
-            '<div class="stat-box"><div class="stat-label">ملکیت‌های فعال در جستجو</div><div class="stat-value">' +
-            approved.length +
-            '</div></div>' +
-            '<div class="stat-box" style="border-right-color:var(--accent);"><div class="stat-label">آگهی‌های تبلیغاتی فعال</div><div class="stat-value">' +
-            activeAds.length +
-            '</div></div>' +
-            '<div class="stat-box"><div class="stat-label">شماره‌های تماس رسمی دفتر</div><div class="stat-value">' +
-            state.phones.length +
-            '</div></div>' +
-            '<div class="stat-box" style="border-right-color:#2c5e8a;"><div class="stat-label">حریم خصوصی مالکین</div><div class="stat-value" style="font-size:1rem;">محرمانه نزد مدیر</div></div>';
-        }
-
-        if (latestGrid) {
-          if (approved.length === 0) {
-            latestGrid.innerHTML = '<p class="section-desc">هنوز ملکیتی در لیست عمومی ثبت نشده است.</p>';
-          } else {
-            latestGrid.innerHTML = approved.slice(0, 4).map(renderPublicPropertyCard).join('');
+          if (data.adminCreds) {
+            state.adminCreds = data.adminCreds;
           }
         }
+      }, (err) => console.error("Config listener error:", err));
+    }
 
-        if (adsGrid) {
-          if (activeAds.length === 0) {
-            adsGrid.innerHTML = '<p class="section-desc">در حال حاضر تبلیغ فعالی وجود ندارد.</p>';
-          } else {
-            adsGrid.innerHTML = activeAds
-              .slice(0, 4)
-              .map(function (ad) {
-                return (
-                  '<div class="ad-card"><h4 class="ad-card-title">' +
-                  escapeHtml(ad.title) +
-                  '</h4><p class="ad-card-text">' +
-                  escapeHtml(ad.text) +
-                  '</p></div>'
-                );
-              })
-              .join('');
-          }
-        }
-      }
+    // ==================== توابع کمکی و نوتیفیکیشن ====================
+    window.showToast = function(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const bgClass = type === 'error' ? 'bg-red-700 border-red-400' : 'bg-navy-900 border-gold-500';
+      const iconClass = type === 'error' ? 'fa-circle-exclamation text-red-300' : 'fa-circle-check text-gold-400';
+      
+      toast.className = `${bgClass} text-white border-2 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs sm:text-sm font-bold pointer-events-auto transition-all duration-300`;
+      toast.innerHTML = `<i class="fa-solid ${iconClass} text-lg"></i><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    };
 
-      // =====================================================================
-      // ۷. جابه‌جایی بخش‌ها، جایگذاری نمای اختصاصی مشتری و کنترل دسترسی مدیر
-      // =====================================================================
-      function placeClientPortalModules() {
-        const regFormCard = document.getElementById('registerFormContainer');
-        const searchCard = document.getElementById('publicSearchContainer');
-        const regSection = document.getElementById('sec-register');
-        const searchSection = document.getElementById('sec-search');
-        const portalRegSlot = document.getElementById('clientPortalRegisterSlot');
-        const portalSearchSlot = document.getElementById('clientPortalSearchSlot');
+    window.copyTextToClipboard = function(text, successMsg = 'لینک با موفقیت کاپی شد!') {
+      const tempInput = document.createElement('input');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(successMsg);
+    };
 
-        if (!regFormCard || !searchCard || !regSection || !searchSection || !portalRegSlot || !portalSearchSlot) {
-          return;
-        }
+    window.copyCurrentUrl = function(msg) {
+      copyTextToClipboard(window.location.href, msg);
+    };
 
-        if (state.activeSection === 'client-portal') {
-          if (regFormCard.parentElement !== portalRegSlot) {
-            portalRegSlot.appendChild(regFormCard);
-          }
-          if (searchCard.parentElement !== portalSearchSlot) {
-            portalSearchSlot.appendChild(searchCard);
-          }
+    window.copySectionLink = function(route, sectionTitle) {
+      const baseUrl = window.location.href.split('#')[0];
+      const fullLink = `${baseUrl}#${route}`;
+      copyTextToClipboard(fullLink, `لینک بخش «${sectionTitle}» کاپی شد! می‌توانید برای مشتریان ارسال کنید.`);
+    };
+
+    window.copyPropertyLink = function(propId, propCode) {
+      const baseUrl = window.location.href.split('#')[0];
+      const fullLink = `${baseUrl}#property=${propId}`;
+      copyTextToClipboard(fullLink, `لینک مستقیم ملکیت کد #${propCode} کاپی شد! آماده ارسال به مشتری.`);
+    };
+
+    // ==================== مسیریابی لینک‌های جداگانه (#hash) ====================
+    window.navigateTo = function(route) {
+      const validRoutes = ['home', 'properties', 'register', 'contact', 'admin'];
+      if (!validRoutes.includes(route)) route = 'home';
+
+      document.querySelectorAll('.route-section').forEach(sec => sec.classList.add('hidden'));
+      const targetSec = document.getElementById(`section-${route}`);
+      if (targetSec) targetSec.classList.remove('hidden');
+
+      document.querySelectorAll('.nav-tab').forEach(tab => {
+        if (tab.dataset.route === route) {
+          tab.classList.add('active');
         } else {
-          if (regFormCard.parentElement !== regSection) {
-            regSection.appendChild(regFormCard);
-          }
-          if (searchCard.parentElement !== searchSection) {
-            searchSection.appendChild(searchCard);
-          }
+          tab.classList.remove('active');
         }
+      });
+
+      if (window.location.hash !== `#${route}` && !window.location.hash.startsWith('#property=')) {
+        history.replaceState(null, '', `#${route}`);
       }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
-      function renderDisabledSectionMessage(sectionKey) {
-        const meta = SECTION_META[sectionKey] || { label: 'این بخش', code: '' };
-        return (
-          '<div class="disabled-section-box">' +
-          '<h3 style="margin:0 0 8px 0;">بخش «' +
-          escapeHtml(meta.label) +
-          '» توسط مدیریت غیرفعال شده است</h3>' +
-          '<p style="margin:0 0 14px 0;">برای کسب اطلاعات بیشتر یا پیگیری امور با شماره‌های رسمی دفتر تماس بگیرید.</p>' +
-          '<div class="phones-list" style="justify-content:center;">' +
-          buildPhonesButtonsHtml() +
-          '</div>' +
-          '</div>'
-        );
+    function handleHashChange() {
+      const hash = window.location.hash.replace('#', '');
+      if (hash.startsWith('property=')) {
+        const propId = hash.split('=')[1];
+        navigateTo('properties');
+        setTimeout(() => openPropertyModal(propId), 200);
+      } else if (hash) {
+        navigateTo(hash);
+      } else {
+        navigateTo('home');
       }
+    }
 
-      function switchSection(sectionKey) {
-        if (!Object.prototype.hasOwnProperty.call(SECTION_META, sectionKey)) {
-          sectionKey = 'home';
-        }
+    // ==================== اعمال تنظیمات ظاهری و محتوایی سایت ====================
+    function applySiteSettings() {
+      const s = state.settings;
+      document.documentElement.style.setProperty('--bg-main', s.bgColor);
+      document.documentElement.style.setProperty('--primary-navy', s.navyColor);
+      document.body.style.backgroundColor = s.bgColor;
 
-        state.activeSection = sectionKey;
+      document.getElementById('site-main-title').textContent = s.mainTitle;
+      document.getElementById('site-sub-title').textContent = s.subTitle;
+      document.getElementById('top-announcement').textContent = s.announcement;
+      document.getElementById('hero-heading').textContent = s.heroHeading;
+      document.getElementById('hero-desc').textContent = s.heroDesc;
 
-        // به‌روزرسانی وضعیت دکمه‌های منو
-        document.querySelectorAll('.nav-btn[data-nav]').forEach(function (btn) {
-          if (btn.getAttribute('data-nav') === sectionKey) {
-            btn.classList.add('active');
+      // پر کردن فیلدهای فرم تنظیمات در پنل مدیریت
+      document.getElementById('set-main-title').value = s.mainTitle;
+      document.getElementById('set-sub-title').value = s.subTitle;
+      document.getElementById('set-announcement').value = s.announcement;
+      document.getElementById('set-hero-heading').value = s.heroHeading;
+      document.getElementById('set-hero-desc').value = s.heroDesc;
+      document.getElementById('set-bg-color').value = s.bgColor;
+      document.getElementById('set-navy-color').value = s.navyColor;
+      document.getElementById('set-phones').value = s.phones;
+
+      // رندر شماره‌های تماس در هدر، صفحه تماس و فوتر
+      const phoneList = s.phones.split('|').map(p => p.trim()).filter(Boolean);
+      
+      const headerPhonesEl = document.getElementById('header-phones-list');
+      headerPhonesEl.innerHTML = phoneList.map(ph => `
+        <a href="tel:${ph}" class="flex items-center justify-center gap-1.5 bg-navy-900 hover:bg-gold-500 hover:text-navy-950 text-gold-300 px-2.5 py-1.5 rounded-lg border border-gold-500/30 transition">
+          <i class="fa-solid fa-phone text-[11px]"></i>
+          <span>${ph}</span>
+        </a>
+      `).join('');
+
+      const contactPhonesEl = document.getElementById('contact-phones-cards');
+      contactPhonesEl.innerHTML = phoneList.map(ph => `
+        <div class="bg-navy-950/90 border border-gold-500/40 p-3 rounded-2xl flex items-center justify-between gap-2">
+          <span class="font-black text-gold-300 text-base" dir="ltr">${ph}</span>
+          <div class="flex items-center gap-2">
+            <a href="tel:${ph}" class="bg-gold-500 hover:bg-gold-400 text-navy-950 px-3 py-1.5 rounded-xl text-xs font-extrabold flex items-center gap-1">
+              <i class="fa-solid fa-phone"></i> تماس
+            </a>
+            <a href="https://wa.me/93${ph.replace(/^0/, '')}" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-xl text-xs font-extrabold flex items-center gap-1">
+              <i class="fa-brands fa-whatsapp"></i> واتساپ
+            </a>
+          </div>
+        </div>
+      `).join('');
+
+      document.getElementById('footer-phones').innerHTML = phoneList.map(ph => `
+        <div><a href="tel:${ph}" class="hover:text-white transition"><i class="fa-solid fa-phone ml-1.5"></i>${ph}</a></div>
+      `).join('');
+    }
+
+    // ==================== آپلود و فشرده‌سازی تصویر ====================
+    let compressedPropertyPhoto = "";
+    let compressedDeedPhoto = "";
+
+    window.previewImageFile = function(input, previewImgId) {
+      const file = input.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.createElement('canvas');
+          const MAX_WIDTH = 800;
+          let width = img.width;
+          let height = img.height;
+          if (width > MAX_WIDTH) {
+            height *= MAX_WIDTH / width;
+            width = MAX_WIDTH;
+          }
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.72);
+
+          document.getElementById(previewImgId).src = dataUrl;
+          document.getElementById(`${previewImgId}-box`).classList.remove('hidden');
+
+          if (previewImgId === 'preview-prop-img') {
+            compressedPropertyPhoto = dataUrl;
           } else {
-            btn.classList.remove('active');
+            compressedDeedPhoto = dataUrl;
           }
-        });
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    };
 
-        // نمایش بخش فعال و مخفی کردن سایر بخش‌ها
-        document.querySelectorAll('.app-section').forEach(function (sec) {
-          sec.classList.add('hidden');
-        });
-
-        const targetSec = document.getElementById('sec-' + sectionKey);
-        if (targetSec) {
-          targetSec.classList.remove('hidden');
-        }
-
-        // اگر مدیر بخش خاصی را غیرفعال کرده باشد (به‌جز خود پنل مدیریت برای مدیر)
-        const existingDisabledNote = targetSec ? targetSec.querySelector('.temp-disabled-overlay') : null;
-        if (existingDisabledNote) {
-          existingDisabledNote.remove();
-        }
-
-        if (sectionKey !== 'admin' && state.sectionAccess[sectionKey] === false && targetSec) {
-          const noticeDiv = document.createElement('div');
-          noticeDiv.className = 'temp-disabled-overlay section-card';
-          noticeDiv.innerHTML = renderDisabledSectionMessage(sectionKey);
-          targetSec.insertBefore(noticeDiv, targetSec.firstChild);
-        }
-
-        placeClientPortalModules();
-        renderAllDynamicViews();
+    // ==================== ثبت ملکیت جدید ====================
+    window.handlePropertySubmit = async function(e) {
+      e.preventDefault();
+      if (!compressedPropertyPhoto) {
+        showToast('لطفاً عکس ملکیت را انتخاب نمایید (ضروری است).', 'error');
+        return;
       }
 
-      // =====================================================================
-      // ۸. رندر پنل مدیریت (ملکیت‌ها با شماره مالک، تبلیغات، لوگو، بخش‌ها، امنیت)
-      // =====================================================================
-      function syncAdminInputsFromState() {
-        const mInp = document.getElementById('mountainColorInput');
-        const gInp = document.getElementById('meadowColorInput');
-        const sInp = document.getElementById('starColorInput');
-        const phArea = document.getElementById('officePhonesTextarea');
-        const uInp = document.getElementById('newAdminUsername');
+      const newCode = String(100 + state.properties.length + 1);
+      const newProp = {
+        code: newCode,
+        customerName: document.getElementById('reg-customer-name').value.trim(),
+        customerPhone: document.getElementById('reg-customer-phone').value.trim(),
+        propertyType: document.getElementById('reg-property-type').value,
+        transactionType: document.getElementById('reg-transaction-type').value,
+        price: document.getElementById('reg-price').value.trim(),
+        currency: document.getElementById('reg-currency').value,
+        deedType: document.getElementById('reg-deed-type').value,
+        province: document.getElementById('reg-province').value,
+        address: document.getElementById('reg-address').value.trim(),
+        notes: document.getElementById('reg-notes').value.trim(),
+        propertyPhoto: compressedPropertyPhoto,
+        deedPhoto: compressedDeedPhoto || "",
+        createdAt: Date.now()
+      };
 
-        if (mInp) mInp.value = (state.logo && state.logo.mountainColor) || DEFAULT_LOGO.mountainColor;
-        if (gInp) gInp.value = (state.logo && state.logo.meadowColor) || DEFAULT_LOGO.meadowColor;
-        if (sInp) sInp.value = (state.logo && state.logo.starColor) || DEFAULT_LOGO.starColor;
-        if (phArea) phArea.value = state.phones.join('\n');
-        if (uInp) uInp.value = state.creds.username;
+      try {
+        if (db && state.user) {
+          const propsCol = collection(db, 'artifacts', appId, 'public', 'data', 'properties');
+          await addDoc(propsCol, newProp);
+        } else {
+          newProp.id = `PROP-${Date.now()}`;
+          state.properties.unshift(newProp);
+          renderAll();
+        }
+
+        e.target.reset();
+        compressedPropertyPhoto = "";
+        compressedDeedPhoto = "";
+        document.getElementById('preview-prop-img-box').classList.add('hidden');
+        document.getElementById('preview-deed-img-box').classList.add('hidden');
+
+        showToast(`ملکیت شما با کد #${newCode} با موفقیت در سامانه ثبت شد!`);
+        navigateTo('properties');
+      } catch (err) {
+        console.error(err);
+        showToast('خطا در ثبت ملکیت. لطفاً دوباره تلاش کنید.', 'error');
+      }
+    };
+
+    // ==================== ارسال پیام از بخش تماس با مشتریان ====================
+    window.handleContactSubmit = async function(e) {
+      e.preventDefault();
+      const msgObj = {
+        name: document.getElementById('contact-name').value.trim(),
+        phone: document.getElementById('contact-phone').value.trim(),
+        subject: document.getElementById('contact-subject').value.trim() || "استعلام عمومی",
+        message: document.getElementById('contact-message').value.trim(),
+        createdAt: Date.now()
+      };
+
+      try {
+        if (db && state.user) {
+          const msgsCol = collection(db, 'artifacts', appId, 'public', 'data', 'messages');
+          await addDoc(msgsCol, msgObj);
+        } else {
+          msgObj.id = `MSG-${Date.now()}`;
+          state.messages.unshift(msgObj);
+          renderAdminMessages();
+        }
+        e.target.reset();
+        showToast('پیام شما با موفقیت به دفتر ارسال شد. همکاران ما به زودی تماس می‌گیرند.');
+      } catch (err) {
+        console.error(err);
+        showToast('خطا در ارسال پیام.', 'error');
+      }
+    };
+
+    // ==================== رندر کارت‌ها و جدول عمومی (بدون نمایش شماره تلفن مشتری!) ====================
+    function createPropertyCardHTML(prop) {
+      return `
+        <article class="bg-white rounded-3xl border border-slate-200 hover:border-gold-500 shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
+          <div class="relative h-52 bg-navy-900 overflow-hidden">
+            <img src="${prop.propertyPhoto}" alt="${prop.propertyType} در ${prop.province}" onerror="this.src='https://placehold.co/600x400/0B192C/D4AF37?text=ستاره+اعتماد'" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+            <div class="absolute top-3 right-3 flex flex-wrap gap-1.5">
+              <span class="bg-navy-900/90 text-gold-400 border border-gold-500/60 px-3 py-1 rounded-xl text-xs font-extrabold">
+                ${prop.transactionType}
+              </span>
+              <span class="bg-gold-500 text-navy-950 px-3 py-1 rounded-xl text-xs font-black">
+                ${prop.propertyType}
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-navy-950/90 text-white px-2.5 py-1 rounded-lg text-xs font-bold border border-white/20">
+              کد: #${prop.code}
+            </div>
+          </div>
+
+          <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold text-slate-500 flex items-center gap-1">
+                  <i class="fa-solid fa-location-dot text-gold-600"></i>
+                  ولایت ${prop.province}
+                </span>
+                <span class="text-xs font-bold bg-slate-100 text-navy-900 px-2.5 py-1 rounded-lg">
+                  <i class="fa-solid fa-file-contract text-gold-600 ml-1"></i>${prop.deedType}
+                </span>
+              </div>
+
+              <h4 class="font-black text-navy-900 text-base line-clamp-1 mb-1">
+                ${prop.propertyType} برای ${prop.transactionType} - ${prop.address}
+              </h4>
+              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                ${prop.notes || 'ثبت‌شده در دفتر رسمی رهنمای معاملات شکرالله ابراهیم خیل'}
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-slate-500 font-semibold">قیمت تعیین‌شده:</span>
+                <span class="text-base font-black text-emerald-700">${prop.price} ${prop.currency}</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button onclick="openPropertyModal('${prop.id}')" class="flex-grow bg-navy-900 hover:bg-navy-800 text-gold-400 font-bold py-2.5 px-3 rounded-xl text-xs transition cursor-pointer">
+                  <i class="fa-solid fa-eye ml-1"></i> جزئیات و تماس با دفتر
+                </button>
+                <button onclick="copyPropertyLink('${prop.id}', '${prop.code}')" title="کاپی لینک مستقیم این ملکیت" class="bg-gold-500/20 hover:bg-gold-500 text-navy-900 px-3 py-2.5 rounded-xl text-xs font-bold transition cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    window.renderProperties = function() {
+      const keyword = (document.getElementById('filter-keyword')?.value || '').trim().toLowerCase();
+      const province = document.getElementById('filter-province')?.value || '';
+      const type = document.getElementById('filter-type')?.value || '';
+      const transaction = document.getElementById('filter-transaction')?.value || '';
+      const deed = document.getElementById('filter-deed')?.value || '';
+
+      const filtered = state.properties.filter(p => {
+        const matchKey = !keyword || 
+          (p.address && p.address.toLowerCase().includes(keyword)) ||
+          (p.notes && p.notes.toLowerCase().includes(keyword)) ||
+          (p.customerName && p.customerName.toLowerCase().includes(keyword)) ||
+          (p.code && p.code.includes(keyword));
+        const matchProv = !province || p.province === province;
+        const matchType = !type || p.propertyType === type;
+        const matchTrans = !transaction || p.transactionType === transaction;
+        const matchDeed = !deed || p.deedType === deed;
+        return matchKey && matchProv && matchType && matchTrans && matchDeed;
+      });
+
+      document.getElementById('search-results-count').textContent = filtered.length;
+      document.getElementById('stat-total-props').textContent = state.properties.length;
+
+      // رندر کارت‌های صفحه اصلی (۳ مورد اول)
+      const homeGrid = document.getElementById('home-featured-grid');
+      if (homeGrid) {
+        homeGrid.innerHTML = state.properties.slice(0, 3).map(createPropertyCardHTML).join('');
       }
 
-      function renderAdminPropsTable() {
-        const tbody = document.getElementById('adminPropsTableBody');
-        if (!tbody) return;
-
-        if (state.properties.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;">هیچ ملکیتی ثبت نشده است.</td></tr>';
-          return;
-        }
-
-        tbody.innerHTML = state.properties
-          .map(function (p) {
-            const isApproved = p.approved !== false;
-            const imgs = [];
-            if (p.propertyImage) {
-              imgs.push('<img src="' + escapeHtml(p.propertyImage) + '" alt="ملکیت" style="width:52px;height:40px;object-fit:cover;border-radius:4px;display:block;margin-bottom:4px;" />');
-            }
-            if (p.deedImage) {
-              imgs.push('<img src="' + escapeHtml(p.deedImage) + '" alt="قباله" style="width:52px;height:40px;object-fit:cover;border-radius:4px;display:block;" />');
-            }
-            if (imgs.length === 0) {
-              imgs.push('<span style="color:var(--text-muted);font-size:0.78rem;">بدون تصویر</span>');
-            }
-
-            return (
-              '<tr>' +
-              '<td><strong>' +
-              escapeHtml(p.title) +
-              '</strong><br><span style="font-size:0.78rem;color:var(--text-muted);">کد: ' +
-              escapeHtml(p.id) +
-              '</span></td>' +
-              '<td>ملکیت: ' +
-              escapeHtml(p.propertyType) +
-              '<br>معامله: ' +
-              escapeHtml(p.dealType) +
-              '</td>' +
-              '<td>قباله: ' +
-              escapeHtml(p.deedType) +
-              '<br><span style="font-size:0.8rem;">' +
-              escapeHtml(p.location) +
-              '</span></td>' +
-              '<td>' +
-              escapeHtml(p.price || '—') +
-              '</td>' +
-              '<td><strong>نام:</strong> ' +
-              escapeHtml(p.ownerName || '—') +
-              '<br><strong>تلفن:</strong> <span dir="ltr">' +
-              escapeHtml(p.ownerPhone || '—') +
-              '</span></td>' +
-              '<td>' +
-              imgs.join('') +
-              '</td>' +
-              '<td><span class="status-pill ' +
-              (isApproved ? 'approved' : 'pending') +
-              '">' +
-              (isApproved ? 'فعال در جستجو' : 'غیرفعال / در انتظار') +
-              '</span></td>' +
-              '<td style="white-space:nowrap;">' +
-              '<button type="button" class="btn btn-secondary btn-sm" data-toggle-prop-status="' +
-              escapeHtml(p.id) +
-              '" style="margin-left:4px;">' +
-              (isApproved ? 'مخفی کردن' : 'تایید و انتشار') +
-              '</button>' +
-              '<button type="button" class="btn btn-danger btn-sm" data-delete-prop="' +
-              escapeHtml(p.id) +
-              '">حذف</button>' +
-              '</td>' +
-              '</tr>'
-            );
-          })
-          .join('');
+      // رندر کارت‌های بخش جستجو
+      const cardsContainer = document.getElementById('properties-cards-container');
+      if (filtered.length === 0) {
+        cardsContainer.innerHTML = `
+          <div class="col-span-full bg-white rounded-3xl p-10 text-center border border-slate-200">
+            <i class="fa-solid fa-folder-open text-4xl text-slate-300 mb-3"></i>
+            <p class="font-bold text-slate-600">هیچ ملکیتی با این مشخصات یافت نشد.</p>
+          </div>
+        `;
+      } else {
+        cardsContainer.innerHTML = filtered.map(createPropertyCardHTML).join('');
       }
 
-      function renderAdminAdsList() {
-        const wrap = document.getElementById('adminAdsManageList');
-        if (!wrap) return;
+      // رندر جدول جستجو (STRICT PRIVACY: بدون شماره تلفن مشتری!)
+      const tbody = document.getElementById('properties-table-body');
+      tbody.innerHTML = filtered.map(p => `
+        <tr class="hover:bg-slate-50 transition">
+          <td class="p-3">
+            <img src="${p.propertyPhoto}" alt="ملکیت" class="w-14 h-12 object-cover rounded-lg border border-slate-200" />
+          </td>
+          <td class="p-3 font-black text-navy-900">#${p.code}</td>
+          <td class="p-3 font-bold text-slate-800">${p.customerName}</td>
+          <td class="p-3"><span class="bg-gold-500/20 text-navy-900 px-2.5 py-1 rounded-lg font-bold">${p.propertyType}</span></td>
+          <td class="p-3"><span class="bg-navy-900 text-gold-400 px-2.5 py-1 rounded-lg font-bold">${p.transactionType}</span></td>
+          <td class="p-3 font-black text-emerald-700">${p.price} ${p.currency}</td>
+          <td class="p-3 text-slate-600">${p.deedType}</td>
+          <td class="p-3 text-slate-700"><strong>${p.province}</strong> - ${p.address}</td>
+          <td class="p-3 text-center">
+            <div class="flex items-center justify-center gap-1.5">
+              <button onclick="openPropertyModal('${p.id}')" class="bg-navy-900 text-gold-400 px-2.5 py-1.5 rounded-lg font-bold hover:bg-navy-800 cursor-pointer">مشاهده</button>
+              <button onclick="copyPropertyLink('${p.id}', '${p.code}')" title="کاپی لینک ملکیت" class="bg-gold-500 text-navy-950 px-2.5 py-1.5 rounded-lg font-bold hover:bg-gold-400 cursor-pointer">
+                <i class="fa-solid fa-link"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    };
 
-        if (state.ads.length === 0) {
-          wrap.innerHTML = '<p class="section-desc">آگهی‌ای ثبت نشده است.</p>';
-          return;
-        }
+    window.setViewMode = function(mode) {
+      state.viewMode = mode;
+      const cardsEl = document.getElementById('properties-cards-container');
+      const tableEl = document.getElementById('properties-table-container');
+      const btnCards = document.getElementById('btn-view-cards');
+      const btnTable = document.getElementById('btn-view-table');
 
-        wrap.innerHTML = state.ads
-          .map(function (ad) {
-            const isActive = ad.active !== false;
-            return (
-              '<div class="ad-card" style="margin-bottom:10px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px;">' +
-              '<div>' +
-              '<h4 class="ad-card-title">' +
-              escapeHtml(ad.title) +
-              ' <span class="status-pill ' +
-              (isActive ? 'approved' : 'disabled') +
-              '">' +
-              (isActive ? 'فعال' : 'غیرفعال') +
-              '</span></h4>' +
-              '<p class="ad-card-text">' +
-              escapeHtml(ad.text) +
-              '</p>' +
-              '</div>' +
-              '<div style="display:flex; gap:6px;">' +
-              '<button type="button" class="btn btn-secondary btn-sm" data-toggle-ad="' +
-              escapeHtml(ad.id) +
-              '">' +
-              (isActive ? 'غیرفعال کردن' : 'فعال کردن') +
-              '</button>' +
-              '<button type="button" class="btn btn-danger btn-sm" data-delete-ad="' +
-              escapeHtml(ad.id) +
-              '">حذف</button>' +
-              '</div>' +
-              '</div>'
-            );
-          })
-          .join('');
+      if (mode === 'cards') {
+        cardsEl.classList.remove('hidden');
+        tableEl.classList.add('hidden');
+        btnCards.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-navy-900 text-gold-400 transition cursor-pointer";
+        btnTable.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-navy-900 transition cursor-pointer";
+      } else {
+        cardsEl.classList.add('hidden');
+        tableEl.classList.remove('hidden');
+        btnTable.className = "px-3 py-1.5 rounded-lg text-xs font-bold bg-navy-900 text-gold-400 transition cursor-pointer";
+        btnCards.className = "px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-navy-900 transition cursor-pointer";
+      }
+    };
+
+    window.quickFilterTransaction = function(transType) {
+      document.getElementById('filter-transaction').value = transType;
+      navigateTo('properties');
+      renderProperties();
+    };
+
+    window.resetFilters = function() {
+      document.getElementById('filter-keyword').value = '';
+      document.getElementById('filter-province').value = '';
+      document.getElementById('filter-type').value = '';
+      document.getElementById('filter-transaction').value = '';
+      document.getElementById('filter-deed').value = '';
+      renderProperties();
+    };
+
+    // ==================== مودال جزئیات ملکیت (محافظت از حریم خصوصی مالک) ====================
+    window.openPropertyModal = function(propId) {
+      const prop = state.properties.find(p => p.id === propId);
+      if (!prop) return;
+
+      const officePhones = state.settings.phones.split('|').map(p => p.trim()).filter(Boolean);
+      const primaryPhone = officePhones[0] || "0705875878";
+
+      document.getElementById('modal-prop-title').textContent = `ملکیت کد #${prop.code} — ${prop.propertyType} (${prop.transactionType})`;
+      document.getElementById('modal-prop-body').innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div>
+            <img src="${prop.propertyPhoto}" alt="${prop.propertyType}" class="w-full h-64 object-cover rounded-2xl border border-slate-200 shadow" />
+          </div>
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between border-b pb-2">
+              <span class="text-slate-500">نوع ملکیت:</span>
+              <span class="font-black text-navy-900">${prop.propertyType}</span>
+            </div>
+            <div class="flex justify-between border-b pb-2">
+              <span class="text-slate-500">نوع معامله:</span>
+              <span class="font-black text-gold-700">${prop.transactionType}</span>
+            </div>
+            <div class="flex justify-between border-b pb-2">
+              <span class="text-slate-500">قیمت:</span>
+              <span class="font-black text-emerald-700 text-base">${prop.price} ${prop.currency}</span>
+            </div>
+            <div class="flex justify-between border-b pb-2">
+              <span class="text-slate-500">نوع قباله:</span>
+              <span class="font-bold text-navy-900">${prop.deedType}</span>
+            </div>
+            <div class="flex justify-between border-b pb-2">
+              <span class="text-slate-500">ولایت:</span>
+              <span class="font-bold text-navy-900">${prop.province}</span>
+            </div>
+            <div>
+              <span class="text-slate-500 block mb-1">آدرس دقیق:</span>
+              <span class="font-bold text-navy-900">${prop.address}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs sm:text-sm text-slate-700">
+          <strong class="text-navy-900 block mb-1">توضیحات تکمیلی:</strong>
+          ${prop.notes || 'بدون توضیحات اضافی.'}
+        </div>
+
+        <div class="bg-navy-900 text-white p-4 rounded-2xl border border-gold-500/50 flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div class="text-xs text-gold-400 font-bold">جهت بازدید حضوری و انجام معامله با دفتر تماس بگیرید:</div>
+            <div class="text-sm font-black mt-1" dir="ltr">${state.settings.phones}</div>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <a href="tel:${primaryPhone}" class="bg-gold-500 hover:bg-gold-400 text-navy-950 font-black px-4 py-2.5 rounded-xl text-xs flex items-center gap-1.5">
+              <i class="fa-solid fa-phone"></i> تماس با دفتر
+            </a>
+            <button onclick="copyPropertyLink('${prop.id}', '${prop.code}')" class="bg-white/10 hover:bg-white/20 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-share-nodes"></i> اشتراک‌گذاری لینک
+            </button>
+          </div>
+        </div>
+      `;
+
+      const modal = document.getElementById('property-detail-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
+
+    window.closePropertyModal = function() {
+      const modal = document.getElementById('property-detail-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      if (window.location.hash.startsWith('#property=')) {
+        history.replaceState(null, '', '#properties');
+      }
+    };
+
+    // ==================== بخش مدیریت و کنترول (Admin Panel) ====================
+    window.togglePasswordField = function(inputId, btn) {
+      const input = document.getElementById(inputId);
+      const icon = btn.querySelector('i');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+      } else {
+        input.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+      }
+    };
+
+    window.handleAdminLogin = function(e) {
+      e.preventDefault();
+      const user = document.getElementById('login-username').value.trim();
+      const pass = document.getElementById('login-password').value.trim();
+
+      if (user === state.adminCreds.username && pass === state.adminCreds.password) {
+        state.isAdminLoggedIn = true;
+        document.getElementById('admin-login-box').classList.add('hidden');
+        document.getElementById('admin-dashboard').classList.remove('hidden');
+        document.getElementById('admin-current-user-label').textContent = user;
+        document.getElementById('security-current-user-display').textContent = user;
+        document.getElementById('new-admin-username').value = user;
+        renderAdminDashboard();
+        showToast('ورود موفقیت‌آمیز به پنل مدیریت و کنترول!');
+      } else {
+        showToast('نام کاربری یا رمز عبور اشتباه است!', 'error');
+      }
+    };
+
+    window.handleAdminLogout = function() {
+      state.isAdminLoggedIn = false;
+      document.getElementById('admin-login-box').classList.remove('hidden');
+      document.getElementById('admin-dashboard').classList.add('hidden');
+      document.getElementById('login-password').value = '';
+      showToast('از پنل مدیریت خارج شدید.');
+    };
+
+    window.switchAdminTab = function(tabName) {
+      document.querySelectorAll('.admin-panel').forEach(p => p.classList.add('hidden'));
+      document.getElementById(`admin-panel-${tabName}`).classList.remove('hidden');
+
+      document.querySelectorAll('.admin-subtab').forEach(btn => {
+        btn.className = "admin-subtab text-slate-700 hover:bg-slate-100 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer";
+      });
+      const activeBtn = document.getElementById(`admin-tab-${tabName}`);
+      if (activeBtn) {
+        activeBtn.className = "admin-subtab bg-navy-900 text-gold-400 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold cursor-pointer";
+      }
+    };
+
+    function renderAdminDashboard() {
+      if (!state.isAdminLoggedIn) return;
+      
+      // جدول ملکیت‌ها با شماره تلفن محرم مشتری و قباله
+      const tbody = document.getElementById('admin-properties-tbody');
+      tbody.innerHTML = state.properties.map(p => `
+        <tr class="hover:bg-slate-50">
+          <td class="p-3 font-black">#${p.code}</td>
+          <td class="p-3 font-bold text-navy-900">${p.customerName}</td>
+          <td class="p-3 bg-amber-50 font-black text-amber-900" dir="ltr">
+            <a href="tel:${p.customerPhone}" class="underline hover:text-gold-600">${p.customerPhone}</a>
+          </td>
+          <td class="p-3">${p.propertyType} / <strong>${p.transactionType}</strong></td>
+          <td class="p-3 font-bold text-emerald-700">${p.price} ${p.currency}</td>
+          <td class="p-3">
+            ${p.deedType}
+            ${p.deedPhoto ? `<a href="${p.deedPhoto}" target="_blank" class="block text-[11px] text-blue-600 underline mt-0.5">مشاهده عکس قباله</a>` : ''}
+          </td>
+          <td class="p-3">${p.province} - ${p.address}</td>
+          <td class="p-3 text-center">
+            <div class="flex items-center justify-center gap-1.5">
+              <button onclick="copyPropertyLink('${p.id}', '${p.code}')" class="bg-gold-500 text-navy-950 px-2.5 py-1.5 rounded-lg font-bold hover:bg-gold-400 cursor-pointer" title="ارسال لینک به مشتری">
+                <i class="fa-solid fa-share-nodes"></i> لینک
+              </button>
+              <button onclick="deleteProperty('${p.id}')" class="bg-red-600 text-white px-2.5 py-1.5 rounded-lg font-bold hover:bg-red-700 cursor-pointer" title="حذف ملکیت">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+
+      renderAdminMessages();
+    }
+
+    function renderAdminMessages() {
+      document.getElementById('admin-msg-badge').textContent = state.messages.length;
+      const listEl = document.getElementById('admin-messages-list');
+      if (!listEl) return;
+
+      if (state.messages.length === 0) {
+        listEl.innerHTML = `<div class="col-span-full text-center text-slate-500 py-8 text-sm">تاکنون پیامی ثبت نشده است.</div>`;
+        return;
       }
 
-      function renderAdminSectionsControl() {
-        const wrap = document.getElementById('adminSectionsControlList');
-        if (!wrap) return;
+      listEl.innerHTML = state.messages.map(m => `
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-black text-navy-900 text-sm">${m.name}</span>
+            <a href="tel:${m.phone}" dir="ltr" class="bg-emerald-600 text-white px-2.5 py-1 rounded-lg text-xs font-bold">${m.phone}</a>
+          </div>
+          <div class="text-xs font-bold text-gold-700">موضوع: ${m.subject}</div>
+          <p class="text-xs text-slate-700 leading-relaxed bg-white p-3 rounded-xl border border-slate-200">${m.message}</p>
+        </div>
+      `).join('');
+    }
 
-        const keys = Object.keys(SECTION_META);
-        wrap.innerHTML = keys
-          .map(function (k) {
-            const meta = SECTION_META[k];
-            const enabled = state.sectionAccess[k] !== false;
-            return (
-              '<div class="official-path-bar">' +
-              '<div>' +
-              '<strong>' +
-              escapeHtml(meta.label) +
-              '</strong> ' +
-              '<span class="status-pill ' +
-              (enabled ? 'approved' : 'disabled') +
-              '">' +
-              (enabled ? 'فعال' : 'غیرفعال') +
-              '</span>' +
-              '<div style="margin-top:6px;"><span class="official-path-code">' +
-              escapeHtml(meta.code) +
-              '</span></div>' +
-              '</div>' +
-              '<div style="display:flex; flex-wrap:wrap; gap:6px;">' +
-              '<button type="button" class="btn btn-secondary btn-sm" data-copy-path="' +
-              escapeHtml(k) +
-              '">کپی شناسه</button>' +
-              (k !== 'admin'
-                ? '<button type="button" class="btn ' +
-                  (enabled ? 'btn-danger' : 'btn-primary') +
-                  ' btn-sm" data-toggle-section="' +
-                  escapeHtml(k) +
-                  '">' +
-                  (enabled ? 'غیرفعال کردن بخش' : 'فعال کردن بخش') +
-                  '</button>'
-                : '') +
-              '</div>' +
-              '</div>'
-            );
-          })
-          .join('');
+    window.deleteProperty = async function(propId) {
+      try {
+        if (db && state.user && !propId.startsWith('PROP-')) {
+          await deleteDoc(doc(db, 'artifacts', appId, 'public', 'data', 'properties', propId));
+        } else {
+          state.properties = state.properties.filter(p => p.id !== propId);
+          renderAll();
+        }
+        showToast('ملکیت مورد نظر حذف شد.');
+      } catch (err) {
+        console.error(err);
+        showToast('خطا در حذف ملکیت.', 'error');
+      }
+    };
+
+    window.handleSaveSettings = async function(e) {
+      e.preventDefault();
+      const updatedSettings = {
+        mainTitle: document.getElementById('set-main-title').value.trim(),
+        subTitle: document.getElementById('set-sub-title').value.trim(),
+        announcement: document.getElementById('set-announcement').value.trim(),
+        heroHeading: document.getElementById('set-hero-heading').value.trim(),
+        heroDesc: document.getElementById('set-hero-desc').value.trim(),
+        bgColor: document.getElementById('set-bg-color').value,
+        navyColor: document.getElementById('set-navy-color').value,
+        phones: document.getElementById('set-phones').value.trim()
+      };
+
+      state.settings = updatedSettings;
+      applySiteSettings();
+
+      if (db && state.user) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'config', 'main'), {
+          settings: updatedSettings,
+          adminCreds: state.adminCreds
+        }, { merge: true });
+      }
+      showToast('تغییرات ظاهری، پس‌زمینه و عناوین با موفقیت ذخیره و اعمال شد!');
+    };
+
+    window.resetSiteSettings = async function() {
+      state.settings = { ...DEFAULT_SETTINGS };
+      applySiteSettings();
+      if (db && state.user) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'config', 'main'), {
+          settings: state.settings
+        }, { merge: true });
+      }
+      showToast('تنظیمات سایت به حالت اولیه بازگردانده شد.');
+    };
+
+    window.handleChangeCredentials = async function(e) {
+      e.preventDefault();
+      const currentPass = document.getElementById('current-admin-password').value.trim();
+      const newUser = document.getElementById('new-admin-username').value.trim();
+      const newPass = document.getElementById('new-admin-password').value.trim();
+      const confirmPass = document.getElementById('confirm-admin-password').value.trim();
+
+      if (currentPass !== state.adminCreds.password) {
+        showToast('رمز عبور فعلی اشتباه وارد شده است!', 'error');
+        return;
       }
 
-      function renderAdminSection() {
-        const loginCard = document.getElementById('adminLoginCard');
-        const dashCard = document.getElementById('adminDashboardCard');
-        if (!loginCard || !dashCard) return;
-
-        if (!state.isAdminLoggedIn) {
-          loginCard.classList.remove('hidden');
-          dashCard.classList.add('hidden');
-          return;
-        }
-
-        loginCard.classList.add('hidden');
-        dashCard.classList.remove('hidden');
-
-        // فعال‌سازی تب انتخاب‌شده
-        document.querySelectorAll('.admin-tab-btn').forEach(function (btn) {
-          if (btn.getAttribute('data-admin-tab') === state.activeAdminTab) {
-            btn.classList.add('active');
-          } else {
-            btn.classList.remove('active');
-          }
-        });
-
-        document.querySelectorAll('.admin-tab-panel').forEach(function (panel) {
-          panel.classList.add('hidden');
-        });
-        const activePanel = document.getElementById('adminTab-' + state.activeAdminTab);
-        if (activePanel) activePanel.classList.remove('hidden');
-
-        syncAdminInputsFromState();
-        renderAdminPropsTable();
-        renderAdminAdsList();
-        renderAdminSectionsControl();
+      if (!newUser) {
+        showToast('نام کاربری جدید نمی‌تواند خالی باشد!', 'error');
+        return;
       }
 
-      function renderAllDynamicViews() {
-        renderHeaderLogo();
-        renderOfficePhones();
-        renderTopAdBar();
-        renderHomeSection();
-        renderPublicSearch();
-        renderAdsSection();
-        if (state.isAdminLoggedIn) {
-          renderAdminSection();
-        }
+      if (newPass !== confirmPass) {
+        showToast('رمز عبور جدید و تکرار آن مطابقت ندارند!', 'error');
+        return;
       }
 
-      // =====================================================================
-      // ۹. اتصال رویدادها و فرم‌ها
-      // =====================================================================
-      function bindEvents() {
-        // دکمه‌های ناوبری و کپی با event delegation
-        document.addEventListener('click', function (evt) {
-          const target = evt.target;
-          if (!target || !target.closest) return;
+      state.adminCreds = { username: newUser, password: newPass };
+      document.getElementById('admin-current-user-label').textContent = newUser;
+      document.getElementById('security-current-user-display').textContent = newUser;
 
-          // بستن پیام اطلاع‌رسانی
-          if (target.closest('#closeNoticeBtn')) {
-            hideNotice();
-            return;
-          }
-
-          // دکمه‌های ناوبری بین بخش‌ها
-          const navBtn = target.closest('button[data-nav]');
-          if (navBtn) {
-            const dest = navBtn.getAttribute('data-nav');
-            switchSection(dest);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            return;
-          }
-
-          // کپی شماره تلفن دفتر
-          const phoneBtn = target.closest('button[data-copy-phone]');
-          if (phoneBtn) {
-            const ph = phoneBtn.getAttribute('data-copy-phone');
-            copyToClipboard(ph, 'شماره تماس دفتر');
-            return;
-          }
-
-          // کپی شناسه رسمی بخش
-          const pathBtn = target.closest('button[data-copy-path]');
-          if (pathBtn) {
-            const secKey = pathBtn.getAttribute('data-copy-path');
-            const meta = SECTION_META[secKey];
-            if (meta) {
-              copyToClipboard(meta.code, 'شناسه بخش «' + meta.label + '»');
-            }
-            return;
-          }
-
-          // تب‌های داخل پنل مدیریت
-          const adminTabBtn = target.closest('button[data-admin-tab]');
-          if (adminTabBtn) {
-            state.activeAdminTab = adminTabBtn.getAttribute('data-admin-tab') || 'props';
-            renderAdminSection();
-            return;
-          }
-
-          // تغییر وضعیت ملکیت توسط مدیر
-          const propStatusBtn = target.closest('button[data-toggle-prop-status]');
-          if (propStatusBtn) {
-            const propId = propStatusBtn.getAttribute('data-toggle-prop-status');
-            let changedItem = null;
-            state.properties = state.properties.map(function (p) {
-              if (p.id === propId) {
-                changedItem = Object.assign({}, p, { approved: p.approved === false ? true : false });
-                return changedItem;
-              }
-              return p;
-            });
-            saveJsonData(STORAGE_KEYS.PROPERTIES, state.properties);
-            if (changedItem) {
-              syncCloudDoc(CLOUD_CONFIG.collections.PROPERTIES, String(changedItem.id), changedItem);
-            }
-            renderAllDynamicViews();
-            showNotice('وضعیت ملکیت «' + propId + '» به‌روزرسانی شد.', false);
-            return;
-          }
-
-          // حذف ملکیت توسط مدیر
-          const delPropBtn = target.closest('button[data-delete-prop]');
-          if (delPropBtn) {
-            const propId = delPropBtn.getAttribute('data-delete-prop');
-            state.properties = state.properties.filter(function (p) {
-              return p.id !== propId;
-            });
-            saveJsonData(STORAGE_KEYS.PROPERTIES, state.properties);
-            deleteCloudDoc(CLOUD_CONFIG.collections.PROPERTIES, String(propId));
-            renderAllDynamicViews();
-            showNotice('ملکیت «' + propId + '» حذف شد.', false);
-            return;
-          }
-
-          // تغییر وضعیت فعال/غیرفعال آگهی توسط مدیر
-          const toggleAdBtn = target.closest('button[data-toggle-ad]');
-          if (toggleAdBtn) {
-            const adId = toggleAdBtn.getAttribute('data-toggle-ad');
-            let changedAd = null;
-            state.ads = state.ads.map(function (a) {
-              if (a.id === adId) {
-                changedAd = Object.assign({}, a, { active: a.active === false ? true : false });
-                return changedAd;
-              }
-              return a;
-            });
-            saveJsonData(STORAGE_KEYS.ADS, state.ads);
-            if (changedAd) {
-              syncCloudDoc(CLOUD_CONFIG.collections.ADS, String(changedAd.id), changedAd);
-            }
-            renderAllDynamicViews();
-            showNotice('وضعیت آگهی «' + adId + '» به‌روزرسانی شد.', false);
-            return;
-          }
-
-          // حذف آگهی توسط مدیر
-          const delAdBtn = target.closest('button[data-delete-ad]');
-          if (delAdBtn) {
-            const adId = delAdBtn.getAttribute('data-delete-ad');
-            state.ads = state.ads.filter(function (a) {
-              return a.id !== adId;
-            });
-            saveJsonData(STORAGE_KEYS.ADS, state.ads);
-            deleteCloudDoc(CLOUD_CONFIG.collections.ADS, String(adId));
-            renderAllDynamicViews();
-            showNotice('آگهی «' + adId + '» حذف شد.', false);
-            return;
-          }
-
-          // فعال/غیرفعال کردن بخش‌های سایت توسط مدیر
-          const toggleSecBtn = target.closest('button[data-toggle-section]');
-          if (toggleSecBtn) {
-            const secKey = toggleSecBtn.getAttribute('data-toggle-section');
-            const nextState = state.sectionAccess[secKey] === false ? true : false;
-            state.sectionAccess[secKey] = nextState;
-            saveJsonData(STORAGE_KEYS.SECTIONS, state.sectionAccess);
-            syncCloudDoc(CLOUD_CONFIG.collections.SECTIONS, 'main', { access: state.sectionAccess });
-            renderAllDynamicViews();
-            showNotice(
-              'وضعیت بخش «' + (SECTION_META[secKey] ? SECTION_META[secKey].label : secKey) + '» به ' + (nextState ? 'فعال' : 'غیرفعال') + ' تغییر یافت.',
-              false
-            );
-          }
-        });
-
-        // نمایش فیلد «سایر» برای نوع ملکیت و نوع معامله
-        const propTypeSelect = document.getElementById('propType');
-        if (propTypeSelect) {
-          propTypeSelect.addEventListener('change', function () {
-            const grp = document.getElementById('propTypeCustomGroup');
-            if (grp) {
-              if (propTypeSelect.value === 'سایر') grp.classList.remove('hidden');
-              else grp.classList.add('hidden');
-            }
-          });
-        }
-
-        const dealTypeSelect = document.getElementById('dealType');
-        if (dealTypeSelect) {
-          dealTypeSelect.addEventListener('change', function () {
-            const grp = document.getElementById('dealTypeCustomGroup');
-            if (grp) {
-              if (dealTypeSelect.value === 'سایر') grp.classList.remove('hidden');
-              else grp.classList.add('hidden');
-            }
-          });
-        }
-
-        // آپلود و پیش‌نمایش تصویر ملکیت
-        const propImgInput = document.getElementById('propImageInput');
-        if (propImgInput) {
-          propImgInput.addEventListener('change', function (evt) {
-            const file = evt.target.files && evt.target.files[0];
-            readImageFile(file, function (dataUrl) {
-              state.draftPropImg = dataUrl;
-              const box = document.getElementById('propImagePreviewBox');
-              if (box) {
-                box.innerHTML = dataUrl
-                  ? '<img src="' + escapeHtml(dataUrl) + '" alt="پیش‌نمایش تصویر ملکیت" />'
-                  : '';
-              }
-            });
-          });
-        }
-
-        // آپلود و پیش‌نمایش تصویر قباله (اختیاری)
-        const deedImgInput = document.getElementById('deedImageInput');
-        if (deedImgInput) {
-          deedImgInput.addEventListener('change', function (evt) {
-            const file = evt.target.files && evt.target.files[0];
-            readImageFile(file, function (dataUrl) {
-              state.draftDeedImg = dataUrl;
-              const box = document.getElementById('deedImagePreviewBox');
-              if (box) {
-                box.innerHTML = dataUrl
-                  ? '<img src="' + escapeHtml(dataUrl) + '" alt="پیش‌نمایش تصویر قباله" />'
-                  : '';
-              }
-            });
-          });
-        }
-
-        // پاک کردن فورم ثبت ملکیت
-        const resetFormBtn = document.getElementById('resetClientFormBtn');
-        if (resetFormBtn) {
-          resetFormBtn.addEventListener('click', function () {
-            state.draftPropImg = '';
-            state.draftDeedImg = '';
-            const grp1 = document.getElementById('propTypeCustomGroup');
-            const grp2 = document.getElementById('dealTypeCustomGroup');
-            const pBox = document.getElementById('propImagePreviewBox');
-            const dBox = document.getElementById('deedImagePreviewBox');
-            if (grp1) grp1.classList.add('hidden');
-            if (grp2) grp2.classList.add('hidden');
-            if (pBox) pBox.innerHTML = '';
-            if (dBox) dBox.innerHTML = '';
-          });
-        }
-
-        // ارسال فورم ثبت ملکیت مشتری
-        const clientForm = document.getElementById('clientPropertyForm');
-        if (clientForm) {
-          clientForm.addEventListener('submit', function (evt) {
-            evt.preventDefault();
-
-            const title = (document.getElementById('propTitle').value || '').trim();
-            const pTypeSel = document.getElementById('propType').value;
-            const pTypeCustom = (document.getElementById('propTypeCustom').value || '').trim();
-            const propertyType = pTypeSel === 'سایر' ? (pTypeCustom || 'سایر') : pTypeSel;
-
-            const dTypeSel = document.getElementById('dealType').value;
-            const dTypeCustom = (document.getElementById('dealTypeCustom').value || '').trim();
-            const dealType = dTypeSel === 'سایر' ? (dTypeCustom || 'سایر') : dTypeSel;
-
-            const deedType = document.getElementById('deedType').value;
-            const price = (document.getElementById('propPrice').value || '').trim();
-            const location = (document.getElementById('propLocation').value || '').trim();
-            const ownerName = (document.getElementById('ownerName').value || '').trim();
-            const ownerPhone = (document.getElementById('ownerPhone').value || '').trim();
-            const description = (document.getElementById('propDesc').value || '').trim();
-
-            if (!title || !location || !ownerName || !ownerPhone) {
-              showNotice('لطفاً عنوان/شماره ملکیت، موقعیت و نام و شماره تماس مالک را کامل وارد کنید.', true);
-              return;
-            }
-
-            const newProp = {
-              id: 'PR-' + String(Date.now()).slice(-6),
-              title: title,
-              propertyType: propertyType,
-              dealType: dealType,
-              deedType: deedType,
-              location: location,
-              price: price,
-              ownerName: ownerName,
-              ownerPhone: ownerPhone,
-              description: description,
-              propertyImage: state.draftPropImg || '',
-              deedImage: state.draftDeedImg || '',
-              approved: true,
-              createdAt: new Date().toLocaleDateString('fa-AF')
-            };
-
-            state.properties.unshift(newProp);
-            saveJsonData(STORAGE_KEYS.PROPERTIES, state.properties);
-            syncCloudDoc(CLOUD_CONFIG.collections.PROPERTIES, String(newProp.id), newProp);
-
-            clientForm.reset();
-            state.draftPropImg = '';
-            state.draftDeedImg = '';
-            const grp1 = document.getElementById('propTypeCustomGroup');
-            const grp2 = document.getElementById('dealTypeCustomGroup');
-            const pBox = document.getElementById('propImagePreviewBox');
-            const dBox = document.getElementById('deedImagePreviewBox');
-            if (grp1) grp1.classList.add('hidden');
-            if (grp2) grp2.classList.add('hidden');
-            if (pBox) pBox.innerHTML = '';
-            if (dBox) dBox.innerHTML = '';
-
-            renderAllDynamicViews();
-            showNotice(
-              'ملکیت شما با کد «' +
-                newProp.id +
-                '» ثبت شد و بلافاصله در جستجوی عمومی قرار گرفت. شماره شما در جستجوی عمومی مخفی است و شماره‌های دفتر نمایش داده می‌شود.',
-              false
-            );
-          });
-        }
-
-        // فیلترهای جستجوی عمومی
-        ['searchKeywordInput', 'filterPropType', 'filterDealType', 'filterDeedType'].forEach(function (id) {
-          const el = document.getElementById(id);
-          if (el) {
-            el.addEventListener('input', renderPublicSearch);
-            el.addEventListener('change', renderPublicSearch);
-          }
-        });
-
-        const clearFiltersBtn = document.getElementById('clearSearchFiltersBtn');
-        if (clearFiltersBtn) {
-          clearFiltersBtn.addEventListener('click', function () {
-            const kw = document.getElementById('searchKeywordInput');
-            const pt = document.getElementById('filterPropType');
-            const dt = document.getElementById('filterDealType');
-            const dd = document.getElementById('filterDeedType');
-            if (kw) kw.value = '';
-            if (pt) pt.value = '';
-            if (dt) dt.value = '';
-            if (dd) dd.value = '';
-            renderPublicSearch();
-          });
-        }
-
-        // ورود مدیر
-        const loginForm = document.getElementById('adminLoginForm');
-        if (loginForm) {
-          loginForm.addEventListener('submit', function (evt) {
-            evt.preventDefault();
-            const u = (document.getElementById('adminUserInput').value || '').trim();
-            const p = (document.getElementById('adminPassInput').value || '').trim();
-            if (u === state.creds.username && p === state.creds.password) {
-              state.isAdminLoggedIn = true;
-              renderAdminSection();
-              showNotice('با موفقیت وارد پنل مدیریت شدید.', false);
-            } else {
-              showNotice('نام کاربری یا رمز عبور مدیر اشتباه است.', true);
-            }
-          });
-        }
-
-        const quickDemoBtn = document.getElementById('quickDemoLoginBtn');
-        if (quickDemoBtn) {
-          quickDemoBtn.addEventListener('click', function () {
-            document.getElementById('adminUserInput').value = DEFAULT_CREDS.username;
-            document.getElementById('adminPassInput').value = DEFAULT_CREDS.password;
-            state.isAdminLoggedIn = true;
-            renderAdminSection();
-            showNotice('ورود سریع مدیریتی انجام شد (admin / 123456).', false);
-          });
-        }
-
-        const resetCredsLoginBtn = document.getElementById('resetDefaultCredsLoginBtn');
-        if (resetCredsLoginBtn) {
-          resetCredsLoginBtn.addEventListener('click', function () {
-            state.creds = Object.assign({}, DEFAULT_CREDS);
-            saveJsonData(STORAGE_KEYS.CREDS, state.creds);
-            syncCloudDoc(CLOUD_CONFIG.collections.CREDS, 'admin_auth', {
-              username: state.creds.username,
-              password: state.creds.password
-            });
-            document.getElementById('adminUserInput').value = DEFAULT_CREDS.username;
-            document.getElementById('adminPassInput').value = DEFAULT_CREDS.password;
-            showNotice('اطلاعات ورود به حالت پیش‌فرض (admin / 123456) بازیابی شد.', false);
-          });
-        }
-
-        const logoutBtn = document.getElementById('adminLogoutBtn');
-        if (logoutBtn) {
-          logoutBtn.addEventListener('click', function () {
-            state.isAdminLoggedIn = false;
-            renderAdminSection();
-            showNotice('از پنل مدیریت خارج شدید.', false);
-          });
-        }
-
-        // افزودن آگهی تبلیغاتی توسط مدیر
-        const addAdForm = document.getElementById('adminAddAdForm');
-        if (addAdForm) {
-          addAdForm.addEventListener('submit', function (evt) {
-            evt.preventDefault();
-            const title = (document.getElementById('newAdTitle').value || '').trim();
-            const text = (document.getElementById('newAdText').value || '').trim();
-            if (!title || !text) {
-              showNotice('لطفاً عنوان و متن آگهی را وارد کنید.', true);
-              return;
-            }
-            const newAd = {
-              id: 'AD-' + String(Date.now()).slice(-5),
-              title: title,
-              text: text,
-              active: true
-            };
-            state.ads.unshift(newAd);
-            saveJsonData(STORAGE_KEYS.ADS, state.ads);
-            syncCloudDoc(CLOUD_CONFIG.collections.ADS, String(newAd.id), newAd);
-            addAdForm.reset();
-            renderAllDynamicViews();
-            showNotice('آگهی تبلیغاتی جدید اضافه شد.', false);
-          });
-        }
-
-        // ذخیره رنگ‌های لوگوی طبیعت پغمان
-        const logoColorsForm = document.getElementById('logoColorsForm');
-        if (logoColorsForm) {
-          logoColorsForm.addEventListener('submit', function (evt) {
-            evt.preventDefault();
-            state.logo.mountainColor = document.getElementById('mountainColorInput').value || DEFAULT_LOGO.mountainColor;
-            state.logo.meadowColor = document.getElementById('meadowColorInput').value || DEFAULT_LOGO.meadowColor;
-            state.logo.starColor = document.getElementById('starColorInput').value || DEFAULT_LOGO.starColor;
-            saveJsonData(STORAGE_KEYS.LOGO, state.logo);
-            syncCloudDoc(CLOUD_CONFIG.collections.LOGO, 'main', { config: state.logo });
-            renderHeaderLogo();
-            showNotice('رنگ‌بندی لوگوی طبیعت پغمان ذخیره شد.', false);
-          });
-        }
-
-        // آپلود لوگوی سفارشی
-        const customLogoUpload = document.getElementById('customLogoUpload');
-        if (customLogoUpload) {
-          customLogoUpload.addEventListener('change', function (evt) {
-            const file = evt.target.files && evt.target.files[0];
-            readImageFile(file, function (dataUrl) {
-              if (!dataUrl) return;
-              state.logo.customImage = dataUrl;
-              saveJsonData(STORAGE_KEYS.LOGO, state.logo);
-              syncCloudDoc(CLOUD_CONFIG.collections.LOGO, 'main', { config: state.logo });
-              renderHeaderLogo();
-              showNotice('لوگوی سفارشی بارگذاری و ذخیره شد.', false);
-            });
-          });
-        }
-
-        // بازگردانی لوگوی پیش‌فرض پغمان
-        const resetLogoBtn = document.getElementById('resetDefaultLogoBtn');
-        if (resetLogoBtn) {
-          resetLogoBtn.addEventListener('click', function () {
-            state.logo = Object.assign({}, DEFAULT_LOGO);
-            if (customLogoUpload) customLogoUpload.value = '';
-            saveJsonData(STORAGE_KEYS.LOGO, state.logo);
-            syncCloudDoc(CLOUD_CONFIG.collections.LOGO, 'main', { config: state.logo });
-            syncAdminInputsFromState();
-            renderHeaderLogo();
-            showNotice('لوگوی طبیعت پغمان به حالت پیش‌فرض بازگردانده شد.', false);
-          });
-        }
-
-        // ذخیره شماره‌های تماس رسمی دفتر
-        const phonesForm = document.getElementById('officePhonesForm');
-        if (phonesForm) {
-          phonesForm.addEventListener('submit', function (evt) {
-            evt.preventDefault();
-            const raw = (document.getElementById('officePhonesTextarea').value || '').trim();
-            const parsed = raw
-              .split(/[\n,،]+/)
-              .map(function (s) { return s.trim(); })
-              .filter(Boolean);
-            if (parsed.length === 0) {
-              showNotice('حداقل یک شماره تماس رسمی وارد کنید.', true);
-              return;
-            }
-            state.phones = parsed;
-            saveJsonData(STORAGE_KEYS.PHONES, state.phones);
-            syncCloudDoc(CLOUD_CONFIG.collections.PHONES, 'main', { list: state.phones });
-            renderAllDynamicViews();
-            showNotice('شماره‌های تماس رسمی دفتر به‌روزرسانی شد.', false);
-          });
-        }
-
-        const resetPhonesBtn = document.getElementById('resetDefaultPhonesBtn');
-        if (resetPhonesBtn) {
-          resetPhonesBtn.addEventListener('click', function () {
-            state.phones = DEFAULT_OFFICE_PHONES.slice();
-            saveJsonData(STORAGE_KEYS.PHONES, state.phones);
-            syncCloudDoc(CLOUD_CONFIG.collections.PHONES, 'main', { list: state.phones });
-            syncAdminInputsFromState();
-            renderAllDynamicViews();
-            showNotice('شماره‌های تماس دفتر به ۵ شماره پیش‌فرض بازگردانده شد.', false);
-          });
-        }
-
-        // تغییر نام کاربری و رمز عبور مدیر
-        const changeCredsForm = document.getElementById('changeAdminCredsForm');
-        if (changeCredsForm) {
-          changeCredsForm.addEventListener('submit', function (evt) {
-            evt.preventDefault();
-            const newU = (document.getElementById('newAdminUsername').value || '').trim();
-            const newP = (document.getElementById('newAdminPassword').value || '').trim();
-            if (!newU || newP.length < 4) {
-              showNotice('نام کاربری و رمز عبور (حداقل ۴ کاراکتر) را وارد کنید.', true);
-              return;
-            }
-            state.creds = { username: newU, password: newP };
-            saveJsonData(STORAGE_KEYS.CREDS, state.creds);
-            syncCloudDoc(CLOUD_CONFIG.collections.CREDS, 'admin_auth', {
-              username: state.creds.username,
-              password: state.creds.password
-            });
-            document.getElementById('newAdminPassword').value = '';
-            showNotice('نام کاربری و رمز عبور مدیر با موفقیت تغییر کرد.', false);
-          });
-        }
-
-        // خروجی، بازگردانی و بازنشانی JSON
-        const exportJsonBtn = document.getElementById('exportJsonBtn');
-        if (exportJsonBtn) {
-          exportJsonBtn.addEventListener('click', function () {
-            const payload = {
-              properties: state.properties,
-              ads: state.ads,
-              phones: state.phones,
-              sectionAccess: state.sectionAccess,
-              logo: state.logo,
-              creds: state.creds
-            };
-            const area = document.getElementById('jsonBackupTextarea');
-            if (area) {
-              area.value = JSON.stringify(payload, null, 2);
-            }
-            showNotice('نسخه پشتیبان JSON در کادر متن آماده شد.', false);
-          });
-        }
-
-        const importJsonBtn = document.getElementById('importJsonBtn');
-        if (importJsonBtn) {
-          importJsonBtn.addEventListener('click', function () {
-            const area = document.getElementById('jsonBackupTextarea');
-            const raw = area ? area.value.trim() : '';
-            if (!raw) {
-              showNotice('ابتدا متن JSON را در کادر وارد کنید.', true);
-              return;
-            }
-            try {
-              const parsed = JSON.parse(raw);
-              if (Array.isArray(parsed.properties)) {
-                state.properties = parsed.properties;
-                saveJsonData(STORAGE_KEYS.PROPERTIES, state.properties);
-              }
-              if (Array.isArray(parsed.ads)) {
-                state.ads = parsed.ads;
-                saveJsonData(STORAGE_KEYS.ADS, state.ads);
-              }
-              if (Array.isArray(parsed.phones) && parsed.phones.length > 0) {
-                state.phones = parsed.phones;
-                saveJsonData(STORAGE_KEYS.PHONES, state.phones);
-              }
-              if (parsed.sectionAccess && typeof parsed.sectionAccess === 'object') {
-                state.sectionAccess = Object.assign({}, DEFAULT_SECTION_ACCESS, parsed.sectionAccess);
-                saveJsonData(STORAGE_KEYS.SECTIONS, state.sectionAccess);
-              }
-              if (parsed.logo && typeof parsed.logo === 'object') {
-                state.logo = Object.assign({}, DEFAULT_LOGO, parsed.logo);
-                saveJsonData(STORAGE_KEYS.LOGO, state.logo);
-              }
-              if (parsed.creds && parsed.creds.username && parsed.creds.password) {
-                state.creds = { username: String(parsed.creds.username), password: String(parsed.creds.password) };
-                saveJsonData(STORAGE_KEYS.CREDS, state.creds);
-              }
-              renderAllDynamicViews();
-              showNotice('اطلاعات از JSON با موفقیت بازگردانی شد.', false);
-            } catch (e) {
-              showNotice('ساختار JSON نامعتبر است.', true);
-            }
-          });
-        }
-
-        const factoryResetBtn = document.getElementById('factoryResetBtn');
-        if (factoryResetBtn) {
-          factoryResetBtn.addEventListener('click', function () {
-            state.properties = cloneDeep(DEFAULT_PROPERTIES);
-            state.ads = cloneDeep(DEFAULT_ADS);
-            state.phones = DEFAULT_OFFICE_PHONES.slice();
-            state.sectionAccess = Object.assign({}, DEFAULT_SECTION_ACCESS);
-            state.logo = Object.assign({}, DEFAULT_LOGO);
-            state.creds = Object.assign({}, DEFAULT_CREDS);
-
-            saveJsonData(STORAGE_KEYS.PROPERTIES, state.properties);
-            saveJsonData(STORAGE_KEYS.ADS, state.ads);
-            saveJsonData(STORAGE_KEYS.PHONES, state.phones);
-            saveJsonData(STORAGE_KEYS.SECTIONS, state.sectionAccess);
-            saveJsonData(STORAGE_KEYS.LOGO, state.logo);
-            saveJsonData(STORAGE_KEYS.CREDS, state.creds);
-
-            renderAllDynamicViews();
-            showNotice('تمامی تنظیمات و اطلاعات به حالت اولیه بازنشانی شدند.', false);
-          });
-        }
+      if (db && state.user) {
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'config', 'main'), {
+          adminCreds: state.adminCreds
+        }, { merge: true });
       }
 
-      // =====================================================================
-      // ۱۰. راه‌اندازی اولیه
-      // =====================================================================
-      initState();
-      bindEvents();
-      switchSection('home');
-      initFirebaseSync();
-    })();
+      document.getElementById('current-admin-password').value = '';
+      document.getElementById('new-admin-password').value = '';
+      document.getElementById('confirm-admin-password').value = '';
+      showToast(`یوزر جدید (${newUser}) و رمز عبور مدیریت با موفقیت ذخیره شد!`);
+    };
+
+    function renderAll() {
+      renderProperties();
+      if (state.isAdminLoggedIn) {
+        renderAdminDashboard();
+      }
+    }
+
+    // ==================== راه‌اندازی اولیه صفحه ====================
+    window.addEventListener('DOMContentLoaded', () => {
+      // پر کردن لیست ۳۴ ولایت در فرم‌ها
+      const regProv = document.getElementById('reg-province');
+      const filterProv = document.getElementById('filter-province');
+      AFGHANISTAN_PROVINCES.forEach(prov => {
+        regProv.innerHTML += `<option value="${prov}">${prov}</option>`;
+        filterProv.innerHTML += `<option value="${prov}">${prov}</option>`;
+      });
+
+      // نمایش تاریخ روز به فارسی
+      try {
+        const todayStr = new Intl.DateTimeFormat('fa-AF', { dateStyle: 'full' }).format(new Date());
+        document.getElementById('current-date').textContent = todayStr;
+      } catch (e) {
+        document.getElementById('current-date').textContent = "سامانه آنلاین املاک";
+      }
+
+      applySiteSettings();
+      renderAll();
+      handleHashChange();
+      initCloudStorage();
+    });
+
+    window.addEventListener('hashchange', handleHashChange);
   </script>
 </body>
 </html>
