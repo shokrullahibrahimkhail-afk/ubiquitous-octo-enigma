@@ -6,79 +6,17 @@
 <meta name="theme-color" content="#123451">
 <title>فورم ثبت مشخصات ملک | ستاره اعتماد</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;padding:16px;background:#f1f5f9;color:#1e293b;font-family:Tahoma,Arial,sans-serif;line-height:1.8}
-.sheet{max-width:760px;margin:auto;background:#fff;border:1px solid #dbe3ec;border-radius:16px;overflow:hidden;box-shadow:0 8px 28px #0f29421a}
-header{background:#123451;color:#fff;padding:22px 20px;border-bottom:4px solid #d99b27}
-.brand{display:flex;align-items:center;gap:14px;margin-bottom:12px}
-.logo{width:92px;height:92px;flex:0 0 92px;object-fit:cover;object-position:center 25%;border-radius:50%;border:3px solid #d99b27;background:#fff}
-.brand-text{min-width:0}
-.brand-name{font-size:18px;font-weight:bold;color:#fff;margin:0}
-.brand-sub{font-size:13px;color:#ffe3a0;margin:2px 0 0}
-header .tag{display:inline-block;color:#ffe3a0;background:#1d4667;border:1px solid #45617a;border-radius:20px;padding:2px 12px;font-size:12px}
-h1{font-size:21px;line-height:1.7;margin:9px 0}
-header p{font-size:13px;color:#e2e8f0;margin:0 0 12px}
-.phone{display:inline-block;background:#1d4667;color:#ffe3a0;padding:5px 12px;border-radius:8px;font-weight:bold;text-decoration:none;direction:ltr}
-main{padding:18px}
-.intro{font-size:13px;color:#475569;margin:0 0 14px}
-.table-wrap{width:100%;border:1px solid #dbe3ec;border-radius:12px;overflow:hidden}
-table{width:100%;border-collapse:collapse;table-layout:fixed}
-thead th{background:#eaf0f6;color:#123451;font-size:13px;padding:11px 9px;text-align:right;border-bottom:1px solid #dbe3ec}
-thead th:first-child{width:36%;border-left:1px solid #dbe3ec}
-tbody th,tbody td{padding:11px 9px;border-bottom:1px solid #e2e8f0;text-align:right;vertical-align:middle;overflow-wrap:anywhere}
-tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
-tbody th{width:36%;background:#f8fafc;font-size:13px;font-weight:600;border-left:1px solid #e2e8f0}
-tbody td{width:64%}
-label{cursor:pointer}
-.required{color:#dc2626}
-input,select,textarea{display:block;width:100%;max-width:100%;min-width:0;border:1px solid #cbd5e1;border-radius:8px;background:#fff;padding:10px 9px;font:14px Tahoma,Arial,sans-serif;color:#1e293b;outline:none}
-input:focus,select:focus,textarea:focus{border-color:#1e4d7b;box-shadow:0 0 0 3px #1e4d7b20}
-input::placeholder,textarea::placeholder{color:#94a3b8;font-size:12px}
-textarea{resize:vertical}
-.file-help{font-size:12px;color:#64748b;margin:7px 0 0}
-.file-list{display:grid;gap:7px;margin-top:9px}
-.file-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px;border:1px solid #dbe3ec;border-radius:8px;background:#f8fafc;font-size:12px}
-.file-name{overflow-wrap:anywhere;min-width:0}
-.remove-file{width:auto;padding:5px 9px;background:#fee2e2;color:#991b1b;font-size:11px;flex:0 0 auto}
-.privacy{margin-top:16px;padding:13px;background:#f1f6fa;border:1px solid #dce7f0;border-right:4px solid #1d4667;border-radius:10px;font-size:12px;color:#475569}
-.privacy strong{display:block;color:#123451;margin-bottom:4px;font-size:13px}
-.actions{display:grid;gap:10px;margin-top:18px}
-button{width:100%;border:0;border-radius:10px;padding:13px 12px;font:bold 14px Tahoma,Arial,sans-serif;cursor:pointer}
-.send{background:#15803d;color:#fff}
-.reset{background:#e9eef3;color:#334155;border:1px solid #cbd5e1}
-.status{display:none;padding:10px 12px;border-radius:9px;margin:0 0 14px;font-size:13px}
-.status.show{display:block}
-.status.error{background:#fff1f2;color:#9f1239;border:1px solid #fecdd3}
-.status.info{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe}
-footer{padding:13px;text-align:center;background:#f8fafc;border-top:1px solid #e2e8f0;color:#64748b;font-size:12px}
-@media(max-width:480px){
-body{padding:8px}.sheet{border-radius:12px}header{padding:17px 14px}
-.logo{width:76px;height:76px;flex-basis:76px}.brand-name{font-size:15px}
-h1{font-size:17px}header p{font-size:12px}main{padding:12px}
-.table-wrap{border-radius:9px}thead th{font-size:11px;padding:9px 6px}
-thead th:first-child,tbody th{width:37%}
-tbody th,tbody td{padding:9px 6px}tbody th{font-size:11px}tbody td{width:63%}
-input,select,textarea{font-size:12px;padding:9px 7px}
-input::placeholder,textarea::placeholder{font-size:10px}
-.privacy{font-size:11px;padding:10px}button{font-size:13px}
-}
+*{box-sizing:border-box}body{margin:0;padding:16px;background:#f1f5f9;color:#1e293b;font-family:Tahoma,Arial,sans-serif;line-height:1.8}.sheet{max-width:760px;margin:auto;background:#fff;border:1px solid #dbe3ec;border-radius:16px;overflow:hidden;box-shadow:0 8px 28px #0f29421a}header{background:#123451;color:#fff;padding:22px 20px;border-bottom:4px solid #d99b27}header .tag{display:inline-block;color:#ffe3a0;background:#1d4667;border:1px solid #45617a;border-radius:20px;padding:2px 12px;font-size:12px}h1{font-size:21px;line-height:1.7;margin:9px 0}header p{font-size:13px;color:#e2e8f0;margin:0 0 12px}.phone{display:inline-block;background:#1d4667;color:#ffe3a0;padding:5px 12px;border-radius:8px;font-weight:bold;text-decoration:none;direction:ltr}main{padding:18px}.intro{font-size:13px;color:#475569;margin:0 0 14px}.table-wrap{width:100%;border:1px solid #dbe3ec;border-radius:12px;overflow:hidden}table{width:100%;border-collapse:collapse;table-layout:fixed}thead th{background:#eaf0f6;color:#123451;font-size:13px;padding:11px 9px;text-align:right;border-bottom:1px solid #dbe3ec}thead th:first-child{width:36%;border-left:1px solid #dbe3ec}tbody th,tbody td{padding:11px 9px;border-bottom:1px solid #e2e8f0;text-align:right;vertical-align:middle;overflow-wrap:anywhere}tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}tbody th{width:36%;background:#f8fafc;font-size:13px;font-weight:600;border-left:1px solid #e2e8f0}tbody td{width:64%}label{cursor:pointer}.required{color:#dc2626}input,select,textarea{display:block;width:100%;max-width:100%;min-width:0;border:1px solid #cbd5e1;border-radius:8px;background:#fff;padding:10px 9px;font:14px Tahoma,Arial,sans-serif;color:#1e293b;outline:none}input:focus,select:focus,textarea:focus{border-color:#1e4d7b;box-shadow:0 0 0 3px #1e4d7b20}input::placeholder,textarea::placeholder{color:#94a3b8;font-size:12px}textarea{resize:vertical}.privacy{margin-top:16px;padding:13px;background:#f1f6fa;border:1px solid #dce7f0;border-right:4px solid #1d4667;border-radius:10px;font-size:12px;color:#475569}.privacy strong{display:block;color:#123451;margin-bottom:4px;font-size:13px}.actions{display:grid;gap:10px;margin-top:18px}button{width:100%;border:0;border-radius:10px;padding:13px 12px;font: bold 14px Tahoma,Arial,sans-serif;cursor:pointer}.send{background:#15803d;color:#fff}.reset{background:#e9eef3;color:#334155;border:1px solid #cbd5e1}.status{display:none;padding:10px 12px;border-radius:9px;margin:0 0 14px;font-size:13px}.status.show{display:block}.status.error{background:#fff1f2;color:#9f1239;border:1px solid #fecdd3}.status.info{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe}footer{padding:13px;text-align:center;background:#f8fafc;border-top:1px solid #e2e8f0;color:#64748b;font-size:12px}
+@media(max-width:480px){body{padding:8px}.sheet{border-radius:12px}header{padding:17px 14px}h1{font-size:17px}header p{font-size:12px}main{padding:12px}.table-wrap{border-radius:9px}thead th{font-size:11px;padding:9px 6px}thead th:first-child,tbody th{width:37%}tbody th,tbody td{padding:9px 6px}tbody th{font-size:11px}tbody td{width:63%}input,select,textarea{font-size:12px;padding:9px 7px}input::placeholder,textarea::placeholder{font-size:10px}.privacy{font-size:11px;padding:10px}button{font-size:13px}}
 </style>
 </head>
 <body>
 <div class="sheet">
 <header>
-  <div class="brand">
-    <img class="logo" src="logo.jpg" alt="عکس صاحب دفتر ستاره اعتماد">
-    <div class="brand-text">
-      <p class="brand-name">شکرالله ابراهیم‌خیل</p>
-      <p class="brand-sub">ستاره اعتماد</p>
-      <p class="brand-sub">اعتماد شما، اعتبار ما</p>
-    </div>
-  </div>
-  <span class="tag">فرم رسمی ثبت فایل ملکی</span>
-  <h1>فورم ثبت مشخصات ملک – دفتر رهنمای معاملات ستاره اعتماد</h1>
-  <p>لطفاً جدول زیر را با دقت خانه‌پوری نمایید تا اطلاعات به واتساپ دفتر فرستاده شود.</p>
-  <div>شماره تماس رسمی دفتر: <a class="phone" href="tel:0792928897">0792928897</a></div>
+<span class="tag">فرم رسمی ثبت فایل ملکی</span>
+<h1>فورم ثبت مشخصات ملک – دفتر رهنمای معاملات ستاره اعتماد</h1>
+<p>لطفاً جدول زیر را با دقت خانه‌پوری نمایید تا اطلاعات به واتساپ دفتر فرستاده شود.</p>
+<div>شماره تماس رسمی دفتر: <a class="phone" href="tel:0792928897">0792928897</a></div>
 </header>
 <main>
 <div id="statusBox" class="status" role="status" aria-live="polite"></div>
@@ -88,8 +26,6 @@ input::placeholder,textarea::placeholder{font-size:10px}
 <table>
 <thead><tr><th>بخش / مورد مشخصات</th><th>خانه‌پوری و انتخاب گزینه</th></tr></thead>
 <tbody>
-<tr><th><label for="customerName">نام مشتری <span class="required">*</span></label></th><td><input id="customerName" required placeholder="نام و تخلص مشتری"></td></tr>
-<tr><th><label for="customerPhone">شماره تماس مشتری <span class="required">*</span></label></th><td><input id="customerPhone" type="tel" inputmode="tel" required placeholder="شماره تماس مشتری"></td></tr>
 <tr><th><label for="dealType">نوع معامله <span class="required">*</span></label></th><td><select id="dealType" required><option value="">انتخاب نوع معامله...</option><option>خرید</option><option>فروش</option><option>گروی</option><option>کرایه</option><option>شریک‌آباد</option></select></td></tr>
 <tr><th><label for="propertyType">نوع ملک <span class="required">*</span></label></th><td><select id="propertyType" required><option value="">انتخاب نوع ملک...</option><option>خانه</option><option>حویلی</option><option>آپارتمان</option><option>دوکان</option><option>زمین</option><option>سرای</option></select></td></tr>
 <tr><th><label for="location">ولایت و ناحیه / ساحه <span class="required">*</span></label></th><td><input id="location" required placeholder="مثلاً: کابل، ناحیه ۵، خوشحال‌خان"></td></tr>
@@ -98,139 +34,37 @@ input::placeholder,textarea::placeholder{font-size:10px}
 <tr><th><label for="documents">وضعیت اسناد</label></th><td><select id="documents"><option value="">انتخاب وضعیت اسناد...</option><option>قباله شرعی</option><option>قولنامه عرفی</option></select></td></tr>
 <tr><th><label for="price">قیمت پیشنهادی / مبلغ</label></th><td><input id="price" placeholder="مبلغ به دالر یا افغانی"></td></tr>
 <tr><th><label for="notes">توضیحات تکمیلی</label></th><td><textarea id="notes" rows="3" placeholder="موقعیت سرک، آب و برق، شرایط معامله یا جزئیات دیگر..."></textarea></td></tr>
-<tr><th><label for="mediaFiles">عکس یا ویدیوی ملک</label></th><td>
-<input id="mediaFiles" type="file" accept="image/*,video/*" multiple>
-<p class="file-help">با لمس دکمه انتخاب فایل، گالری یا فایل‌های موبایل/کمپیوتر باز می‌شود. انتخاب چند فایل ممکن است.</p>
-<div id="uploadCount" class="file-help">هنوز فایلی انتخاب نشده است.</div>
-<div id="fileList" class="file-list"></div>
-</td></tr>
 </tbody></table>
 </div>
 <div class="privacy"><strong>🔒 تعهد محرمیت و حفظ حریم خصوصی</strong>تمامی اطلاعات مالک و مشخصات ملک نزد دفتر رهنمای معاملات ستاره اعتماد محرمانه باقی می‌ماند و بدون هماهنگی قبلی در آگهی یا نمایش عمومی نشر نمی‌شود.</div>
-<div class="actions">
-<button class="send" type="submit">ارسال اطلاعات و فایل‌ها به واتساپ دفتر</button>
-<button class="reset" type="reset">پاک‌سازی جدول</button>
-</div>
+<div class="actions"><button class="send" type="submit">ارسال اطلاعات تکمیل‌شده به واتساپ دفتر</button><button class="reset" type="reset">پاک‌سازی جدول</button></div>
 </form>
 </main>
 <footer>دفتر رهنمای معاملات ستاره اعتماد | تماس مستقیم: <b dir="ltr">0792928897</b></footer>
 </div>
 <script>
-const form = document.getElementById('propertyForm');
-const statusBox = document.getElementById('statusBox');
-const mediaInput = document.getElementById('mediaFiles');
-const fileList = document.getElementById('fileList');
-const uploadCount = document.getElementById('uploadCount');
-let selectedFiles = [];
-
-function value(id) {
-  const el = document.getElementById(id);
-  return el && el.value.trim() ? el.value.trim() : 'ذکر نشده';
+const form=document.getElementById('propertyForm');
+const statusBox=document.getElementById('statusBox');
+function value(id){return document.getElementById(id).value.trim()||'ذکر نشده'}
+form.addEventListener('submit',function(e){
+e.preventDefault();
+const deal=value('dealType'),property=value('propertyType'),location=value('location');
+if(deal==='ذکر نشده'||property==='ذکر نشده'||location==='ذکر نشده'){
+statusBox.className='status show error';statusBox.textContent='لطفاً نوع معامله، نوع ملک و ولایت و ناحیه / ساحه را تکمیل کنید.';return;
 }
-
-function showFiles() {
-  fileList.innerHTML = '';
-  selectedFiles.forEach((file, index) => {
-    const item = document.createElement('div');
-    item.className = 'file-item';
-    const name = document.createElement('span');
-    name.className = 'file-name';
-    name.textContent = (file.type.startsWith('video/') ? '🎬 ' : '🖼️ ') + file.name +
-      ' (' + (file.size / 1024 / 1024).toFixed(2) + ' MB)';
-    const remove = document.createElement('button');
-    remove.type = 'button';
-    remove.className = 'remove-file';
-    remove.textContent = 'حذف';
-    remove.addEventListener('click', () => {
-      selectedFiles.splice(index, 1);
-      showFiles();
-    });
-    item.append(name, remove);
-    fileList.appendChild(item);
-  });
-  uploadCount.textContent = selectedFiles.length
-    ? selectedFiles.length + ' فایل انتخاب شده است.'
-    : 'هنوز فایلی انتخاب نشده است.';
-}
-
-mediaInput.addEventListener('change', function () {
-  const newFiles = Array.from(this.files || []);
-  newFiles.forEach(file => {
-    if ((file.type.startsWith('image/') || file.type.startsWith('video/')) &&
-        !selectedFiles.some(existing => existing.name === file.name && existing.size === file.size)) {
-      selectedFiles.push(file);
-    }
-  });
-  showFiles();
-  this.value = '';
+const message=[
+'📋 فورم ثبت مشخصات ملک – دفتر رهنمای معاملات ستاره اعتماد',
+'📞 شماره تماس دفتر: 0792928897','━━━━━━━━━━━━━━━━━━',
+'نوع معامله: '+deal,'نوع ملک: '+property,'ولایت و ناحیه / ساحه: '+location,
+'مساحت تقریبی: '+value('area'),'تعداد اتاق / طبقات: '+value('rooms'),
+'وضعیت اسناد: '+value('documents'),'قیمت پیشنهادی / مبلغ: '+value('price'),
+'توضیحات تکمیلی: '+value('notes'),'━━━━━━━━━━━━━━━━━━',
+'یادداشت محرمیت: اطلاعات نزد دفتر محرمانه می‌ماند.'
+].join('\n');
+statusBox.className='status show info';statusBox.textContent='واتساپ باز می‌شود. لطفاً متن پیام را بررسی کرده و دکمه ارسال را در واتساپ بزنید.';
+window.location.href='https://wa.me/93792928897?text='+encodeURIComponent(message);
 });
-
-form.addEventListener('submit', async function (e) {
-  e.preventDefault();
-
-  const requiredValues = ['customerName','customerPhone','dealType','propertyType','location'];
-  if (requiredValues.some(id => value(id) === 'ذکر نشده')) {
-    statusBox.className = 'status show error';
-    statusBox.textContent = 'لطفاً نام مشتری، شماره تماس، نوع معامله، نوع ملک و ولایت/ساحه را تکمیل کنید.';
-    return;
-  }
-
-  const message = [
-    '📋 فورم ثبت مشخصات ملک – دفتر رهنمای معاملات ستاره اعتماد',
-    '📞 شماره تماس دفتر: 0792928897',
-    '━━━━━━━━━━━━━━━━━━',
-    'نام مشتری: ' + value('customerName'),
-    'شماره تماس مشتری: ' + value('customerPhone'),
-    'نوع معامله: ' + value('dealType'),
-    'نوع ملک: ' + value('propertyType'),
-    'ولایت و ناحیه / ساحه: ' + value('location'),
-    'مساحت تقریبی: ' + value('area'),
-    'تعداد اتاق / طبقات: ' + value('rooms'),
-    'وضعیت اسناد: ' + value('documents'),
-    'قیمت پیشنهادی / مبلغ: ' + value('price'),
-    'توضیحات تکمیلی: ' + value('notes'),
-    'تعداد فایل‌های انتخاب‌شده: ' + selectedFiles.length,
-    '━━━━━━━━━━━━━━━━━━',
-    'یادداشت محرمیت: اطلاعات نزد دفتر محرمانه می‌ماند.'
-  ].join('\n');
-
-  if (selectedFiles.length && navigator.canShare && navigator.share &&
-      navigator.canShare({ files: selectedFiles })) {
-    try {
-      await navigator.share({
-        files: selectedFiles,
-        title: 'ثبت مشخصات ملک - ستاره اعتماد',
-        text: message
-      });
-      statusBox.className = 'status show info';
-      statusBox.textContent = 'پنجره اشتراک‌گذاری باز شد. اگر واتساپ را انتخاب کردید، پیام و فایل‌ها را در واتساپ ارسال نمایید.';
-    } catch (err) {
-      if (err.name !== 'AbortError') {
-        statusBox.className = 'status show error';
-        statusBox.textContent = 'اشتراک‌گذاری فایل انجام نشد. لطفاً فایل‌ها را جداگانه در واتساپ ضمیمه کنید.';
-      }
-    }
-    return;
-  }
-
-  if (selectedFiles.length) {
-    statusBox.className = 'status show info';
-    statusBox.textContent = 'این مرورگر ارسال مستقیم فایل را پشتیبانی نمی‌کند. واتساپ باز می‌شود؛ فایل‌ها را در واتساپ به‌صورت دستی ضمیمه کنید.';
-  } else {
-    statusBox.className = 'status show info';
-    statusBox.textContent = 'واتساپ باز می‌شود. لطفاً متن پیام را بررسی کرده و دکمه ارسال را بزنید.';
-  }
-
-  const whatsappUrl = 'https://wa.me/93792928897?text=' + encodeURIComponent(message);
-  window.location.href = whatsappUrl;
-});
-
-form.addEventListener('reset', function () {
-  selectedFiles = [];
-  showFiles();
-  statusBox.className = 'status';
-  statusBox.textContent = '';
-});
+form.addEventListener('reset',()=>{statusBox.className='status';statusBox.textContent=''});
 </script>
 </body>
 </html>
